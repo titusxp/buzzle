@@ -1,0 +1,114 @@
+C:\Projs\Buzzle\Buzzle.Sales\bin\Debug\Buzzle.Sales.dll
+C:\Projs\Buzzle\Buzzle.Sales\bin\Debug\Buzzle.Sales.pdb
+C:\Projs\Buzzle\Buzzle.Sales\bin\Debug\Buzzle.Data.dll
+C:\Projs\Buzzle\Buzzle.Sales\bin\Debug\Buzzle.GlobalStuff.dll
+C:\Projs\Buzzle\Buzzle.Sales\bin\Debug\Buzzle.Data.pdb
+C:\Projs\Buzzle\Buzzle.Sales\bin\Debug\Buzzle.GlobalStuff.pdb
+C:\Projs\Buzzle\Buzzle.Sales\obj\Debug\Buzzle.Sales.Properties.Resources.resources
+C:\Projs\Buzzle\Buzzle.Sales\obj\Debug\Buzzle.Sales.Views.StockItemTypesView.resources
+C:\Projs\Buzzle\Buzzle.Sales\obj\Debug\Buzzle.Sales.csproj.GenerateResource.Cache
+C:\Projs\Buzzle\Buzzle.Sales\obj\Debug\Buzzle.Sales.dll.licenses
+C:\Projs\Buzzle\Buzzle.Sales\obj\Debug\Buzzle.Sales.dll
+C:\Projs\Buzzle\Buzzle.Sales\obj\Debug\Buzzle.Sales.pdb
+C:\Projs\Buzzle\Buzzle.Sales\obj\Debug\Buzzle.Sales.Views.AddEditStockItemTypeView.resources
+C:\Projs\Buzzle\Buzzle.Sales\obj\Debug\Buzzle.Sales.Views.PurchasesView.resources
+C:\Projs\Buzzle\Buzzle.Sales\obj\Debug\Buzzle.Sales.Views.ItemsInStockView.resources
+C:\Projs\Buzzle\Buzzle.Sales\obj\Debug\Buzzle.Sales.Views.ViewEditPurchaseView.resources
+C:\Projs\Buzzle\Buzzle.Sales\obj\Debug\Buzzle.Sales.Views.Purchases.ProcessPurchasesView.ProcessPurchaseView.resources
+C:\Projs\Buzzle\Buzzle.Sales\obj\Debug\Buzzle.Sales.csprojResolveAssemblyReference.cache
+C:\Projs\Buzzle\Buzzle.Sales\obj\Debug\Buzzle.Sales.Views.AddSaleView.resources
+C:\Projs\Buzzle\Buzzle.Sales\obj\Debug\Buzzle.Sales.Views.SalesView.resources
+C:\Projs\Buzzle\Buzzle.Sales\obj\Debug\Buzzle.Sales.Views.AddEditPurchaseView.resources
+C:\Projs\Buzzle\Buzzle.Sales\obj\Debug\Buzzle.Sales.Views.SuppliesView.resources
+C:\Projs\Buzzle\Buzzle.Sales\obj\Debug\Buzzle.Sales.Views.ViewSupplyView.resources
+C:\Projs\Buzzle\Buzzle.Sales\obj\Debug\Buzzle.Sales.Views.ViewSaleView.resources
+C:\Users\KUKU\Desktop\KUKU\Projs\Buzzle\Buzzle.Sales\bin\Debug\Buzzle.Sales.dll
+C:\Users\KUKU\Desktop\KUKU\Projs\Buzzle\Buzzle.Sales\bin\Debug\Buzzle.Sales.pdb
+C:\Users\KUKU\Desktop\KUKU\Projs\Buzzle\Buzzle.Sales\bin\Debug\Buzzle.Data.dll
+C:\Users\KUKU\Desktop\KUKU\Projs\Buzzle\Buzzle.Sales\bin\Debug\Buzzle.GlobalStuff.dll
+C:\Users\KUKU\Desktop\KUKU\Projs\Buzzle\Buzzle.Sales\bin\Debug\Buzzle.Data.pdb
+C:\Users\KUKU\Desktop\KUKU\Projs\Buzzle\Buzzle.Sales\bin\Debug\Buzzle.GlobalStuff.pdb
+C:\Users\KUKU\Desktop\KUKU\Projs\Buzzle\Buzzle.Sales\obj\Debug\Buzzle.Sales.Properties.Resources.resources
+C:\Users\KUKU\Desktop\KUKU\Projs\Buzzle\Buzzle.Sales\obj\Debug\Buzzle.Sales.Views.ViewSaleView.resources
+C:\Users\KUKU\Desktop\KUKU\Projs\Buzzle\Buzzle.Sales\obj\Debug\Buzzle.Sales.Views.AddEditStockItemTypeView.resources
+C:\Users\KUKU\Desktop\KUKU\Projs\Buzzle\Buzzle.Sales\obj\Debug\Buzzle.Sales.Views.AddEditPurchaseView.resources
+C:\Users\KUKU\Desktop\KUKU\Projs\Buzzle\Buzzle.Sales\obj\Debug\Buzzle.Sales.Views.Purchases.ProcessPurchasesView.ProcessPurchaseView.resources
+C:\Users\KUKU\Desktop\KUKU\Projs\Buzzle\Buzzle.Sales\obj\Debug\Buzzle.Sales.Views.PurchasesView.resources
+C:\Users\KUKU\Desktop\KUKU\Projs\Buzzle\Buzzle.Sales\obj\Debug\Buzzle.Sales.Views.ItemsInStockView.resources
+C:\Users\KUKU\Desktop\KUKU\Projs\Buzzle\Buzzle.Sales\obj\Debug\Buzzle.Sales.Views.ViewEditPurchaseView.resources
+C:\Users\KUKU\Desktop\KUKU\Projs\Buzzle\Buzzle.Sales\obj\Debug\Buzzle.Sales.Views.AddSaleView.resources
+C:\Users\KUKU\Desktop\KUKU\Projs\Buzzle\Buzzle.Sales\obj\Debug\Buzzle.Sales.Views.SalesView.resources
+C:\Users\KUKU\Desktop\KUKU\Projs\Buzzle\Buzzle.Sales\obj\Debug\Buzzle.Sales.Views.StockItemTypesView.resources
+C:\Users\KUKU\Desktop\KUKU\Projs\Buzzle\Buzzle.Sales\obj\Debug\Buzzle.Sales.Views.SuppliesView.resources
+C:\Users\KUKU\Desktop\KUKU\Projs\Buzzle\Buzzle.Sales\obj\Debug\Buzzle.Sales.Views.ViewSupplyView.resources
+C:\Users\KUKU\Desktop\KUKU\Projs\Buzzle\Buzzle.Sales\obj\Debug\Buzzle.Sales.csproj.GenerateResource.Cache
+C:\Users\KUKU\Desktop\KUKU\Projs\Buzzle\Buzzle.Sales\obj\Debug\Buzzle.Sales.dll.licenses
+C:\Users\KUKU\Desktop\KUKU\Projs\Buzzle\Buzzle.Sales\obj\Debug\Buzzle.Sales.dll
+C:\Users\KUKU\Desktop\KUKU\Projs\Buzzle\Buzzle.Sales\obj\Debug\Buzzle.Sales.pdb
+C:\Users\KUKU\Desktop\KUKU\Projs\Buzzle - Sales Only\Buzzle.Sales\bin\Debug\Buzzle.Sales.dll.config
+C:\Users\KUKU\Desktop\KUKU\Projs\Buzzle - Sales Only\Buzzle.Sales\bin\Debug\Buzzle.Sales.dll
+C:\Users\KUKU\Desktop\KUKU\Projs\Buzzle - Sales Only\Buzzle.Sales\bin\Debug\Buzzle.Sales.pdb
+C:\Users\KUKU\Desktop\KUKU\Projs\Buzzle - Sales Only\Buzzle.Sales\bin\Debug\Buzzle.Data.dll
+C:\Users\KUKU\Desktop\KUKU\Projs\Buzzle - Sales Only\Buzzle.Sales\bin\Debug\Buzzle.GlobalStuff.dll
+C:\Users\KUKU\Desktop\KUKU\Projs\Buzzle - Sales Only\Buzzle.Sales\bin\Debug\EntityFramework.dll
+C:\Users\KUKU\Desktop\KUKU\Projs\Buzzle - Sales Only\Buzzle.Sales\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\KUKU\Desktop\KUKU\Projs\Buzzle - Sales Only\Buzzle.Sales\bin\Debug\Buzzle.Data.pdb
+C:\Users\KUKU\Desktop\KUKU\Projs\Buzzle - Sales Only\Buzzle.Sales\bin\Debug\Buzzle.GlobalStuff.pdb
+C:\Users\KUKU\Desktop\KUKU\Projs\Buzzle - Sales Only\Buzzle.Sales\bin\Debug\EntityFramework.xml
+C:\Users\KUKU\Desktop\KUKU\Projs\Buzzle - Sales Only\Buzzle.Sales\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\KUKU\Desktop\KUKU\Projs\Buzzle - Sales Only\Buzzle.Sales\obj\Debug\Buzzle.Sales.csprojResolveAssemblyReference.cache
+C:\Users\KUKU\Desktop\KUKU\Projs\Buzzle - Sales Only\Buzzle.Sales\obj\Debug\Buzzle.Sales.Properties.Resources.resources
+C:\Users\KUKU\Desktop\KUKU\Projs\Buzzle - Sales Only\Buzzle.Sales\obj\Debug\Buzzle.Sales.Views.ViewSaleView.resources
+C:\Users\KUKU\Desktop\KUKU\Projs\Buzzle - Sales Only\Buzzle.Sales\obj\Debug\Buzzle.Sales.Views.AddEditStockItemTypeView.resources
+C:\Users\KUKU\Desktop\KUKU\Projs\Buzzle - Sales Only\Buzzle.Sales\obj\Debug\Buzzle.Sales.Views.AddEditPurchaseView.resources
+C:\Users\KUKU\Desktop\KUKU\Projs\Buzzle - Sales Only\Buzzle.Sales\obj\Debug\Buzzle.Sales.Views.Purchases.ProcessPurchasesView.ProcessPurchaseView.resources
+C:\Users\KUKU\Desktop\KUKU\Projs\Buzzle - Sales Only\Buzzle.Sales\obj\Debug\Buzzle.Sales.Views.PurchasesView.resources
+C:\Users\KUKU\Desktop\KUKU\Projs\Buzzle - Sales Only\Buzzle.Sales\obj\Debug\Buzzle.Sales.Views.ItemsInStockView.resources
+C:\Users\KUKU\Desktop\KUKU\Projs\Buzzle - Sales Only\Buzzle.Sales\obj\Debug\Buzzle.Sales.Views.ViewEditPurchaseView.resources
+C:\Users\KUKU\Desktop\KUKU\Projs\Buzzle - Sales Only\Buzzle.Sales\obj\Debug\Buzzle.Sales.Views.AddSaleView.resources
+C:\Users\KUKU\Desktop\KUKU\Projs\Buzzle - Sales Only\Buzzle.Sales\obj\Debug\Buzzle.Sales.Views.SalesView.resources
+C:\Users\KUKU\Desktop\KUKU\Projs\Buzzle - Sales Only\Buzzle.Sales\obj\Debug\Buzzle.Sales.Views.StockItemTypesView.resources
+C:\Users\KUKU\Desktop\KUKU\Projs\Buzzle - Sales Only\Buzzle.Sales\obj\Debug\Buzzle.Sales.Views.SuppliesView.resources
+C:\Users\KUKU\Desktop\KUKU\Projs\Buzzle - Sales Only\Buzzle.Sales\obj\Debug\Buzzle.Sales.Views.ViewSupplyView.resources
+C:\Users\KUKU\Desktop\KUKU\Projs\Buzzle - Sales Only\Buzzle.Sales\obj\Debug\Buzzle.Sales.csproj.GenerateResource.Cache
+C:\Users\KUKU\Desktop\KUKU\Projs\Buzzle - Sales Only\Buzzle.Sales\obj\Debug\Buzzle.Sales.dll.licenses
+C:\Users\KUKU\Desktop\KUKU\Projs\Buzzle - Sales Only\Buzzle.Sales\obj\Debug\Buzzle.Sales.dll
+C:\Users\KUKU\Desktop\KUKU\Projs\Buzzle - Sales Only\Buzzle.Sales\obj\Debug\Buzzle.Sales.pdb
+C:\Users\Kuks\Desktop\KUKU\Docs\Projs\Buzzle - Sales Only\Buzzle.Sales\obj\Debug\Buzzle.Sales.Properties.Resources.resources
+C:\Users\Kuks\Desktop\KUKU\Docs\Projs\Buzzle - Sales Only\Buzzle.Sales\obj\Debug\Buzzle.Sales.Views.ViewSaleView.resources
+C:\Users\Kuks\Desktop\KUKU\Docs\Projs\Buzzle - Sales Only\Buzzle.Sales\obj\Debug\Buzzle.Sales.Views.AddEditStockItemTypeView.resources
+C:\Users\Kuks\Desktop\KUKU\Docs\Projs\Buzzle - Sales Only\Buzzle.Sales\obj\Debug\Buzzle.Sales.Views.AddEditPurchaseView.resources
+C:\Users\Kuks\Desktop\KUKU\Docs\Projs\Buzzle - Sales Only\Buzzle.Sales\obj\Debug\Buzzle.Sales.Views.Purchases.ProcessPurchasesView.ProcessPurchaseView.resources
+C:\Users\Kuks\Desktop\KUKU\Docs\Projs\Buzzle - Sales Only\Buzzle.Sales\obj\Debug\Buzzle.Sales.Views.PurchasesView.resources
+C:\Users\Kuks\Desktop\KUKU\Docs\Projs\Buzzle - Sales Only\Buzzle.Sales\obj\Debug\Buzzle.Sales.Views.ItemsInStockView.resources
+C:\Users\Kuks\Desktop\KUKU\Docs\Projs\Buzzle - Sales Only\Buzzle.Sales\obj\Debug\Buzzle.Sales.Views.ViewEditPurchaseView.resources
+C:\Users\Kuks\Desktop\KUKU\Docs\Projs\Buzzle - Sales Only\Buzzle.Sales\obj\Debug\Buzzle.Sales.Views.AddSaleView.resources
+C:\Users\Kuks\Desktop\KUKU\Docs\Projs\Buzzle - Sales Only\Buzzle.Sales\obj\Debug\Buzzle.Sales.Views.SalesView.resources
+C:\Users\Kuks\Desktop\KUKU\Docs\Projs\Buzzle - Sales Only\Buzzle.Sales\obj\Debug\Buzzle.Sales.Views.StockItemTypesView.resources
+C:\Users\Kuks\Desktop\KUKU\Docs\Projs\Buzzle - Sales Only\Buzzle.Sales\obj\Debug\Buzzle.Sales.Views.SuppliesView.resources
+C:\Users\Kuks\Desktop\KUKU\Docs\Projs\Buzzle - Sales Only\Buzzle.Sales\obj\Debug\Buzzle.Sales.Views.ViewSupplyView.resources
+C:\Users\Kuks\Desktop\KUKU\Docs\Projs\Buzzle - Sales Only\Buzzle.Sales\obj\Debug\Buzzle.Sales.csproj.GenerateResource.Cache
+C:\Users\Kuks\Desktop\KUKU\Docs\Projs\Buzzle - Sales Only\Buzzle.Sales\obj\Debug\Buzzle.Sales.dll.licenses
+C:\Users\Kuks\Desktop\KUKU\Docs\Projs\Buzzle - Sales Only\Buzzle.Sales\obj\Debug\Buzzle.Sales.dll
+C:\Users\Kuks\Desktop\KUKU\Docs\Projs\Buzzle - Sales Only\Buzzle.Sales\obj\Debug\Buzzle.Sales.pdb
+C:\Users\Kuks\Desktop\KUKU\Docs\Projs\Buzzle - Sales Only\Buzzle.Sales\bin\Debug\Buzzle.Sales.dll.config
+C:\Users\Kuks\Desktop\KUKU\Docs\Projs\Buzzle - Sales Only\Buzzle.Sales\bin\Debug\Buzzle.Sales.dll
+C:\Users\Kuks\Desktop\KUKU\Docs\Projs\Buzzle - Sales Only\Buzzle.Sales\bin\Debug\Buzzle.Sales.pdb
+C:\Users\Kuks\Desktop\KUKU\Docs\Projs\Buzzle - Sales Only\Buzzle.Sales\bin\Debug\Buzzle.Data.dll
+C:\Users\Kuks\Desktop\KUKU\Docs\Projs\Buzzle - Sales Only\Buzzle.Sales\bin\Debug\Buzzle.GlobalStuff.dll
+C:\Users\Kuks\Desktop\KUKU\Docs\Projs\Buzzle - Sales Only\Buzzle.Sales\bin\Debug\Dapper.dll
+C:\Users\Kuks\Desktop\KUKU\Docs\Projs\Buzzle - Sales Only\Buzzle.Sales\bin\Debug\EntityFramework.dll
+C:\Users\Kuks\Desktop\KUKU\Docs\Projs\Buzzle - Sales Only\Buzzle.Sales\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Kuks\Desktop\KUKU\Docs\Projs\Buzzle - Sales Only\Buzzle.Sales\bin\Debug\Buzzle.Data.pdb
+C:\Users\Kuks\Desktop\KUKU\Docs\Projs\Buzzle - Sales Only\Buzzle.Sales\bin\Debug\Buzzle.GlobalStuff.pdb
+C:\Users\Kuks\Desktop\KUKU\Docs\Projs\Buzzle - Sales Only\Buzzle.Sales\bin\Debug\Dapper.pdb
+C:\Users\Kuks\Desktop\KUKU\Docs\Projs\Buzzle - Sales Only\Buzzle.Sales\bin\Debug\Dapper.xml
+C:\Users\Kuks\Desktop\KUKU\Docs\Projs\Buzzle - Sales Only\Buzzle.Sales\bin\Debug\EntityFramework.xml
+C:\Users\Kuks\Desktop\KUKU\Docs\Projs\Buzzle - Sales Only\Buzzle.Sales\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Kuks\Desktop\KUKU\Docs\Projs\Buzzle - Sales Only\Buzzle.Sales\bin\Debug\Models\buzzle_compact4.sdf
+C:\Users\Kuks\Desktop\KUKU\Docs\Projs\Buzzle - Sales Only\Buzzle.Sales\bin\Debug\EntityFramework.SqlServerCompact.dll
+C:\Users\Kuks\Desktop\KUKU\Docs\Projs\Buzzle - Sales Only\Buzzle.Sales\bin\Debug\EntityFramework.SqlServerCompact.Legacy.dll
+C:\Users\Kuks\Desktop\KUKU\Docs\Projs\Buzzle - Sales Only\Buzzle.Sales\bin\Debug\System.Data.SqlServerCe.dll
+C:\Users\Kuks\Desktop\KUKU\Docs\Projs\Buzzle - Sales Only\Buzzle.Sales\bin\Debug\EntityFramework.SqlServerCompact.xml
+C:\Users\Kuks\Desktop\KUKU\Docs\Projs\Buzzle - Sales Only\Buzzle.Sales\bin\Debug\EntityFramework.SqlServerCompact.Legacy.xml
+C:\Users\Kuks\Desktop\KUKU\Docs\Projs\Buzzle - Sales Only\Buzzle.Sales\obj\Debug\Buzzle.Sales.csprojResolveAssemblyReference.cache

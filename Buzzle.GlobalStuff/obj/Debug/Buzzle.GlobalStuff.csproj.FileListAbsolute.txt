@@ -1,0 +1,110 @@
+C:\Windows\Projs\Buzzle\Buzzle.GlobalStuff\bin\Debug\Buzzle.GlobalStuff.dll
+C:\Windows\Projs\Buzzle\Buzzle.GlobalStuff\bin\Debug\Buzzle.GlobalStuff.pdb
+C:\Windows\Projs\Buzzle\Buzzle.GlobalStuff\obj\Debug\ResolveAssemblyReference.cache
+C:\Windows\Projs\Buzzle\Buzzle.GlobalStuff\obj\Debug\Buzzle.GlobalStuff.BuzzleGlobalView.resources
+C:\Windows\Projs\Buzzle\Buzzle.GlobalStuff\obj\Debug\Buzzle.GlobalStuff.BuzzleWaitForm.resources
+C:\Windows\Projs\Buzzle\Buzzle.GlobalStuff\obj\Debug\Buzzle.GlobalStuff.Properties.Resources.resources
+C:\Windows\Projs\Buzzle\Buzzle.GlobalStuff\obj\Debug\GenerateResource.read.1.tlog
+C:\Windows\Projs\Buzzle\Buzzle.GlobalStuff\obj\Debug\GenerateResource.write.1.tlog
+C:\Windows\Projs\Buzzle\Buzzle.GlobalStuff\obj\Debug\Buzzle.GlobalStuff.dll.licenses
+C:\Windows\Projs\Buzzle\Buzzle.GlobalStuff\obj\Debug\Buzzle.GlobalStuff.dll
+C:\Windows\Projs\Buzzle\Buzzle.GlobalStuff\obj\Debug\Buzzle.GlobalStuff.pdb
+C:\Windows\Projs\Buzzle\Buzzle.GlobalStuff\bin\Debug\Buzzle.Data.dll
+C:\Windows\Projs\Buzzle\Buzzle.GlobalStuff\bin\Debug\Buzzle.Data.pdb
+C:\Windows\Projs\Buzzle\Buzzle.GlobalStuff\obj\Debug\Buzzle.GlobalStuff.BuzzleSplashScreen.resources
+C:\Windows\Projs\Buzzle\Buzzle.GlobalStuff\obj\Debug\Buzzle.GlobalStuff.BuzzleSettingsView.resources
+C:\Projs\Buzzle\Buzzle.GlobalStuff\bin\Debug\Buzzle.GlobalStuff.dll
+C:\Projs\Buzzle\Buzzle.GlobalStuff\bin\Debug\Buzzle.GlobalStuff.pdb
+C:\Projs\Buzzle\Buzzle.GlobalStuff\bin\Debug\Buzzle.Data.dll
+C:\Projs\Buzzle\Buzzle.GlobalStuff\bin\Debug\Buzzle.Data.pdb
+C:\Projs\Buzzle\Buzzle.GlobalStuff\obj\Debug\Buzzle.GlobalStuff.BuzzleGlobalView.resources
+C:\Projs\Buzzle\Buzzle.GlobalStuff\obj\Debug\Buzzle.GlobalStuff.BuzzleSplashScreen.resources
+C:\Projs\Buzzle\Buzzle.GlobalStuff\obj\Debug\Buzzle.GlobalStuff.BuzzleWaitForm.resources
+C:\Projs\Buzzle\Buzzle.GlobalStuff\obj\Debug\Buzzle.GlobalStuff.BuzzleSettingsView.resources
+C:\Projs\Buzzle\Buzzle.GlobalStuff\obj\Debug\Buzzle.GlobalStuff.Properties.Resources.resources
+C:\Projs\Buzzle\Buzzle.GlobalStuff\obj\Debug\Buzzle.GlobalStuff.dll.licenses
+C:\Projs\Buzzle\Buzzle.GlobalStuff\obj\Debug\Buzzle.GlobalStuff.dll
+C:\Projs\Buzzle\Buzzle.GlobalStuff\obj\Debug\Buzzle.GlobalStuff.pdb
+C:\Projs\Buzzle\Buzzle.GlobalStuff\obj\Debug\Buzzle.GlobalStuff.csprojResolveAssemblyReference.cache
+C:\Projs\Buzzle\Buzzle.GlobalStuff\obj\Debug\Buzzle.GlobalStuff.csproj.GenerateResource.Cache
+C:\Projs\Buzzle\Buzzle.GlobalStuff\obj\Debug\Buzzle.GlobalStuff.AddEditUserView.resources
+C:\Projs\Buzzle\Buzzle.GlobalStuff\obj\Debug\Buzzle.GlobalStuff.CompanySettingsView.resources
+C:\Users\KUKU\Desktop\KUKU\Projs\Buzzle\Buzzle.GlobalStuff\obj\Debug\Buzzle.GlobalStuff.csprojResolveAssemblyReference.cache
+C:\Users\KUKU\Desktop\KUKU\Projs\Buzzle\Buzzle.GlobalStuff\obj\Debug\Buzzle.GlobalStuff.AddEditUserView.resources
+C:\Users\KUKU\Desktop\KUKU\Projs\Buzzle\Buzzle.GlobalStuff\obj\Debug\Buzzle.GlobalStuff.BuzzleGlobalView.resources
+C:\Users\KUKU\Desktop\KUKU\Projs\Buzzle\Buzzle.GlobalStuff\obj\Debug\Buzzle.GlobalStuff.BuzzleSplashScreen.resources
+C:\Users\KUKU\Desktop\KUKU\Projs\Buzzle\Buzzle.GlobalStuff\obj\Debug\Buzzle.GlobalStuff.BuzzleWaitForm.resources
+C:\Users\KUKU\Desktop\KUKU\Projs\Buzzle\Buzzle.GlobalStuff\obj\Debug\Buzzle.GlobalStuff.BuzzleSettingsView.resources
+C:\Users\KUKU\Desktop\KUKU\Projs\Buzzle\Buzzle.GlobalStuff\obj\Debug\Buzzle.GlobalStuff.JobSettingsView.resources
+C:\Users\KUKU\Desktop\KUKU\Projs\Buzzle\Buzzle.GlobalStuff\obj\Debug\Buzzle.GlobalStuff.CompanySettingsView.resources
+C:\Users\KUKU\Desktop\KUKU\Projs\Buzzle\Buzzle.GlobalStuff\obj\Debug\Buzzle.GlobalStuff.Properties.Resources.resources
+C:\Users\KUKU\Desktop\KUKU\Projs\Buzzle\Buzzle.GlobalStuff\obj\Debug\Buzzle.GlobalStuff.csproj.GenerateResource.Cache
+C:\Users\KUKU\Desktop\KUKU\Projs\Buzzle\Buzzle.GlobalStuff\obj\Debug\Buzzle.GlobalStuff.dll.licenses
+C:\Users\KUKU\Desktop\KUKU\Projs\Buzzle\Buzzle.GlobalStuff\obj\Debug\Buzzle.GlobalStuff.dll
+C:\Users\KUKU\Desktop\KUKU\Projs\Buzzle\Buzzle.GlobalStuff\bin\Debug\Buzzle.GlobalStuff.dll
+C:\Users\KUKU\Desktop\KUKU\Projs\Buzzle\Buzzle.GlobalStuff\bin\Debug\Buzzle.GlobalStuff.pdb
+C:\Users\KUKU\Desktop\KUKU\Projs\Buzzle\Buzzle.GlobalStuff\bin\Debug\Buzzle.Data.dll
+C:\Users\KUKU\Desktop\KUKU\Projs\Buzzle\Buzzle.GlobalStuff\bin\Debug\Buzzle.Data.pdb
+C:\Users\KUKU\Desktop\KUKU\Projs\Buzzle\Buzzle.GlobalStuff\obj\Debug\Buzzle.GlobalStuff.pdb
+C:\Users\KUKU\Desktop\KUKU\Projs\Buzzle\Buzzle.GlobalStuff\obj\Debug\Buzzle.GlobalStuff.UsersView.resources
+C:\Users\KUKU\Desktop\KUKU\Projs\Buzzle\Buzzle.GlobalStuff\obj\Debug\Buzzle.GlobalStuff.AccountsSettingsView.resources
+C:\Users\KUKU\Desktop\KUKU\Projs\Buzzle\Buzzle.GlobalStuff\obj\Debug\Buzzle.GlobalStuff.TransactionTypesView.resources
+C:\Users\KUKU\Desktop\KUKU\Projs\Buzzle - Sales Only\Buzzle.GlobalStuff\bin\Debug\Buzzle.GlobalStuff.dll.config
+C:\Users\KUKU\Desktop\KUKU\Projs\Buzzle - Sales Only\Buzzle.GlobalStuff\bin\Debug\Buzzle.GlobalStuff.dll
+C:\Users\KUKU\Desktop\KUKU\Projs\Buzzle - Sales Only\Buzzle.GlobalStuff\bin\Debug\Buzzle.GlobalStuff.pdb
+C:\Users\KUKU\Desktop\KUKU\Projs\Buzzle - Sales Only\Buzzle.GlobalStuff\bin\Debug\Buzzle.Data.dll
+C:\Users\KUKU\Desktop\KUKU\Projs\Buzzle - Sales Only\Buzzle.GlobalStuff\bin\Debug\EntityFramework.dll
+C:\Users\KUKU\Desktop\KUKU\Projs\Buzzle - Sales Only\Buzzle.GlobalStuff\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\KUKU\Desktop\KUKU\Projs\Buzzle - Sales Only\Buzzle.GlobalStuff\bin\Debug\Buzzle.Data.pdb
+C:\Users\KUKU\Desktop\KUKU\Projs\Buzzle - Sales Only\Buzzle.GlobalStuff\bin\Debug\EntityFramework.xml
+C:\Users\KUKU\Desktop\KUKU\Projs\Buzzle - Sales Only\Buzzle.GlobalStuff\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\KUKU\Desktop\KUKU\Projs\Buzzle - Sales Only\Buzzle.GlobalStuff\obj\Debug\Buzzle.GlobalStuff.csprojResolveAssemblyReference.cache
+C:\Users\KUKU\Desktop\KUKU\Projs\Buzzle - Sales Only\Buzzle.GlobalStuff\obj\Debug\Buzzle.GlobalStuff.AddEditUserView.resources
+C:\Users\KUKU\Desktop\KUKU\Projs\Buzzle - Sales Only\Buzzle.GlobalStuff\obj\Debug\Buzzle.GlobalStuff.BuzzleGlobalView.resources
+C:\Users\KUKU\Desktop\KUKU\Projs\Buzzle - Sales Only\Buzzle.GlobalStuff\obj\Debug\Buzzle.GlobalStuff.BuzzleSplashScreen.resources
+C:\Users\KUKU\Desktop\KUKU\Projs\Buzzle - Sales Only\Buzzle.GlobalStuff\obj\Debug\Buzzle.GlobalStuff.BuzzleWaitForm.resources
+C:\Users\KUKU\Desktop\KUKU\Projs\Buzzle - Sales Only\Buzzle.GlobalStuff\obj\Debug\Buzzle.GlobalStuff.AccountsSettingsView.resources
+C:\Users\KUKU\Desktop\KUKU\Projs\Buzzle - Sales Only\Buzzle.GlobalStuff\obj\Debug\Buzzle.GlobalStuff.TransactionTypesView.resources
+C:\Users\KUKU\Desktop\KUKU\Projs\Buzzle - Sales Only\Buzzle.GlobalStuff\obj\Debug\Buzzle.GlobalStuff.UsersView.resources
+C:\Users\KUKU\Desktop\KUKU\Projs\Buzzle - Sales Only\Buzzle.GlobalStuff\obj\Debug\Buzzle.GlobalStuff.BuzzleSettingsView.resources
+C:\Users\KUKU\Desktop\KUKU\Projs\Buzzle - Sales Only\Buzzle.GlobalStuff\obj\Debug\Buzzle.GlobalStuff.JobSettingsView.resources
+C:\Users\KUKU\Desktop\KUKU\Projs\Buzzle - Sales Only\Buzzle.GlobalStuff\obj\Debug\Buzzle.GlobalStuff.CompanySettingsView.resources
+C:\Users\KUKU\Desktop\KUKU\Projs\Buzzle - Sales Only\Buzzle.GlobalStuff\obj\Debug\Buzzle.GlobalStuff.Properties.Resources.resources
+C:\Users\KUKU\Desktop\KUKU\Projs\Buzzle - Sales Only\Buzzle.GlobalStuff\obj\Debug\Buzzle.GlobalStuff.csproj.GenerateResource.Cache
+C:\Users\KUKU\Desktop\KUKU\Projs\Buzzle - Sales Only\Buzzle.GlobalStuff\obj\Debug\Buzzle.GlobalStuff.dll.licenses
+C:\Users\KUKU\Desktop\KUKU\Projs\Buzzle - Sales Only\Buzzle.GlobalStuff\obj\Debug\Buzzle.GlobalStuff.dll
+C:\Users\KUKU\Desktop\KUKU\Projs\Buzzle - Sales Only\Buzzle.GlobalStuff\obj\Debug\Buzzle.GlobalStuff.pdb
+C:\Users\Kuks\Desktop\KUKU\Docs\Projs\Buzzle - Sales Only\Buzzle.GlobalStuff\obj\Debug\Buzzle.GlobalStuff.csprojResolveAssemblyReference.cache
+C:\Users\Kuks\Desktop\KUKU\Docs\Projs\Buzzle - Sales Only\Buzzle.GlobalStuff\obj\Debug\Buzzle.GlobalStuff.AddEditUserView.resources
+C:\Users\Kuks\Desktop\KUKU\Docs\Projs\Buzzle - Sales Only\Buzzle.GlobalStuff\obj\Debug\Buzzle.GlobalStuff.BuzzleGlobalView.resources
+C:\Users\Kuks\Desktop\KUKU\Docs\Projs\Buzzle - Sales Only\Buzzle.GlobalStuff\obj\Debug\Buzzle.GlobalStuff.BuzzleSplashScreen.resources
+C:\Users\Kuks\Desktop\KUKU\Docs\Projs\Buzzle - Sales Only\Buzzle.GlobalStuff\obj\Debug\Buzzle.GlobalStuff.BuzzleWaitForm.resources
+C:\Users\Kuks\Desktop\KUKU\Docs\Projs\Buzzle - Sales Only\Buzzle.GlobalStuff\obj\Debug\Buzzle.GlobalStuff.AccountsSettingsView.resources
+C:\Users\Kuks\Desktop\KUKU\Docs\Projs\Buzzle - Sales Only\Buzzle.GlobalStuff\obj\Debug\Buzzle.GlobalStuff.TransactionTypesView.resources
+C:\Users\Kuks\Desktop\KUKU\Docs\Projs\Buzzle - Sales Only\Buzzle.GlobalStuff\obj\Debug\Buzzle.GlobalStuff.UsersView.resources
+C:\Users\Kuks\Desktop\KUKU\Docs\Projs\Buzzle - Sales Only\Buzzle.GlobalStuff\obj\Debug\Buzzle.GlobalStuff.BuzzleSettingsView.resources
+C:\Users\Kuks\Desktop\KUKU\Docs\Projs\Buzzle - Sales Only\Buzzle.GlobalStuff\obj\Debug\Buzzle.GlobalStuff.JobSettingsView.resources
+C:\Users\Kuks\Desktop\KUKU\Docs\Projs\Buzzle - Sales Only\Buzzle.GlobalStuff\obj\Debug\Buzzle.GlobalStuff.CompanySettingsView.resources
+C:\Users\Kuks\Desktop\KUKU\Docs\Projs\Buzzle - Sales Only\Buzzle.GlobalStuff\obj\Debug\Buzzle.GlobalStuff.Properties.Resources.resources
+C:\Users\Kuks\Desktop\KUKU\Docs\Projs\Buzzle - Sales Only\Buzzle.GlobalStuff\obj\Debug\Buzzle.GlobalStuff.csproj.GenerateResource.Cache
+C:\Users\Kuks\Desktop\KUKU\Docs\Projs\Buzzle - Sales Only\Buzzle.GlobalStuff\obj\Debug\Buzzle.GlobalStuff.dll.licenses
+C:\Users\Kuks\Desktop\KUKU\Docs\Projs\Buzzle - Sales Only\Buzzle.GlobalStuff\obj\Debug\Buzzle.GlobalStuff.dll
+C:\Users\Kuks\Desktop\KUKU\Docs\Projs\Buzzle - Sales Only\Buzzle.GlobalStuff\obj\Debug\Buzzle.GlobalStuff.pdb
+C:\Users\Kuks\Desktop\KUKU\Docs\Projs\Buzzle - Sales Only\Buzzle.GlobalStuff\bin\Debug\Buzzle.GlobalStuff.dll.config
+C:\Users\Kuks\Desktop\KUKU\Docs\Projs\Buzzle - Sales Only\Buzzle.GlobalStuff\bin\Debug\Buzzle.GlobalStuff.dll
+C:\Users\Kuks\Desktop\KUKU\Docs\Projs\Buzzle - Sales Only\Buzzle.GlobalStuff\bin\Debug\Buzzle.GlobalStuff.pdb
+C:\Users\Kuks\Desktop\KUKU\Docs\Projs\Buzzle - Sales Only\Buzzle.GlobalStuff\bin\Debug\Buzzle.Data.dll
+C:\Users\Kuks\Desktop\KUKU\Docs\Projs\Buzzle - Sales Only\Buzzle.GlobalStuff\bin\Debug\Dapper.dll
+C:\Users\Kuks\Desktop\KUKU\Docs\Projs\Buzzle - Sales Only\Buzzle.GlobalStuff\bin\Debug\EntityFramework.dll
+C:\Users\Kuks\Desktop\KUKU\Docs\Projs\Buzzle - Sales Only\Buzzle.GlobalStuff\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Kuks\Desktop\KUKU\Docs\Projs\Buzzle - Sales Only\Buzzle.GlobalStuff\bin\Debug\Buzzle.Data.pdb
+C:\Users\Kuks\Desktop\KUKU\Docs\Projs\Buzzle - Sales Only\Buzzle.GlobalStuff\bin\Debug\Dapper.pdb
+C:\Users\Kuks\Desktop\KUKU\Docs\Projs\Buzzle - Sales Only\Buzzle.GlobalStuff\bin\Debug\Dapper.xml
+C:\Users\Kuks\Desktop\KUKU\Docs\Projs\Buzzle - Sales Only\Buzzle.GlobalStuff\bin\Debug\EntityFramework.xml
+C:\Users\Kuks\Desktop\KUKU\Docs\Projs\Buzzle - Sales Only\Buzzle.GlobalStuff\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Kuks\Desktop\KUKU\Docs\Projs\Buzzle - Sales Only\Buzzle.GlobalStuff\bin\Debug\Models\buzzle_compact4.sdf
+C:\Users\Kuks\Desktop\KUKU\Docs\Projs\Buzzle - Sales Only\Buzzle.GlobalStuff\bin\Debug\EntityFramework.SqlServerCompact.dll
+C:\Users\Kuks\Desktop\KUKU\Docs\Projs\Buzzle - Sales Only\Buzzle.GlobalStuff\bin\Debug\EntityFramework.SqlServerCompact.Legacy.dll
+C:\Users\Kuks\Desktop\KUKU\Docs\Projs\Buzzle - Sales Only\Buzzle.GlobalStuff\bin\Debug\System.Data.SqlServerCe.dll
+C:\Users\Kuks\Desktop\KUKU\Docs\Projs\Buzzle - Sales Only\Buzzle.GlobalStuff\bin\Debug\EntityFramework.SqlServerCompact.xml
+C:\Users\Kuks\Desktop\KUKU\Docs\Projs\Buzzle - Sales Only\Buzzle.GlobalStuff\bin\Debug\EntityFramework.SqlServerCompact.Legacy.xml

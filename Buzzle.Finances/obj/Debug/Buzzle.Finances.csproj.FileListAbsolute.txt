@@ -1,0 +1,93 @@
+C:\Windows\Projs\Buzzle\Buzzle.Finances\obj\Debug\ResolveAssemblyReference.cache
+C:\Windows\Projs\Buzzle\Buzzle.Finances\obj\Debug\Buzzle.Finances.AddTransactionView.resources
+C:\Windows\Projs\Buzzle\Buzzle.Finances\obj\Debug\Buzzle.Finances.Properties.Resources.resources
+C:\Windows\Projs\Buzzle\Buzzle.Finances\obj\Debug\GenerateResource.read.1.tlog
+C:\Windows\Projs\Buzzle\Buzzle.Finances\obj\Debug\GenerateResource.write.1.tlog
+C:\Windows\Projs\Buzzle\Buzzle.Finances\obj\Debug\Buzzle.Finances.dll.licenses
+C:\Windows\Projs\Buzzle\Buzzle.Finances\bin\Debug\Buzzle.Finances.dll
+C:\Windows\Projs\Buzzle\Buzzle.Finances\bin\Debug\Buzzle.Finances.pdb
+C:\Windows\Projs\Buzzle\Buzzle.Finances\bin\Debug\Buzzle.Data.dll
+C:\Windows\Projs\Buzzle\Buzzle.Finances\bin\Debug\Buzzle.GlobalStuff.dll
+C:\Windows\Projs\Buzzle\Buzzle.Finances\bin\Debug\Buzzle.Data.pdb
+C:\Windows\Projs\Buzzle\Buzzle.Finances\bin\Debug\Buzzle.GlobalStuff.pdb
+C:\Windows\Projs\Buzzle\Buzzle.Finances\obj\Debug\Buzzle.Finances.dll
+C:\Windows\Projs\Buzzle\Buzzle.Finances\obj\Debug\Buzzle.Finances.pdb
+C:\Projs\Buzzle\Buzzle.Finances\bin\Debug\Buzzle.Finances.dll
+C:\Projs\Buzzle\Buzzle.Finances\bin\Debug\Buzzle.Finances.pdb
+C:\Projs\Buzzle\Buzzle.Finances\bin\Debug\Buzzle.Data.dll
+C:\Projs\Buzzle\Buzzle.Finances\bin\Debug\Buzzle.GlobalStuff.dll
+C:\Projs\Buzzle\Buzzle.Finances\bin\Debug\Buzzle.Data.pdb
+C:\Projs\Buzzle\Buzzle.Finances\bin\Debug\Buzzle.GlobalStuff.pdb
+C:\Projs\Buzzle\Buzzle.Finances\obj\Debug\Buzzle.Finances.AddTransactionView.resources
+C:\Projs\Buzzle\Buzzle.Finances\obj\Debug\Buzzle.Finances.Properties.Resources.resources
+C:\Projs\Buzzle\Buzzle.Finances\obj\Debug\Buzzle.Finances.dll.licenses
+C:\Projs\Buzzle\Buzzle.Finances\obj\Debug\Buzzle.Finances.dll
+C:\Projs\Buzzle\Buzzle.Finances\obj\Debug\Buzzle.Finances.pdb
+C:\Projs\Buzzle\Buzzle.Finances\obj\Debug\Buzzle.Finances.csprojResolveAssemblyReference.cache
+C:\Projs\Buzzle\Buzzle.Finances\obj\Debug\Buzzle.Finances.csproj.GenerateResource.Cache
+C:\Projs\Buzzle\Buzzle.Finances\obj\Debug\Buzzle.Finances.AccountsView.resources
+C:\Projs\Buzzle\Buzzle.Finances\obj\Debug\Buzzle.Finances.TransactionsView.resources
+C:\Users\KUKU\Desktop\KUKU\Projs\Buzzle\Buzzle.Finances\bin\Debug\Buzzle.Finances.dll
+C:\Users\KUKU\Desktop\KUKU\Projs\Buzzle\Buzzle.Finances\bin\Debug\Buzzle.Finances.pdb
+C:\Users\KUKU\Desktop\KUKU\Projs\Buzzle\Buzzle.Finances\bin\Debug\Buzzle.Data.dll
+C:\Users\KUKU\Desktop\KUKU\Projs\Buzzle\Buzzle.Finances\bin\Debug\Buzzle.GlobalStuff.dll
+C:\Users\KUKU\Desktop\KUKU\Projs\Buzzle\Buzzle.Finances\bin\Debug\Buzzle.Data.pdb
+C:\Users\KUKU\Desktop\KUKU\Projs\Buzzle\Buzzle.Finances\bin\Debug\Buzzle.GlobalStuff.pdb
+C:\Users\KUKU\Desktop\KUKU\Projs\Buzzle\Buzzle.Finances\obj\Debug\Buzzle.Finances.csprojResolveAssemblyReference.cache
+C:\Users\KUKU\Desktop\KUKU\Projs\Buzzle\Buzzle.Finances\obj\Debug\Buzzle.Finances.AccountsView.resources
+C:\Users\KUKU\Desktop\KUKU\Projs\Buzzle\Buzzle.Finances\obj\Debug\Buzzle.Finances.AddTransactionView.resources
+C:\Users\KUKU\Desktop\KUKU\Projs\Buzzle\Buzzle.Finances\obj\Debug\Buzzle.Finances.Properties.Resources.resources
+C:\Users\KUKU\Desktop\KUKU\Projs\Buzzle\Buzzle.Finances\obj\Debug\Buzzle.Finances.TransactionsView.resources
+C:\Users\KUKU\Desktop\KUKU\Projs\Buzzle\Buzzle.Finances\obj\Debug\Buzzle.Finances.csproj.GenerateResource.Cache
+C:\Users\KUKU\Desktop\KUKU\Projs\Buzzle\Buzzle.Finances\obj\Debug\Buzzle.Finances.dll.licenses
+C:\Users\KUKU\Desktop\KUKU\Projs\Buzzle\Buzzle.Finances\obj\Debug\Buzzle.Finances.dll
+C:\Users\KUKU\Desktop\KUKU\Projs\Buzzle\Buzzle.Finances\obj\Debug\Buzzle.Finances.pdb
+C:\Users\KUKU\Desktop\KUKU\Projs\Buzzle - Sales Only\Buzzle.Finances\bin\Debug\Buzzle.Finances.dll.config
+C:\Users\KUKU\Desktop\KUKU\Projs\Buzzle - Sales Only\Buzzle.Finances\bin\Debug\Buzzle.Finances.dll
+C:\Users\KUKU\Desktop\KUKU\Projs\Buzzle - Sales Only\Buzzle.Finances\bin\Debug\Buzzle.Finances.pdb
+C:\Users\KUKU\Desktop\KUKU\Projs\Buzzle - Sales Only\Buzzle.Finances\bin\Debug\Buzzle.Data.dll
+C:\Users\KUKU\Desktop\KUKU\Projs\Buzzle - Sales Only\Buzzle.Finances\bin\Debug\Buzzle.GlobalStuff.dll
+C:\Users\KUKU\Desktop\KUKU\Projs\Buzzle - Sales Only\Buzzle.Finances\bin\Debug\EntityFramework.dll
+C:\Users\KUKU\Desktop\KUKU\Projs\Buzzle - Sales Only\Buzzle.Finances\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\KUKU\Desktop\KUKU\Projs\Buzzle - Sales Only\Buzzle.Finances\bin\Debug\Buzzle.Data.pdb
+C:\Users\KUKU\Desktop\KUKU\Projs\Buzzle - Sales Only\Buzzle.Finances\bin\Debug\Buzzle.GlobalStuff.pdb
+C:\Users\KUKU\Desktop\KUKU\Projs\Buzzle - Sales Only\Buzzle.Finances\bin\Debug\EntityFramework.xml
+C:\Users\KUKU\Desktop\KUKU\Projs\Buzzle - Sales Only\Buzzle.Finances\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\KUKU\Desktop\KUKU\Projs\Buzzle - Sales Only\Buzzle.Finances\obj\Debug\Buzzle.Finances.csprojResolveAssemblyReference.cache
+C:\Users\KUKU\Desktop\KUKU\Projs\Buzzle - Sales Only\Buzzle.Finances\obj\Debug\Buzzle.Finances.AccountsView.resources
+C:\Users\KUKU\Desktop\KUKU\Projs\Buzzle - Sales Only\Buzzle.Finances\obj\Debug\Buzzle.Finances.AddTransactionView.resources
+C:\Users\KUKU\Desktop\KUKU\Projs\Buzzle - Sales Only\Buzzle.Finances\obj\Debug\Buzzle.Finances.Properties.Resources.resources
+C:\Users\KUKU\Desktop\KUKU\Projs\Buzzle - Sales Only\Buzzle.Finances\obj\Debug\Buzzle.Finances.TransactionsView.resources
+C:\Users\KUKU\Desktop\KUKU\Projs\Buzzle - Sales Only\Buzzle.Finances\obj\Debug\Buzzle.Finances.csproj.GenerateResource.Cache
+C:\Users\KUKU\Desktop\KUKU\Projs\Buzzle - Sales Only\Buzzle.Finances\obj\Debug\Buzzle.Finances.dll.licenses
+C:\Users\KUKU\Desktop\KUKU\Projs\Buzzle - Sales Only\Buzzle.Finances\obj\Debug\Buzzle.Finances.dll
+C:\Users\KUKU\Desktop\KUKU\Projs\Buzzle - Sales Only\Buzzle.Finances\obj\Debug\Buzzle.Finances.pdb
+C:\Users\Kuks\Desktop\KUKU\Docs\Projs\Buzzle - Sales Only\Buzzle.Finances\bin\Debug\Buzzle.Finances.dll.config
+C:\Users\Kuks\Desktop\KUKU\Docs\Projs\Buzzle - Sales Only\Buzzle.Finances\bin\Debug\Buzzle.Finances.dll
+C:\Users\Kuks\Desktop\KUKU\Docs\Projs\Buzzle - Sales Only\Buzzle.Finances\bin\Debug\Buzzle.Finances.pdb
+C:\Users\Kuks\Desktop\KUKU\Docs\Projs\Buzzle - Sales Only\Buzzle.Finances\bin\Debug\Buzzle.Data.dll
+C:\Users\Kuks\Desktop\KUKU\Docs\Projs\Buzzle - Sales Only\Buzzle.Finances\bin\Debug\Buzzle.GlobalStuff.dll
+C:\Users\Kuks\Desktop\KUKU\Docs\Projs\Buzzle - Sales Only\Buzzle.Finances\bin\Debug\Dapper.dll
+C:\Users\Kuks\Desktop\KUKU\Docs\Projs\Buzzle - Sales Only\Buzzle.Finances\bin\Debug\EntityFramework.dll
+C:\Users\Kuks\Desktop\KUKU\Docs\Projs\Buzzle - Sales Only\Buzzle.Finances\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Kuks\Desktop\KUKU\Docs\Projs\Buzzle - Sales Only\Buzzle.Finances\bin\Debug\Buzzle.Data.pdb
+C:\Users\Kuks\Desktop\KUKU\Docs\Projs\Buzzle - Sales Only\Buzzle.Finances\bin\Debug\Buzzle.GlobalStuff.pdb
+C:\Users\Kuks\Desktop\KUKU\Docs\Projs\Buzzle - Sales Only\Buzzle.Finances\bin\Debug\Dapper.pdb
+C:\Users\Kuks\Desktop\KUKU\Docs\Projs\Buzzle - Sales Only\Buzzle.Finances\bin\Debug\Dapper.xml
+C:\Users\Kuks\Desktop\KUKU\Docs\Projs\Buzzle - Sales Only\Buzzle.Finances\bin\Debug\EntityFramework.xml
+C:\Users\Kuks\Desktop\KUKU\Docs\Projs\Buzzle - Sales Only\Buzzle.Finances\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Kuks\Desktop\KUKU\Docs\Projs\Buzzle - Sales Only\Buzzle.Finances\obj\Debug\Buzzle.Finances.csprojResolveAssemblyReference.cache
+C:\Users\Kuks\Desktop\KUKU\Docs\Projs\Buzzle - Sales Only\Buzzle.Finances\obj\Debug\Buzzle.Finances.AccountsView.resources
+C:\Users\Kuks\Desktop\KUKU\Docs\Projs\Buzzle - Sales Only\Buzzle.Finances\obj\Debug\Buzzle.Finances.AddTransactionView.resources
+C:\Users\Kuks\Desktop\KUKU\Docs\Projs\Buzzle - Sales Only\Buzzle.Finances\obj\Debug\Buzzle.Finances.Properties.Resources.resources
+C:\Users\Kuks\Desktop\KUKU\Docs\Projs\Buzzle - Sales Only\Buzzle.Finances\obj\Debug\Buzzle.Finances.TransactionsView.resources
+C:\Users\Kuks\Desktop\KUKU\Docs\Projs\Buzzle - Sales Only\Buzzle.Finances\obj\Debug\Buzzle.Finances.csproj.GenerateResource.Cache
+C:\Users\Kuks\Desktop\KUKU\Docs\Projs\Buzzle - Sales Only\Buzzle.Finances\obj\Debug\Buzzle.Finances.dll.licenses
+C:\Users\Kuks\Desktop\KUKU\Docs\Projs\Buzzle - Sales Only\Buzzle.Finances\obj\Debug\Buzzle.Finances.dll
+C:\Users\Kuks\Desktop\KUKU\Docs\Projs\Buzzle - Sales Only\Buzzle.Finances\obj\Debug\Buzzle.Finances.pdb
+C:\Users\Kuks\Desktop\KUKU\Docs\Projs\Buzzle - Sales Only\Buzzle.Finances\bin\Debug\Models\buzzle_compact4.sdf
+C:\Users\Kuks\Desktop\KUKU\Docs\Projs\Buzzle - Sales Only\Buzzle.Finances\bin\Debug\EntityFramework.SqlServerCompact.dll
+C:\Users\Kuks\Desktop\KUKU\Docs\Projs\Buzzle - Sales Only\Buzzle.Finances\bin\Debug\EntityFramework.SqlServerCompact.Legacy.dll
+C:\Users\Kuks\Desktop\KUKU\Docs\Projs\Buzzle - Sales Only\Buzzle.Finances\bin\Debug\System.Data.SqlServerCe.dll
+C:\Users\Kuks\Desktop\KUKU\Docs\Projs\Buzzle - Sales Only\Buzzle.Finances\bin\Debug\EntityFramework.SqlServerCompact.xml
+C:\Users\Kuks\Desktop\KUKU\Docs\Projs\Buzzle - Sales Only\Buzzle.Finances\bin\Debug\EntityFramework.SqlServerCompact.Legacy.xml

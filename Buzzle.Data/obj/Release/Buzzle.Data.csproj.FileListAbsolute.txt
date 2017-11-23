@@ -1,0 +1,5 @@
+C:\Users\KUKU\Desktop\KUKU\Projs\Buzzle - Sales Only\Buzzle.Data\bin\Release\Buzzle.Data.dll.config
+C:\Users\KUKU\Desktop\KUKU\Projs\Buzzle - Sales Only\Buzzle.Data\bin\Release\Buzzle.Data.dll
+C:\Users\KUKU\Desktop\KUKU\Projs\Buzzle - Sales Only\Buzzle.Data\bin\Release\Buzzle.Data.pdb
+C:\Users\KUKU\Desktop\KUKU\Projs\Buzzle - Sales Only\Buzzle.Data\obj\Release\Buzzle.Data.dll
+C:\Users\KUKU\Desktop\KUKU\Projs\Buzzle - Sales Only\Buzzle.Data\obj\Release\Buzzle.Data.pdb

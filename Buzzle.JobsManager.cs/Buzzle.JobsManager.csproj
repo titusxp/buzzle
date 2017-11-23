@@ -1,0 +1,177 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4EACF8D1-8247-4026-805A-026F456E1454}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Buzzle.JobsManager.cs</RootNamespace>
+    <AssemblyName>Buzzle.JobsManager.cs</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Dapper">
+      <HintPath>..\packages\Dapper.1.42\lib\net40\Dapper.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Data.v13.2, Version=13.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v13.2.Core, Version=13.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v13.2, Version=13.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraBars.v13.2, Version=13.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Program Files\DevExpress 13.2\Components\Bin\Framework\DevExpress.XtraBars.v13.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v13.2, Version=13.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v13.2, Version=13.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Program Files\DevExpress 13.2\Components\Bin\Framework\DevExpress.XtraGrid.v13.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraLayout.v13.2, Version=13.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Program Files\DevExpress 13.2\Components\Bin\Framework\DevExpress.XtraLayout.v13.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraMap.v13.2, Version=13.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Program Files\DevExpress 13.2\Components\Bin\Framework\DevExpress.XtraMap.v13.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraRichEdit.v13.2, Version=13.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Program Files\DevExpress 13.2\Components\Bin\Framework\DevExpress.XtraRichEdit.v13.2.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net40\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net40\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServerCompact">
+      <HintPath>..\packages\EntityFramework.SqlServerCompact.6.1.3\lib\net40\EntityFramework.SqlServerCompact.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServerCompact.Legacy">
+      <HintPath>..\packages\EntityFramework.SqlServerCompact.Legacy.6.1.3\lib\net40\EntityFramework.SqlServerCompact.Legacy.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Data.SqlServerCe, Version=4.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.SqlServer.Compact.4.0.8876.1\lib\net40\System.Data.SqlServerCe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\AddEditJobView\AddEditJobView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\AddEditJobView\AddEditJobView.Designer.cs">
+      <DependentUpon>AddEditJobView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\AddNotesView\AddNotesView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\AddNotesView\AddNotesView.Designer.cs">
+      <DependentUpon>AddNotesView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\JobsView\JobsView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\JobsView\JobsView.Designer.cs">
+      <DependentUpon>JobsView.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\AddEditJobView\AddEditJobView.resx">
+      <DependentUpon>AddEditJobView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\AddNotesView\AddNotesView.resx">
+      <DependentUpon>AddNotesView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\JobsView\JobsView.resx">
+      <DependentUpon>JobsView.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+    <None Include="Properties\DataSources\Buzzle.Data.DataModel.Sale.datasource" />
+    <None Include="Properties\DataSources\Buzzle.Data.DataModel.SaleItem.datasource" />
+    <None Include="Properties\DataSources\Buzzle.Data.DataModel.StockItemBalance.datasource" />
+    <None Include="Properties\DataSources\Buzzle.Data.DataModel.StockItemType.datasource" />
+    <None Include="Properties\DataSources\Buzzle.Data.DataModel.User.datasource" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Buzzle.Data\Buzzle.Data.csproj">
+      <Project>{7F109D34-4424-4983-9183-E21A4D2B593D}</Project>
+      <Name>Buzzle.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Buzzle.Finances\Buzzle.Finances.csproj">
+      <Project>{CD3815A8-6CEE-4EC8-B98C-0C7027461070}</Project>
+      <Name>Buzzle.Finances</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Buzzle.GlobalStuff\Buzzle.GlobalStuff.csproj">
+      <Project>{C5F508F4-60C1-475C-8170-8F214DCB5DBA}</Project>
+      <Name>Buzzle.GlobalStuff</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>echo.&gt;$(ProjectDir)\properties\licenses.licx</PreBuildEvent>
+  </PropertyGroup>
+  <PropertyGroup>
+    <PostBuildEvent>
+    if not exist "$(TargetDir)x86" md "$(TargetDir)x86"
+    xcopy /s /y "$(SolutionDir)packages\Microsoft.SqlServer.Compact.4.0.8876.1\NativeBinaries\x86\*.*" "$(TargetDir)x86"
+    if not exist "$(TargetDir)amd64" md "$(TargetDir)amd64"
+    xcopy /s /y "$(SolutionDir)packages\Microsoft.SqlServer.Compact.4.0.8876.1\NativeBinaries\amd64\*.*" "$(TargetDir)amd64"</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

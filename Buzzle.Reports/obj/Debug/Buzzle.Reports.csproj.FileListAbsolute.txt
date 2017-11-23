@@ -1,0 +1,103 @@
+C:\Projs\Buzzle\Buzzle.Reports\obj\Debug\Buzzle.Reports.csprojResolveAssemblyReference.cache
+C:\Projs\Buzzle\Buzzle.Reports\bin\Debug\Buzzle.Reports.dll
+C:\Projs\Buzzle\Buzzle.Reports\bin\Debug\Buzzle.Reports.pdb
+C:\Projs\Buzzle\Buzzle.Reports\bin\Debug\Buzzle.Data.dll
+C:\Projs\Buzzle\Buzzle.Reports\bin\Debug\Buzzle.Finances.dll
+C:\Projs\Buzzle\Buzzle.Reports\bin\Debug\Buzzle.GlobalStuff.dll
+C:\Projs\Buzzle\Buzzle.Reports\bin\Debug\Buzzle.JobsManager.cs.dll
+C:\Projs\Buzzle\Buzzle.Reports\bin\Debug\Buzzle.Sales.dll
+C:\Projs\Buzzle\Buzzle.Reports\bin\Debug\Buzzle.Data.pdb
+C:\Projs\Buzzle\Buzzle.Reports\bin\Debug\Buzzle.Finances.pdb
+C:\Projs\Buzzle\Buzzle.Reports\bin\Debug\Buzzle.GlobalStuff.pdb
+C:\Projs\Buzzle\Buzzle.Reports\bin\Debug\Buzzle.JobsManager.cs.pdb
+C:\Projs\Buzzle\Buzzle.Reports\bin\Debug\Buzzle.Sales.pdb
+C:\Projs\Buzzle\Buzzle.Reports\obj\Debug\Buzzle.Reports.dll.licenses
+C:\Projs\Buzzle\Buzzle.Reports\obj\Debug\Buzzle.Reports.dll
+C:\Projs\Buzzle\Buzzle.Reports\obj\Debug\Buzzle.Reports.pdb
+C:\Projs\Buzzle\Buzzle.Reports\obj\Debug\Buzzle.Reports.PrintableReports.SalesReport.resources
+C:\Projs\Buzzle\Buzzle.Reports\obj\Debug\Buzzle.Reports.Views.SalesReportView.resources
+C:\Projs\Buzzle\Buzzle.Reports\obj\Debug\Buzzle.Reports.csproj.GenerateResource.Cache
+C:\Projs\Buzzle\Buzzle.Reports\obj\Debug\Buzzle.Reports.DetailSalesReport.resources
+C:\Projs\Buzzle\Buzzle.Reports\obj\Debug\Buzzle.Reports.Properties.Resources.resources
+C:\Users\KUKU\Desktop\KUKU\Projs\Buzzle\Buzzle.Reports\obj\Debug\Buzzle.Reports.csprojResolveAssemblyReference.cache
+C:\Users\KUKU\Desktop\KUKU\Projs\Buzzle\Buzzle.Reports\obj\Debug\Buzzle.Reports.DetailSalesReport.resources
+C:\Users\KUKU\Desktop\KUKU\Projs\Buzzle\Buzzle.Reports\obj\Debug\Buzzle.Reports.PrintableReports.SalesReport.resources
+C:\Users\KUKU\Desktop\KUKU\Projs\Buzzle\Buzzle.Reports\obj\Debug\Buzzle.Reports.Properties.Resources.resources
+C:\Users\KUKU\Desktop\KUKU\Projs\Buzzle\Buzzle.Reports\obj\Debug\Buzzle.Reports.Views.SalesReportView.resources
+C:\Users\KUKU\Desktop\KUKU\Projs\Buzzle\Buzzle.Reports\obj\Debug\Buzzle.Reports.csproj.GenerateResource.Cache
+C:\Users\KUKU\Desktop\KUKU\Projs\Buzzle\Buzzle.Reports\obj\Debug\Buzzle.Reports.dll.licenses
+C:\Users\KUKU\Desktop\KUKU\Projs\Buzzle\Buzzle.Reports\obj\Debug\Buzzle.Reports.dll
+C:\Users\KUKU\Desktop\KUKU\Projs\Buzzle\Buzzle.Reports\obj\Debug\Buzzle.Reports.pdb
+C:\Users\KUKU\Desktop\KUKU\Projs\Buzzle\Buzzle.Reports\bin\Debug\Buzzle.Reports.dll
+C:\Users\KUKU\Desktop\KUKU\Projs\Buzzle\Buzzle.Reports\bin\Debug\Buzzle.Reports.pdb
+C:\Users\KUKU\Desktop\KUKU\Projs\Buzzle\Buzzle.Reports\bin\Debug\Buzzle.Data.dll
+C:\Users\KUKU\Desktop\KUKU\Projs\Buzzle\Buzzle.Reports\bin\Debug\Buzzle.Finances.dll
+C:\Users\KUKU\Desktop\KUKU\Projs\Buzzle\Buzzle.Reports\bin\Debug\Buzzle.GlobalStuff.dll
+C:\Users\KUKU\Desktop\KUKU\Projs\Buzzle\Buzzle.Reports\bin\Debug\Buzzle.JobsManager.cs.dll
+C:\Users\KUKU\Desktop\KUKU\Projs\Buzzle\Buzzle.Reports\bin\Debug\Buzzle.Sales.dll
+C:\Users\KUKU\Desktop\KUKU\Projs\Buzzle\Buzzle.Reports\bin\Debug\Buzzle.Data.pdb
+C:\Users\KUKU\Desktop\KUKU\Projs\Buzzle\Buzzle.Reports\bin\Debug\Buzzle.Finances.pdb
+C:\Users\KUKU\Desktop\KUKU\Projs\Buzzle\Buzzle.Reports\bin\Debug\Buzzle.GlobalStuff.pdb
+C:\Users\KUKU\Desktop\KUKU\Projs\Buzzle\Buzzle.Reports\bin\Debug\Buzzle.JobsManager.cs.pdb
+C:\Users\KUKU\Desktop\KUKU\Projs\Buzzle\Buzzle.Reports\bin\Debug\Buzzle.Sales.pdb
+C:\Users\KUKU\Desktop\KUKU\Projs\Buzzle - Sales Only\Buzzle.Reports\bin\Debug\Buzzle.Reports.dll.config
+C:\Users\KUKU\Desktop\KUKU\Projs\Buzzle - Sales Only\Buzzle.Reports\bin\Debug\Buzzle.Reports.dll
+C:\Users\KUKU\Desktop\KUKU\Projs\Buzzle - Sales Only\Buzzle.Reports\bin\Debug\Buzzle.Reports.pdb
+C:\Users\KUKU\Desktop\KUKU\Projs\Buzzle - Sales Only\Buzzle.Reports\bin\Debug\Buzzle.Data.dll
+C:\Users\KUKU\Desktop\KUKU\Projs\Buzzle - Sales Only\Buzzle.Reports\bin\Debug\Buzzle.Finances.dll
+C:\Users\KUKU\Desktop\KUKU\Projs\Buzzle - Sales Only\Buzzle.Reports\bin\Debug\Buzzle.GlobalStuff.dll
+C:\Users\KUKU\Desktop\KUKU\Projs\Buzzle - Sales Only\Buzzle.Reports\bin\Debug\Buzzle.JobsManager.cs.dll
+C:\Users\KUKU\Desktop\KUKU\Projs\Buzzle - Sales Only\Buzzle.Reports\bin\Debug\Buzzle.Sales.dll
+C:\Users\KUKU\Desktop\KUKU\Projs\Buzzle - Sales Only\Buzzle.Reports\bin\Debug\EntityFramework.dll
+C:\Users\KUKU\Desktop\KUKU\Projs\Buzzle - Sales Only\Buzzle.Reports\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\KUKU\Desktop\KUKU\Projs\Buzzle - Sales Only\Buzzle.Reports\bin\Debug\Buzzle.Data.pdb
+C:\Users\KUKU\Desktop\KUKU\Projs\Buzzle - Sales Only\Buzzle.Reports\bin\Debug\Buzzle.Finances.pdb
+C:\Users\KUKU\Desktop\KUKU\Projs\Buzzle - Sales Only\Buzzle.Reports\bin\Debug\Buzzle.GlobalStuff.pdb
+C:\Users\KUKU\Desktop\KUKU\Projs\Buzzle - Sales Only\Buzzle.Reports\bin\Debug\Buzzle.JobsManager.cs.pdb
+C:\Users\KUKU\Desktop\KUKU\Projs\Buzzle - Sales Only\Buzzle.Reports\bin\Debug\Buzzle.Sales.pdb
+C:\Users\KUKU\Desktop\KUKU\Projs\Buzzle - Sales Only\Buzzle.Reports\bin\Debug\EntityFramework.xml
+C:\Users\KUKU\Desktop\KUKU\Projs\Buzzle - Sales Only\Buzzle.Reports\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\KUKU\Desktop\KUKU\Projs\Buzzle - Sales Only\Buzzle.Reports\obj\Debug\Buzzle.Reports.csprojResolveAssemblyReference.cache
+C:\Users\KUKU\Desktop\KUKU\Projs\Buzzle - Sales Only\Buzzle.Reports\obj\Debug\Buzzle.Reports.DetailSalesReport.resources
+C:\Users\KUKU\Desktop\KUKU\Projs\Buzzle - Sales Only\Buzzle.Reports\obj\Debug\Buzzle.Reports.PrintableReports.SalesReport.resources
+C:\Users\KUKU\Desktop\KUKU\Projs\Buzzle - Sales Only\Buzzle.Reports\obj\Debug\Buzzle.Reports.Properties.Resources.resources
+C:\Users\KUKU\Desktop\KUKU\Projs\Buzzle - Sales Only\Buzzle.Reports\obj\Debug\Buzzle.Reports.Views.SalesReportView.resources
+C:\Users\KUKU\Desktop\KUKU\Projs\Buzzle - Sales Only\Buzzle.Reports\obj\Debug\Buzzle.Reports.csproj.GenerateResource.Cache
+C:\Users\KUKU\Desktop\KUKU\Projs\Buzzle - Sales Only\Buzzle.Reports\obj\Debug\Buzzle.Reports.dll.licenses
+C:\Users\KUKU\Desktop\KUKU\Projs\Buzzle - Sales Only\Buzzle.Reports\obj\Debug\Buzzle.Reports.dll
+C:\Users\KUKU\Desktop\KUKU\Projs\Buzzle - Sales Only\Buzzle.Reports\obj\Debug\Buzzle.Reports.pdb
+C:\Users\Kuks\Desktop\KUKU\Docs\Projs\Buzzle - Sales Only\Buzzle.Reports\obj\Debug\Buzzle.Reports.csprojResolveAssemblyReference.cache
+C:\Users\Kuks\Desktop\KUKU\Docs\Projs\Buzzle - Sales Only\Buzzle.Reports\obj\Debug\Buzzle.Reports.DetailSalesReport.resources
+C:\Users\Kuks\Desktop\KUKU\Docs\Projs\Buzzle - Sales Only\Buzzle.Reports\obj\Debug\Buzzle.Reports.PrintableReports.SalesReport.resources
+C:\Users\Kuks\Desktop\KUKU\Docs\Projs\Buzzle - Sales Only\Buzzle.Reports\obj\Debug\Buzzle.Reports.Properties.Resources.resources
+C:\Users\Kuks\Desktop\KUKU\Docs\Projs\Buzzle - Sales Only\Buzzle.Reports\obj\Debug\Buzzle.Reports.Views.SalesReportView.resources
+C:\Users\Kuks\Desktop\KUKU\Docs\Projs\Buzzle - Sales Only\Buzzle.Reports\obj\Debug\Buzzle.Reports.csproj.GenerateResource.Cache
+C:\Users\Kuks\Desktop\KUKU\Docs\Projs\Buzzle - Sales Only\Buzzle.Reports\obj\Debug\Buzzle.Reports.dll.licenses
+C:\Users\Kuks\Desktop\KUKU\Docs\Projs\Buzzle - Sales Only\Buzzle.Reports\obj\Debug\Buzzle.Reports.dll
+C:\Users\Kuks\Desktop\KUKU\Docs\Projs\Buzzle - Sales Only\Buzzle.Reports\obj\Debug\Buzzle.Reports.pdb
+C:\Users\Kuks\Desktop\KUKU\Docs\Projs\Buzzle - Sales Only\Buzzle.Reports\bin\Debug\Buzzle.Reports.dll.config
+C:\Users\Kuks\Desktop\KUKU\Docs\Projs\Buzzle - Sales Only\Buzzle.Reports\bin\Debug\Buzzle.Reports.dll
+C:\Users\Kuks\Desktop\KUKU\Docs\Projs\Buzzle - Sales Only\Buzzle.Reports\bin\Debug\Buzzle.Reports.pdb
+C:\Users\Kuks\Desktop\KUKU\Docs\Projs\Buzzle - Sales Only\Buzzle.Reports\bin\Debug\Buzzle.Data.dll
+C:\Users\Kuks\Desktop\KUKU\Docs\Projs\Buzzle - Sales Only\Buzzle.Reports\bin\Debug\Buzzle.Finances.dll
+C:\Users\Kuks\Desktop\KUKU\Docs\Projs\Buzzle - Sales Only\Buzzle.Reports\bin\Debug\Buzzle.GlobalStuff.dll
+C:\Users\Kuks\Desktop\KUKU\Docs\Projs\Buzzle - Sales Only\Buzzle.Reports\bin\Debug\Buzzle.JobsManager.cs.dll
+C:\Users\Kuks\Desktop\KUKU\Docs\Projs\Buzzle - Sales Only\Buzzle.Reports\bin\Debug\Buzzle.Sales.dll
+C:\Users\Kuks\Desktop\KUKU\Docs\Projs\Buzzle - Sales Only\Buzzle.Reports\bin\Debug\Dapper.dll
+C:\Users\Kuks\Desktop\KUKU\Docs\Projs\Buzzle - Sales Only\Buzzle.Reports\bin\Debug\EntityFramework.dll
+C:\Users\Kuks\Desktop\KUKU\Docs\Projs\Buzzle - Sales Only\Buzzle.Reports\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Kuks\Desktop\KUKU\Docs\Projs\Buzzle - Sales Only\Buzzle.Reports\bin\Debug\Buzzle.Data.pdb
+C:\Users\Kuks\Desktop\KUKU\Docs\Projs\Buzzle - Sales Only\Buzzle.Reports\bin\Debug\Buzzle.Finances.pdb
+C:\Users\Kuks\Desktop\KUKU\Docs\Projs\Buzzle - Sales Only\Buzzle.Reports\bin\Debug\Buzzle.GlobalStuff.pdb
+C:\Users\Kuks\Desktop\KUKU\Docs\Projs\Buzzle - Sales Only\Buzzle.Reports\bin\Debug\Buzzle.JobsManager.cs.pdb
+C:\Users\Kuks\Desktop\KUKU\Docs\Projs\Buzzle - Sales Only\Buzzle.Reports\bin\Debug\Buzzle.Sales.pdb
+C:\Users\Kuks\Desktop\KUKU\Docs\Projs\Buzzle - Sales Only\Buzzle.Reports\bin\Debug\Dapper.pdb
+C:\Users\Kuks\Desktop\KUKU\Docs\Projs\Buzzle - Sales Only\Buzzle.Reports\bin\Debug\Dapper.xml
+C:\Users\Kuks\Desktop\KUKU\Docs\Projs\Buzzle - Sales Only\Buzzle.Reports\bin\Debug\EntityFramework.xml
+C:\Users\Kuks\Desktop\KUKU\Docs\Projs\Buzzle - Sales Only\Buzzle.Reports\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Kuks\Desktop\KUKU\Docs\Projs\Buzzle - Sales Only\Buzzle.Reports\bin\Debug\Models\buzzle_compact4.sdf
+C:\Users\Kuks\Desktop\KUKU\Docs\Projs\Buzzle - Sales Only\Buzzle.Reports\bin\Debug\EntityFramework.SqlServerCompact.dll
+C:\Users\Kuks\Desktop\KUKU\Docs\Projs\Buzzle - Sales Only\Buzzle.Reports\bin\Debug\EntityFramework.SqlServerCompact.Legacy.dll
+C:\Users\Kuks\Desktop\KUKU\Docs\Projs\Buzzle - Sales Only\Buzzle.Reports\bin\Debug\System.Data.SqlServerCe.dll
+C:\Users\Kuks\Desktop\KUKU\Docs\Projs\Buzzle - Sales Only\Buzzle.Reports\bin\Debug\EntityFramework.SqlServerCompact.xml
+C:\Users\Kuks\Desktop\KUKU\Docs\Projs\Buzzle - Sales Only\Buzzle.Reports\bin\Debug\EntityFramework.SqlServerCompact.Legacy.xml

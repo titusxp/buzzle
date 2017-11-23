@@ -1,0 +1,15 @@
+C:\Projs\Buzzle\Buzzle.GlobalStuff\bin\x86\Debug\Buzzle.GlobalStuff.dll
+C:\Projs\Buzzle\Buzzle.GlobalStuff\bin\x86\Debug\Buzzle.GlobalStuff.pdb
+C:\Projs\Buzzle\Buzzle.GlobalStuff\bin\x86\Debug\Buzzle.Data.dll
+C:\Projs\Buzzle\Buzzle.GlobalStuff\bin\x86\Debug\Buzzle.Data.pdb
+C:\Projs\Buzzle\Buzzle.GlobalStuff\obj\x86\Debug\Buzzle.GlobalStuff.AddEditUserView.resources
+C:\Projs\Buzzle\Buzzle.GlobalStuff\obj\x86\Debug\Buzzle.GlobalStuff.BuzzleGlobalView.resources
+C:\Projs\Buzzle\Buzzle.GlobalStuff\obj\x86\Debug\Buzzle.GlobalStuff.BuzzleSplashScreen.resources
+C:\Projs\Buzzle\Buzzle.GlobalStuff\obj\x86\Debug\Buzzle.GlobalStuff.BuzzleWaitForm.resources
+C:\Projs\Buzzle\Buzzle.GlobalStuff\obj\x86\Debug\Buzzle.GlobalStuff.BuzzleSettingsView.resources
+C:\Projs\Buzzle\Buzzle.GlobalStuff\obj\x86\Debug\Buzzle.GlobalStuff.Properties.Resources.resources
+C:\Projs\Buzzle\Buzzle.GlobalStuff\obj\x86\Debug\Buzzle.GlobalStuff.dll.licenses
+C:\Projs\Buzzle\Buzzle.GlobalStuff\obj\x86\Debug\Buzzle.GlobalStuff.dll
+C:\Projs\Buzzle\Buzzle.GlobalStuff\obj\x86\Debug\Buzzle.GlobalStuff.pdb
+C:\Projs\Buzzle\Buzzle.GlobalStuff\obj\x86\Debug\Buzzle.GlobalStuff.csprojResolveAssemblyReference.cache
+C:\Projs\Buzzle\Buzzle.GlobalStuff\obj\x86\Debug\Buzzle.GlobalStuff.csproj.GenerateResource.Cache

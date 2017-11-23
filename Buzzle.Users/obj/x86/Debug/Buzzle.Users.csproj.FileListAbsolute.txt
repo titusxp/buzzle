@@ -1,0 +1,5 @@
+C:\Projs\Buzzle\Buzzle.Users\obj\x86\Debug\Buzzle.Users.csprojResolveAssemblyReference.cache
+C:\Projs\Buzzle\Buzzle.Users\obj\x86\Debug\Buzzle.Users.BuzzleUsers.BuzzleUsersView.resources
+C:\Projs\Buzzle\Buzzle.Users\obj\x86\Debug\Buzzle.Users.Properties.Resources.resources
+C:\Projs\Buzzle\Buzzle.Users\obj\x86\Debug\Buzzle.Users.csproj.GenerateResource.Cache
+C:\Projs\Buzzle\Buzzle.Users\obj\x86\Debug\Buzzle.Users.exe.licenses

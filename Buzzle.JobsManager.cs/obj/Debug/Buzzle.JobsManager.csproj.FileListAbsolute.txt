@@ -1,0 +1,87 @@
+C:\Projs\Buzzle\Buzzle.JobsManager.cs\bin\Debug\Buzzle.JobsManager.cs.dll
+C:\Projs\Buzzle\Buzzle.JobsManager.cs\bin\Debug\Buzzle.JobsManager.cs.pdb
+C:\Projs\Buzzle\Buzzle.JobsManager.cs\bin\Debug\Buzzle.Data.dll
+C:\Projs\Buzzle\Buzzle.JobsManager.cs\bin\Debug\Buzzle.Finances.dll
+C:\Projs\Buzzle\Buzzle.JobsManager.cs\bin\Debug\Buzzle.GlobalStuff.dll
+C:\Projs\Buzzle\Buzzle.JobsManager.cs\bin\Debug\Buzzle.Data.pdb
+C:\Projs\Buzzle\Buzzle.JobsManager.cs\bin\Debug\Buzzle.Finances.pdb
+C:\Projs\Buzzle\Buzzle.JobsManager.cs\bin\Debug\Buzzle.GlobalStuff.pdb
+C:\Projs\Buzzle\Buzzle.JobsManager.cs\obj\Debug\Buzzle.JobsManager.Views.AddEditJobView.resources
+C:\Projs\Buzzle\Buzzle.JobsManager.cs\obj\Debug\Buzzle.JobsManager.Views.AddNotesView.resources
+C:\Projs\Buzzle\Buzzle.JobsManager.cs\obj\Debug\Buzzle.JobsManager.Views.JobsView.JobsView.resources
+C:\Projs\Buzzle\Buzzle.JobsManager.cs\obj\Debug\Buzzle.JobsManager.cs.dll
+C:\Projs\Buzzle\Buzzle.JobsManager.cs\obj\Debug\Buzzle.JobsManager.cs.pdb
+C:\Projs\Buzzle\Buzzle.JobsManager.cs\obj\Debug\Buzzle.JobsManager.csprojResolveAssemblyReference.cache
+C:\Projs\Buzzle\Buzzle.JobsManager.cs\obj\Debug\Buzzle.JobsManager.csproj.GenerateResource.Cache
+C:\Projs\Buzzle\Buzzle.JobsManager.cs\obj\Debug\Buzzle.JobsManager.cs.dll.licenses
+C:\Projs\Buzzle\Buzzle.JobsManager.cs\obj\Debug\Buzzle.JobsManager.cs.Properties.Resources.resources
+C:\Users\KUKU\Desktop\KUKU\Projs\Buzzle\Buzzle.JobsManager.cs\bin\Debug\Buzzle.JobsManager.cs.dll
+C:\Users\KUKU\Desktop\KUKU\Projs\Buzzle\Buzzle.JobsManager.cs\bin\Debug\Buzzle.JobsManager.cs.pdb
+C:\Users\KUKU\Desktop\KUKU\Projs\Buzzle\Buzzle.JobsManager.cs\bin\Debug\Buzzle.Data.dll
+C:\Users\KUKU\Desktop\KUKU\Projs\Buzzle\Buzzle.JobsManager.cs\bin\Debug\Buzzle.Finances.dll
+C:\Users\KUKU\Desktop\KUKU\Projs\Buzzle\Buzzle.JobsManager.cs\bin\Debug\Buzzle.GlobalStuff.dll
+C:\Users\KUKU\Desktop\KUKU\Projs\Buzzle\Buzzle.JobsManager.cs\bin\Debug\Buzzle.Data.pdb
+C:\Users\KUKU\Desktop\KUKU\Projs\Buzzle\Buzzle.JobsManager.cs\bin\Debug\Buzzle.Finances.pdb
+C:\Users\KUKU\Desktop\KUKU\Projs\Buzzle\Buzzle.JobsManager.cs\bin\Debug\Buzzle.GlobalStuff.pdb
+C:\Users\KUKU\Desktop\KUKU\Projs\Buzzle\Buzzle.JobsManager.cs\obj\Debug\Buzzle.JobsManager.csprojResolveAssemblyReference.cache
+C:\Users\KUKU\Desktop\KUKU\Projs\Buzzle\Buzzle.JobsManager.cs\obj\Debug\Buzzle.JobsManager.cs.Properties.Resources.resources
+C:\Users\KUKU\Desktop\KUKU\Projs\Buzzle\Buzzle.JobsManager.cs\obj\Debug\Buzzle.JobsManager.Views.AddEditJobView.resources
+C:\Users\KUKU\Desktop\KUKU\Projs\Buzzle\Buzzle.JobsManager.cs\obj\Debug\Buzzle.JobsManager.Views.AddNotesView.resources
+C:\Users\KUKU\Desktop\KUKU\Projs\Buzzle\Buzzle.JobsManager.cs\obj\Debug\Buzzle.JobsManager.Views.JobsView.JobsView.resources
+C:\Users\KUKU\Desktop\KUKU\Projs\Buzzle\Buzzle.JobsManager.cs\obj\Debug\Buzzle.JobsManager.csproj.GenerateResource.Cache
+C:\Users\KUKU\Desktop\KUKU\Projs\Buzzle\Buzzle.JobsManager.cs\obj\Debug\Buzzle.JobsManager.cs.dll.licenses
+C:\Users\KUKU\Desktop\KUKU\Projs\Buzzle\Buzzle.JobsManager.cs\obj\Debug\Buzzle.JobsManager.cs.dll
+C:\Users\KUKU\Desktop\KUKU\Projs\Buzzle\Buzzle.JobsManager.cs\obj\Debug\Buzzle.JobsManager.cs.pdb
+C:\Users\KUKU\Desktop\KUKU\Projs\Buzzle - Sales Only\Buzzle.JobsManager.cs\bin\Debug\Buzzle.JobsManager.cs.dll.config
+C:\Users\KUKU\Desktop\KUKU\Projs\Buzzle - Sales Only\Buzzle.JobsManager.cs\bin\Debug\Buzzle.JobsManager.cs.dll
+C:\Users\KUKU\Desktop\KUKU\Projs\Buzzle - Sales Only\Buzzle.JobsManager.cs\bin\Debug\Buzzle.JobsManager.cs.pdb
+C:\Users\KUKU\Desktop\KUKU\Projs\Buzzle - Sales Only\Buzzle.JobsManager.cs\bin\Debug\Buzzle.Data.dll
+C:\Users\KUKU\Desktop\KUKU\Projs\Buzzle - Sales Only\Buzzle.JobsManager.cs\bin\Debug\Buzzle.Finances.dll
+C:\Users\KUKU\Desktop\KUKU\Projs\Buzzle - Sales Only\Buzzle.JobsManager.cs\bin\Debug\Buzzle.GlobalStuff.dll
+C:\Users\KUKU\Desktop\KUKU\Projs\Buzzle - Sales Only\Buzzle.JobsManager.cs\bin\Debug\EntityFramework.dll
+C:\Users\KUKU\Desktop\KUKU\Projs\Buzzle - Sales Only\Buzzle.JobsManager.cs\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\KUKU\Desktop\KUKU\Projs\Buzzle - Sales Only\Buzzle.JobsManager.cs\bin\Debug\Buzzle.Data.pdb
+C:\Users\KUKU\Desktop\KUKU\Projs\Buzzle - Sales Only\Buzzle.JobsManager.cs\bin\Debug\Buzzle.Finances.pdb
+C:\Users\KUKU\Desktop\KUKU\Projs\Buzzle - Sales Only\Buzzle.JobsManager.cs\bin\Debug\Buzzle.GlobalStuff.pdb
+C:\Users\KUKU\Desktop\KUKU\Projs\Buzzle - Sales Only\Buzzle.JobsManager.cs\bin\Debug\EntityFramework.xml
+C:\Users\KUKU\Desktop\KUKU\Projs\Buzzle - Sales Only\Buzzle.JobsManager.cs\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\KUKU\Desktop\KUKU\Projs\Buzzle - Sales Only\Buzzle.JobsManager.cs\obj\Debug\Buzzle.JobsManager.csprojResolveAssemblyReference.cache
+C:\Users\KUKU\Desktop\KUKU\Projs\Buzzle - Sales Only\Buzzle.JobsManager.cs\obj\Debug\Buzzle.JobsManager.cs.Properties.Resources.resources
+C:\Users\KUKU\Desktop\KUKU\Projs\Buzzle - Sales Only\Buzzle.JobsManager.cs\obj\Debug\Buzzle.JobsManager.Views.AddEditJobView.resources
+C:\Users\KUKU\Desktop\KUKU\Projs\Buzzle - Sales Only\Buzzle.JobsManager.cs\obj\Debug\Buzzle.JobsManager.Views.AddNotesView.resources
+C:\Users\KUKU\Desktop\KUKU\Projs\Buzzle - Sales Only\Buzzle.JobsManager.cs\obj\Debug\Buzzle.JobsManager.Views.JobsView.JobsView.resources
+C:\Users\KUKU\Desktop\KUKU\Projs\Buzzle - Sales Only\Buzzle.JobsManager.cs\obj\Debug\Buzzle.JobsManager.csproj.GenerateResource.Cache
+C:\Users\KUKU\Desktop\KUKU\Projs\Buzzle - Sales Only\Buzzle.JobsManager.cs\obj\Debug\Buzzle.JobsManager.cs.dll.licenses
+C:\Users\KUKU\Desktop\KUKU\Projs\Buzzle - Sales Only\Buzzle.JobsManager.cs\obj\Debug\Buzzle.JobsManager.cs.dll
+C:\Users\KUKU\Desktop\KUKU\Projs\Buzzle - Sales Only\Buzzle.JobsManager.cs\obj\Debug\Buzzle.JobsManager.cs.pdb
+C:\Users\Kuks\Desktop\KUKU\Docs\Projs\Buzzle - Sales Only\Buzzle.JobsManager.cs\bin\Debug\Buzzle.JobsManager.cs.dll.config
+C:\Users\Kuks\Desktop\KUKU\Docs\Projs\Buzzle - Sales Only\Buzzle.JobsManager.cs\bin\Debug\Buzzle.JobsManager.cs.dll
+C:\Users\Kuks\Desktop\KUKU\Docs\Projs\Buzzle - Sales Only\Buzzle.JobsManager.cs\bin\Debug\Buzzle.JobsManager.cs.pdb
+C:\Users\Kuks\Desktop\KUKU\Docs\Projs\Buzzle - Sales Only\Buzzle.JobsManager.cs\bin\Debug\Buzzle.Data.dll
+C:\Users\Kuks\Desktop\KUKU\Docs\Projs\Buzzle - Sales Only\Buzzle.JobsManager.cs\bin\Debug\Buzzle.Finances.dll
+C:\Users\Kuks\Desktop\KUKU\Docs\Projs\Buzzle - Sales Only\Buzzle.JobsManager.cs\bin\Debug\Buzzle.GlobalStuff.dll
+C:\Users\Kuks\Desktop\KUKU\Docs\Projs\Buzzle - Sales Only\Buzzle.JobsManager.cs\bin\Debug\Dapper.dll
+C:\Users\Kuks\Desktop\KUKU\Docs\Projs\Buzzle - Sales Only\Buzzle.JobsManager.cs\bin\Debug\EntityFramework.dll
+C:\Users\Kuks\Desktop\KUKU\Docs\Projs\Buzzle - Sales Only\Buzzle.JobsManager.cs\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Kuks\Desktop\KUKU\Docs\Projs\Buzzle - Sales Only\Buzzle.JobsManager.cs\bin\Debug\Buzzle.Data.pdb
+C:\Users\Kuks\Desktop\KUKU\Docs\Projs\Buzzle - Sales Only\Buzzle.JobsManager.cs\bin\Debug\Buzzle.Finances.pdb
+C:\Users\Kuks\Desktop\KUKU\Docs\Projs\Buzzle - Sales Only\Buzzle.JobsManager.cs\bin\Debug\Buzzle.GlobalStuff.pdb
+C:\Users\Kuks\Desktop\KUKU\Docs\Projs\Buzzle - Sales Only\Buzzle.JobsManager.cs\bin\Debug\Dapper.pdb
+C:\Users\Kuks\Desktop\KUKU\Docs\Projs\Buzzle - Sales Only\Buzzle.JobsManager.cs\bin\Debug\Dapper.xml
+C:\Users\Kuks\Desktop\KUKU\Docs\Projs\Buzzle - Sales Only\Buzzle.JobsManager.cs\bin\Debug\EntityFramework.xml
+C:\Users\Kuks\Desktop\KUKU\Docs\Projs\Buzzle - Sales Only\Buzzle.JobsManager.cs\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Kuks\Desktop\KUKU\Docs\Projs\Buzzle - Sales Only\Buzzle.JobsManager.cs\obj\Debug\Buzzle.JobsManager.csprojResolveAssemblyReference.cache
+C:\Users\Kuks\Desktop\KUKU\Docs\Projs\Buzzle - Sales Only\Buzzle.JobsManager.cs\obj\Debug\Buzzle.JobsManager.cs.Properties.Resources.resources
+C:\Users\Kuks\Desktop\KUKU\Docs\Projs\Buzzle - Sales Only\Buzzle.JobsManager.cs\obj\Debug\Buzzle.JobsManager.Views.AddEditJobView.resources
+C:\Users\Kuks\Desktop\KUKU\Docs\Projs\Buzzle - Sales Only\Buzzle.JobsManager.cs\obj\Debug\Buzzle.JobsManager.Views.AddNotesView.resources
+C:\Users\Kuks\Desktop\KUKU\Docs\Projs\Buzzle - Sales Only\Buzzle.JobsManager.cs\obj\Debug\Buzzle.JobsManager.Views.JobsView.JobsView.resources
+C:\Users\Kuks\Desktop\KUKU\Docs\Projs\Buzzle - Sales Only\Buzzle.JobsManager.cs\obj\Debug\Buzzle.JobsManager.csproj.GenerateResource.Cache
+C:\Users\Kuks\Desktop\KUKU\Docs\Projs\Buzzle - Sales Only\Buzzle.JobsManager.cs\obj\Debug\Buzzle.JobsManager.cs.dll.licenses
+C:\Users\Kuks\Desktop\KUKU\Docs\Projs\Buzzle - Sales Only\Buzzle.JobsManager.cs\obj\Debug\Buzzle.JobsManager.cs.dll
+C:\Users\Kuks\Desktop\KUKU\Docs\Projs\Buzzle - Sales Only\Buzzle.JobsManager.cs\obj\Debug\Buzzle.JobsManager.cs.pdb
+C:\Users\Kuks\Desktop\KUKU\Docs\Projs\Buzzle - Sales Only\Buzzle.JobsManager.cs\bin\Debug\Models\buzzle_compact4.sdf
+C:\Users\Kuks\Desktop\KUKU\Docs\Projs\Buzzle - Sales Only\Buzzle.JobsManager.cs\bin\Debug\EntityFramework.SqlServerCompact.dll
+C:\Users\Kuks\Desktop\KUKU\Docs\Projs\Buzzle - Sales Only\Buzzle.JobsManager.cs\bin\Debug\EntityFramework.SqlServerCompact.Legacy.dll
+C:\Users\Kuks\Desktop\KUKU\Docs\Projs\Buzzle - Sales Only\Buzzle.JobsManager.cs\bin\Debug\System.Data.SqlServerCe.dll
+C:\Users\Kuks\Desktop\KUKU\Docs\Projs\Buzzle - Sales Only\Buzzle.JobsManager.cs\bin\Debug\EntityFramework.SqlServerCompact.xml
+C:\Users\Kuks\Desktop\KUKU\Docs\Projs\Buzzle - Sales Only\Buzzle.JobsManager.cs\bin\Debug\EntityFramework.SqlServerCompact.Legacy.xml
