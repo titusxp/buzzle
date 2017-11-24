@@ -1,0 +1,13 @@
+F:\CODE\buzzle\Buzzle.Api.Core\bin\Debug\Buzzle.Data.dll.config
+F:\CODE\buzzle\Buzzle.Api.Core\bin\Debug\Buzzle.Data.dll
+F:\CODE\buzzle\Buzzle.Api.Core\bin\Debug\Buzzle.Data.pdb
+F:\CODE\buzzle\Buzzle.Api.Core\bin\Debug\Buzzle.DataModel.dll
+F:\CODE\buzzle\Buzzle.Api.Core\bin\Debug\EntityFramework.dll
+F:\CODE\buzzle\Buzzle.Api.Core\bin\Debug\EntityFramework.SqlServer.dll
+F:\CODE\buzzle\Buzzle.Api.Core\bin\Debug\System.Data.SqlServerCe.dll
+F:\CODE\buzzle\Buzzle.Api.Core\bin\Debug\Buzzle.DataModel.pdb
+F:\CODE\buzzle\Buzzle.Api.Core\obj\Debug\Buzzle.Api.Core.csprojResolveAssemblyReference.cache
+F:\CODE\buzzle\Buzzle.Api.Core\obj\Debug\Buzzle.Data.dll
+F:\CODE\buzzle\Buzzle.Api.Core\obj\Debug\Buzzle.Data.pdb
+F:\CODE\buzzle\Buzzle.Api.Core\bin\Debug\Bizzle.Common.dll
+F:\CODE\buzzle\Buzzle.Api.Core\bin\Debug\Bizzle.Common.pdb

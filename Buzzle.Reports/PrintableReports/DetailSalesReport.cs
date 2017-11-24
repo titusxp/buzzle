@@ -1,8 +1,10 @@
-﻿using Buzzle.Data.DataModel;
-using Buzzle.GlobalStuff;
+﻿
+using Buzzle.Client.Ui;
 using System;
 using System.Collections.Generic;
 using System.Drawing;
+using Buzzle.DataModel;
+
 namespace Buzzle.Reports
 {
     public partial class DetailSalesReport : DevExpress.XtraReports.UI.XtraReport

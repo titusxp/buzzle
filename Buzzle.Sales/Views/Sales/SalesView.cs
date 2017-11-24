@@ -7,9 +7,10 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using Buzzle.Data;
-using Buzzle.GlobalStuff;
-using Buzzle.Data.DataModel;
+using Buzzle.Client.Ui;
+
 using System.Drawing.Printing;
+using Buzzle.DataModel;
 
 namespace Buzzle.Sales.Views
 {

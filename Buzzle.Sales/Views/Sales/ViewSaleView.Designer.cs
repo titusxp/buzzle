@@ -114,7 +114,7 @@
             // 
             // saleItemBindingSource
             // 
-            this.saleItemBindingSource.DataSource = typeof(Buzzle.Data.DataModel.SaleItem);
+            this.saleItemBindingSource.DataSource = typeof(Buzzle.DataModel.SaleItem);
             // 
             // gridView_SaleItems
             // 
@@ -179,7 +179,7 @@
             // 
             // saleBindingSource
             // 
-            this.saleBindingSource.DataSource = typeof(Buzzle.Data.DataModel.Sale);
+            this.saleBindingSource.DataSource = typeof(Buzzle.DataModel.Sale);
             // 
             // textBox_RecordedBy
             // 

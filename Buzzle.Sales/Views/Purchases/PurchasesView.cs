@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Linq;
 using Buzzle.Data;
-using Buzzle.Data.DataModel;
-using Buzzle.GlobalStuff;
+using Buzzle.DataModel;
+using Buzzle.Client.Ui;
 using Buzzle.Sales.Views.Purchases.ProcessPurchasesView;
 using DevExpress.Data.Linq;
 

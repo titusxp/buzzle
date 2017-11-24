@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading;
 using System.Windows.Forms;
-using Buzzle.GlobalStuff;
+using Buzzle.Client.Ui;
 using System.Data.OleDb;
 using System.Configuration;
 using System.Data.SqlClient;
@@ -26,17 +26,17 @@ namespace Buzzle.Launcher
             Application.SetCompatibleTextRenderingDefault(false);
             
             //Check if database exists, if not, attach a new one before continuing
-            if (DataBaseNotExists())
-            {
-                if (BuzzleFunctions.AskQuestion("Can't find the database. Do you want to initialize a new one?"))
-                {
-                    LoadDatabase();
-                }
-                else
-                {
-                    return;
-                }
-            }
+            //if (DataBaseNotExists())
+            //{
+            //    if (BuzzleFunctions.AskQuestion("Can't find the database. Do you want to initialize a new one?"))
+            //    {
+            //        LoadDatabase();
+            //    }
+            //    else
+            //    {
+            //        return;
+            //    }
+            //}
             BuzzleFunctions.ShowSplashScreen();
             BuzzleFunctions.ShowWaitForm();
             var loginForm = new BuzzleLoginForm();
@@ -95,7 +95,7 @@ namespace Buzzle.Launcher
 
         private static string GetConnectionString()
         {
-            return ConfigurationManager.ConnectionStrings["BuzzleTFEntities"].ConnectionString;
+            return ConfigurationManager.ConnectionStrings["BuzzleEntities"].ConnectionString;
         }
 
         private static void CloseSlashScreen()

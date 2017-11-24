@@ -7,8 +7,8 @@ using System.Linq;
 using System.Reflection.Emit;
 using System.Text;
 using System.Windows.Forms;
-using Buzzle.Data.DataModel;
-using Buzzle.GlobalStuff;
+
+using Buzzle.Client.Ui;
 
 namespace Buzzle.Launcher
 {

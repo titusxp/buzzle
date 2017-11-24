@@ -292,7 +292,7 @@
             // 
             // supplyItemBindingSource
             // 
-            this.supplyItemBindingSource.DataSource = typeof(Buzzle.Data.DataModel.SupplyItem);
+            this.supplyItemBindingSource.DataSource = typeof(Buzzle.DataModel.SupplyItem);
             this.supplyItemBindingSource.ListChanged += new System.ComponentModel.ListChangedEventHandler(this.supplyItemBindingSource_ListChanged);
             // 
             // gridView_PurchasedItems

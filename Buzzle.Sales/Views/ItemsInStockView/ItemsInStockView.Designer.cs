@@ -87,7 +87,7 @@
             // 
             // stockItemBalanceBindingSource
             // 
-            this.stockItemBalanceBindingSource.DataSource = typeof(Buzzle.Data.DataModel.StockItemBalance);
+            this.stockItemBalanceBindingSource.DataSource = typeof(Buzzle.DataModel.StockItemBalance);
             // 
             // gridView_StockItemBalances
             // 

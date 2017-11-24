@@ -1,0 +1,1801 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="BuzzleModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="AccountPostings">
+          <Key>
+            <PropertyRef Name="PostingID" />
+          </Key>
+          <Property Name="PostingID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="TransactionID" Type="int" Nullable="false" />
+          <Property Name="AccountID" Type="int" Nullable="false" />
+          <Property Name="PostingType" Type="int" Nullable="false" />
+          <Property Name="Amount" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Accounts">
+          <Key>
+            <PropertyRef Name="AccountID" />
+          </Key>
+          <Property Name="AccountID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="AccountName" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Description" Type="varchar(max)" />
+        </EntityType>
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'Buzzle.dbo.BuzzleSettings' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="BuzzleSettings">
+          <Key>
+            <PropertyRef Name="SettingName" />
+            <PropertyRef Name="SettingValue" />
+          </Key>
+          <Property Name="SettingName" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="SettingValue" Type="varchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Company">
+          <Key>
+            <PropertyRef Name="CompanyID" />
+          </Key>
+          <Property Name="CompanyID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="CompanyName" Type="varchar" MaxLength="150" Nullable="false" />
+          <Property Name="CompanyLogo" Type="varbinary(max)" />
+          <Property Name="PhoneNumber" Type="varchar" MaxLength="50" />
+          <Property Name="Email" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="FaultTypes">
+          <Key>
+            <PropertyRef Name="FaultTypeID" />
+          </Key>
+          <Property Name="FaultTypeID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="FaultName" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Notes" Type="varchar(max)" />
+        </EntityType>
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'Buzzle.dbo.JobHistories' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="JobHistories">
+          <Key>
+            <PropertyRef Name="JobID" />
+            <PropertyRef Name="HistoryNote" />
+            <PropertyRef Name="DateInserted" />
+            <PropertyRef Name="RecordedByUserID" />
+          </Key>
+          <Property Name="JobID" Type="int" Nullable="false" />
+          <Property Name="HistoryNote" Type="varchar(max)" Nullable="false" />
+          <Property Name="DateInserted" Type="datetime" Nullable="false" />
+          <Property Name="RecordedByUserID" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="JobItemTypes">
+          <Key>
+            <PropertyRef Name="ItemTypeID" />
+          </Key>
+          <Property Name="ItemTypeID" Type="int" Nullable="false" />
+          <Property Name="ItemName" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Notes" Type="nchar" MaxLength="10" />
+        </EntityType>
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'Buzzle.dbo.JobPayments' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="JobPayments">
+          <Key>
+            <PropertyRef Name="JobID" />
+            <PropertyRef Name="TransactionID" />
+          </Key>
+          <Property Name="JobID" Type="int" Nullable="false" />
+          <Property Name="TransactionID" Type="int" Nullable="false" />
+          <Property Name="Notes" Type="varchar(max)" />
+        </EntityType>
+        <EntityType Name="Jobs">
+          <Key>
+            <PropertyRef Name="JobID" />
+          </Key>
+          <Property Name="JobID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="CustomerName" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="ItemTypeID" Type="int" Nullable="false" />
+          <Property Name="DateCreated" Type="datetime" Nullable="false" />
+          <Property Name="EndDate" Type="datetime" />
+          <Property Name="Notes" Type="varchar(max)" />
+          <Property Name="ItemDescription" Type="varchar(max)" />
+          <Property Name="FaultTypeID" Type="int" Nullable="false" />
+          <Property Name="FaultDescription" Type="varchar(max)" />
+          <Property Name="CustomerPhoneNumber" Type="int" />
+          <Property Name="IsPaid" Type="bit" Nullable="false" />
+          <Property Name="IsCollected" Type="bit" Nullable="false" />
+          <Property Name="IsFixed" Type="bit" Nullable="false" />
+          <Property Name="IsCancel" Type="bit" Nullable="false" />
+          <Property Name="CreatorUserID" Type="int" Nullable="false" />
+        </EntityType>
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'Buzzle.dbo.LookupData' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="LookupData">
+          <Key>
+            <PropertyRef Name="TableNumber" />
+            <PropertyRef Name="TableData" />
+          </Key>
+          <Property Name="TableNumber" Type="tinyint" Nullable="false" />
+          <Property Name="TableData" Type="varchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <EntityType Name="PurchaseItems">
+          <Key>
+            <PropertyRef Name="PurchaseItemID" />
+          </Key>
+          <Property Name="PurchaseItemID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="PurchaseID" Type="int" Nullable="false" />
+          <Property Name="StockItemTypeID" Type="int" Nullable="false" />
+          <Property Name="ProposedUnitPrice" Type="int" Nullable="false" />
+          <Property Name="Notes" Type="varchar(max)" />
+          <Property Name="Quantity" Type="int" Nullable="false" />
+          <Property Name="TotalProposedPrice" Type="int" StoreGeneratedPattern="Computed" />
+          <Property Name="IsSupplied" Type="bit" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Purchases">
+          <Key>
+            <PropertyRef Name="PurchaseID" />
+          </Key>
+          <Property Name="PurchaseID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="DateRecorded" Type="datetime" Nullable="false" />
+          <Property Name="CreatedByUserID" Type="int" Nullable="false" />
+          <Property Name="Status" Type="varchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <EntityType Name="SaleItems">
+          <Key>
+            <PropertyRef Name="SaleItemID" />
+          </Key>
+          <Property Name="SaleItemID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="SaleID" Type="bigint" Nullable="false" />
+          <Property Name="StockItemTypeID" Type="int" Nullable="false" />
+          <Property Name="UnitSoldPrice" Type="int" Nullable="false" />
+          <Property Name="Quantity" Type="int" Nullable="false" />
+          <Property Name="TotalSoldPrice" Type="int" StoreGeneratedPattern="Computed" />
+          <Property Name="UnitPurchasePrice" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Sales">
+          <Key>
+            <PropertyRef Name="SaleID" />
+          </Key>
+          <Property Name="SaleID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="CustomerName" Type="varchar" MaxLength="50" />
+          <Property Name="DateRecorded" Type="datetime" />
+          <Property Name="RecordedByUserID" Type="int" Nullable="false" />
+          <Property Name="CustomerDetails" Type="varchar(max)" />
+        </EntityType>
+        <EntityType Name="StockItemMovements">
+          <Key>
+            <PropertyRef Name="MovementID" />
+          </Key>
+          <Property Name="MovementID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="StockItemTypeID" Type="int" Nullable="false" />
+          <Property Name="Quantity" Type="int" Nullable="false" />
+          <Property Name="MovementType" Type="int" Nullable="false" />
+          <Property Name="CalculatedValue" Type="int" StoreGeneratedPattern="Computed" />
+          <Property Name="Description" Type="varchar(max)" />
+          <Property Name="SerialNumber" Type="varchar" MaxLength="50" />
+          <Property Name="UnitPurchasePrice" Type="int" Nullable="false" />
+          <Property Name="MovementReason" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="DateRecorded" Type="datetime" />
+        </EntityType>
+        <EntityType Name="StockItemTypes">
+          <Key>
+            <PropertyRef Name="StockItemTypeID" />
+          </Key>
+          <Property Name="StockItemTypeID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="StockItemName" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="UnitSellingPrice" Type="int" Nullable="false" />
+          <Property Name="Notes" Type="varchar(max)" />
+          <Property Name="Model" Type="varchar" MaxLength="50" />
+          <Property Name="UnitPurchasePrice" Type="int" />
+        </EntityType>
+        <EntityType Name="Supplies">
+          <Key>
+            <PropertyRef Name="SupplyID" />
+          </Key>
+          <Property Name="SupplyID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="DateRecorded" Type="datetime" Nullable="false" />
+          <Property Name="RecordedByUserID" Type="int" Nullable="false" />
+          <Property Name="Notes" Type="varchar(max)" />
+          <Property Name="PurchaseID" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="SupplyItems">
+          <Key>
+            <PropertyRef Name="SupplyItemID" />
+          </Key>
+          <Property Name="SupplyItemID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="SupplyID" Type="int" Nullable="false" />
+          <Property Name="PurchaseItemID" Type="int" Nullable="false" />
+          <Property Name="PurchasedUnitPrice" Type="int" Nullable="false" />
+          <Property Name="PurchasedQuantity" Type="int" Nullable="false" />
+          <Property Name="TotalSpent" Type="int" StoreGeneratedPattern="Computed" />
+          <Property Name="StockItemTypeID" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Transactions">
+          <Key>
+            <PropertyRef Name="TransactionID" />
+          </Key>
+          <Property Name="TransactionID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="TransactionTypeID" Type="int" Nullable="false" />
+          <Property Name="Amount" Type="int" Nullable="false" />
+          <Property Name="Notes" Type="varchar(max)" />
+          <Property Name="RecordedByUserID" Type="int" />
+          <Property Name="DateRecorded" Type="datetime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="TransactionTypes">
+          <Key>
+            <PropertyRef Name="TransactionTypeID" />
+          </Key>
+          <Property Name="TransactionTypeID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="TransactionName" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="DeductionAccountID" Type="int" />
+          <Property Name="IncreasingAccountID" Type="int" />
+        </EntityType>
+        <EntityType Name="Users">
+          <Key>
+            <PropertyRef Name="UserID" />
+          </Key>
+          <Property Name="UserID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="UserName" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="PassWord" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="FirstName" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="LastName" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="DateOfBirth" Type="datetime" />
+          <Property Name="DateCreated" Type="datetime" />
+          <Property Name="IsDeleted" Type="bit" Nullable="false" />
+          <Property Name="IsAdministrator" Type="bit" Nullable="false" />
+        </EntityType>
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'Buzzle.dbo.AccountStats' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="AccountStats">
+          <Key>
+            <PropertyRef Name="AccountID" />
+            <PropertyRef Name="AccountName" />
+          </Key>
+          <Property Name="AccountID" Type="int" Nullable="false" />
+          <Property Name="AccountName" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="amount" Type="int" />
+        </EntityType>
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'Buzzle.dbo.StockItemBalances' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="StockItemBalances">
+          <Key>
+            <PropertyRef Name="StockItemTypeID" />
+            <PropertyRef Name="StockItemName" />
+            <PropertyRef Name="UnitPurchasePrice" />
+            <PropertyRef Name="UnitSellingPrice" />
+          </Key>
+          <Property Name="StockItemTypeID" Type="int" Nullable="false" />
+          <Property Name="StockItemName" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Model" Type="varchar" MaxLength="50" />
+          <Property Name="SerialNumber" Type="varchar" MaxLength="50" />
+          <Property Name="UnitPurchasePrice" Type="int" Nullable="false" />
+          <Property Name="UnitSellingPrice" Type="int" Nullable="false" />
+          <Property Name="QuantityInStock" Type="int" />
+        </EntityType>
+        <Association Name="FK_AccountPostings_Accounts">
+          <End Role="Accounts" Type="Self.Accounts" Multiplicity="1" />
+          <End Role="AccountPostings" Type="Self.AccountPostings" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Accounts">
+              <PropertyRef Name="AccountID" />
+            </Principal>
+            <Dependent Role="AccountPostings">
+              <PropertyRef Name="AccountID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_AccountPostings_Transactions">
+          <End Role="Transactions" Type="Self.Transactions" Multiplicity="1" />
+          <End Role="AccountPostings" Type="Self.AccountPostings" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Transactions">
+              <PropertyRef Name="TransactionID" />
+            </Principal>
+            <Dependent Role="AccountPostings">
+              <PropertyRef Name="TransactionID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_JobHistories_RepairJobs">
+          <End Role="Jobs" Type="Self.Jobs" Multiplicity="1" />
+          <End Role="JobHistories" Type="Self.JobHistories" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Jobs">
+              <PropertyRef Name="JobID" />
+            </Principal>
+            <Dependent Role="JobHistories">
+              <PropertyRef Name="JobID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_JobHistories_Users">
+          <End Role="Users" Type="Self.Users" Multiplicity="1" />
+          <End Role="JobHistories" Type="Self.JobHistories" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Users">
+              <PropertyRef Name="UserID" />
+            </Principal>
+            <Dependent Role="JobHistories">
+              <PropertyRef Name="RecordedByUserID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_JobPayments_Jobs">
+          <End Role="Jobs" Type="Self.Jobs" Multiplicity="1" />
+          <End Role="JobPayments" Type="Self.JobPayments" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Jobs">
+              <PropertyRef Name="JobID" />
+            </Principal>
+            <Dependent Role="JobPayments">
+              <PropertyRef Name="JobID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_JobPayments_Transactions">
+          <End Role="Transactions" Type="Self.Transactions" Multiplicity="1" />
+          <End Role="JobPayments" Type="Self.JobPayments" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Transactions">
+              <PropertyRef Name="TransactionID" />
+            </Principal>
+            <Dependent Role="JobPayments">
+              <PropertyRef Name="TransactionID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Jobs_FaultTypes">
+          <End Role="FaultTypes" Type="Self.FaultTypes" Multiplicity="1" />
+          <End Role="Jobs" Type="Self.Jobs" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="FaultTypes">
+              <PropertyRef Name="FaultTypeID" />
+            </Principal>
+            <Dependent Role="Jobs">
+              <PropertyRef Name="FaultTypeID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Jobs_ItemTypes">
+          <End Role="JobItemTypes" Type="Self.JobItemTypes" Multiplicity="1" />
+          <End Role="Jobs" Type="Self.Jobs" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="JobItemTypes">
+              <PropertyRef Name="ItemTypeID" />
+            </Principal>
+            <Dependent Role="Jobs">
+              <PropertyRef Name="ItemTypeID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Jobs_Users">
+          <End Role="Users" Type="Self.Users" Multiplicity="1" />
+          <End Role="Jobs" Type="Self.Jobs" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Users">
+              <PropertyRef Name="UserID" />
+            </Principal>
+            <Dependent Role="Jobs">
+              <PropertyRef Name="CreatorUserID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_PurchaseItems_Purchases">
+          <End Role="Purchases" Type="Self.Purchases" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="PurchaseItems" Type="Self.PurchaseItems" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Purchases">
+              <PropertyRef Name="PurchaseID" />
+            </Principal>
+            <Dependent Role="PurchaseItems">
+              <PropertyRef Name="PurchaseID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_PurchaseItems_StockItemTypes">
+          <End Role="StockItemTypes" Type="Self.StockItemTypes" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="PurchaseItems" Type="Self.PurchaseItems" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="StockItemTypes">
+              <PropertyRef Name="StockItemTypeID" />
+            </Principal>
+            <Dependent Role="PurchaseItems">
+              <PropertyRef Name="StockItemTypeID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Purchases_Users">
+          <End Role="Users" Type="Self.Users" Multiplicity="1" />
+          <End Role="Purchases" Type="Self.Purchases" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Users">
+              <PropertyRef Name="UserID" />
+            </Principal>
+            <Dependent Role="Purchases">
+              <PropertyRef Name="CreatedByUserID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_SaleItems_Sales">
+          <End Role="Sales" Type="Self.Sales" Multiplicity="1" />
+          <End Role="SaleItems" Type="Self.SaleItems" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Sales">
+              <PropertyRef Name="SaleID" />
+            </Principal>
+            <Dependent Role="SaleItems">
+              <PropertyRef Name="SaleID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_SaleItems_StockItems">
+          <End Role="StockItemTypes" Type="Self.StockItemTypes" Multiplicity="1" />
+          <End Role="SaleItems" Type="Self.SaleItems" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="StockItemTypes">
+              <PropertyRef Name="StockItemTypeID" />
+            </Principal>
+            <Dependent Role="SaleItems">
+              <PropertyRef Name="StockItemTypeID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Sales_Users">
+          <End Role="Users" Type="Self.Users" Multiplicity="1" />
+          <End Role="Sales" Type="Self.Sales" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Users">
+              <PropertyRef Name="UserID" />
+            </Principal>
+            <Dependent Role="Sales">
+              <PropertyRef Name="RecordedByUserID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_StockItemMovements_StockItems">
+          <End Role="StockItemTypes" Type="Self.StockItemTypes" Multiplicity="1" />
+          <End Role="StockItemMovements" Type="Self.StockItemMovements" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="StockItemTypes">
+              <PropertyRef Name="StockItemTypeID" />
+            </Principal>
+            <Dependent Role="StockItemMovements">
+              <PropertyRef Name="StockItemTypeID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Supplies_Purchases">
+          <End Role="Purchases" Type="Self.Purchases" Multiplicity="1" />
+          <End Role="Supplies" Type="Self.Supplies" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Purchases">
+              <PropertyRef Name="PurchaseID" />
+            </Principal>
+            <Dependent Role="Supplies">
+              <PropertyRef Name="PurchaseID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Supplies_Users">
+          <End Role="Users" Type="Self.Users" Multiplicity="1" />
+          <End Role="Supplies" Type="Self.Supplies" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Users">
+              <PropertyRef Name="UserID" />
+            </Principal>
+            <Dependent Role="Supplies">
+              <PropertyRef Name="RecordedByUserID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_SupplyItems_PurchaseItems">
+          <End Role="PurchaseItems" Type="Self.PurchaseItems" Multiplicity="1" />
+          <End Role="SupplyItems" Type="Self.SupplyItems" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="PurchaseItems">
+              <PropertyRef Name="PurchaseItemID" />
+            </Principal>
+            <Dependent Role="SupplyItems">
+              <PropertyRef Name="PurchaseItemID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_SupplyItems_StockItemTypes">
+          <End Role="StockItemTypes" Type="Self.StockItemTypes" Multiplicity="1" />
+          <End Role="SupplyItems" Type="Self.SupplyItems" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="StockItemTypes">
+              <PropertyRef Name="StockItemTypeID" />
+            </Principal>
+            <Dependent Role="SupplyItems">
+              <PropertyRef Name="StockItemTypeID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_SupplyItems_Supplies">
+          <End Role="Supplies" Type="Self.Supplies" Multiplicity="1" />
+          <End Role="SupplyItems" Type="Self.SupplyItems" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Supplies">
+              <PropertyRef Name="SupplyID" />
+            </Principal>
+            <Dependent Role="SupplyItems">
+              <PropertyRef Name="SupplyID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Transactions_TransactionTypes">
+          <End Role="TransactionTypes" Type="Self.TransactionTypes" Multiplicity="1" />
+          <End Role="Transactions" Type="Self.Transactions" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TransactionTypes">
+              <PropertyRef Name="TransactionTypeID" />
+            </Principal>
+            <Dependent Role="Transactions">
+              <PropertyRef Name="TransactionTypeID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Transactions_Users">
+          <End Role="Users" Type="Self.Users" Multiplicity="0..1" />
+          <End Role="Transactions" Type="Self.Transactions" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Users">
+              <PropertyRef Name="UserID" />
+            </Principal>
+            <Dependent Role="Transactions">
+              <PropertyRef Name="RecordedByUserID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_TransactionTypes_Accounts">
+          <End Role="Accounts" Type="Self.Accounts" Multiplicity="0..1" />
+          <End Role="TransactionTypes" Type="Self.TransactionTypes" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Accounts">
+              <PropertyRef Name="AccountID" />
+            </Principal>
+            <Dependent Role="TransactionTypes">
+              <PropertyRef Name="DeductionAccountID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_TransactionTypes_Accounts1">
+          <End Role="Accounts" Type="Self.Accounts" Multiplicity="0..1" />
+          <End Role="TransactionTypes" Type="Self.TransactionTypes" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Accounts">
+              <PropertyRef Name="AccountID" />
+            </Principal>
+            <Dependent Role="TransactionTypes">
+              <PropertyRef Name="IncreasingAccountID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Function Name="FindSales" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="StartDate" Type="datetime" Mode="In" />
+          <Parameter Name="EndDate" Type="datetime" Mode="In" />
+          <Parameter Name="RecordedByUserID" Type="int" Mode="In" />
+        </Function>
+        <Function Name="GetJobPaymentAmount" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="JobID" Type="int" Mode="In" />
+        </Function>
+        <EntityContainer Name="BuzzleModelStoreContainer">
+          <EntitySet Name="AccountPostings" EntityType="Self.AccountPostings" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Accounts" EntityType="Self.Accounts" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Company" EntityType="Self.Company" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="FaultTypes" EntityType="Self.FaultTypes" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="JobItemTypes" EntityType="Self.JobItemTypes" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Jobs" EntityType="Self.Jobs" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="PurchaseItems" EntityType="Self.PurchaseItems" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Purchases" EntityType="Self.Purchases" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="SaleItems" EntityType="Self.SaleItems" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Sales" EntityType="Self.Sales" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="StockItemMovements" EntityType="Self.StockItemMovements" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="StockItemTypes" EntityType="Self.StockItemTypes" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Supplies" EntityType="Self.Supplies" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="SupplyItems" EntityType="Self.SupplyItems" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Transactions" EntityType="Self.Transactions" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="TransactionTypes" EntityType="Self.TransactionTypes" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Users" EntityType="Self.Users" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="BuzzleSettings" EntityType="Self.BuzzleSettings" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [BuzzleSettings].[SettingName] AS [SettingName], 
+    [BuzzleSettings].[SettingValue] AS [SettingValue]
+    FROM [dbo].[BuzzleSettings] AS [BuzzleSettings]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="JobHistories" EntityType="Self.JobHistories" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [JobHistories].[JobID] AS [JobID], 
+    [JobHistories].[HistoryNote] AS [HistoryNote], 
+    [JobHistories].[DateInserted] AS [DateInserted], 
+    [JobHistories].[RecordedByUserID] AS [RecordedByUserID]
+    FROM [dbo].[JobHistories] AS [JobHistories]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="JobPayments" EntityType="Self.JobPayments" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [JobPayments].[JobID] AS [JobID], 
+    [JobPayments].[TransactionID] AS [TransactionID], 
+    [JobPayments].[Notes] AS [Notes]
+    FROM [dbo].[JobPayments] AS [JobPayments]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="LookupData" EntityType="Self.LookupData" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [LookupData].[TableNumber] AS [TableNumber], 
+    [LookupData].[TableData] AS [TableData]
+    FROM [dbo].[LookupData] AS [LookupData]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="AccountStats" EntityType="Self.AccountStats" store:Type="Views" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [AccountStats].[AccountID] AS [AccountID], 
+    [AccountStats].[AccountName] AS [AccountName], 
+    [AccountStats].[amount] AS [amount]
+    FROM [dbo].[AccountStats] AS [AccountStats]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="StockItemBalances" EntityType="Self.StockItemBalances" store:Type="Views" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [StockItemBalances].[StockItemTypeID] AS [StockItemTypeID], 
+    [StockItemBalances].[StockItemName] AS [StockItemName], 
+    [StockItemBalances].[Model] AS [Model], 
+    [StockItemBalances].[SerialNumber] AS [SerialNumber], 
+    [StockItemBalances].[UnitPurchasePrice] AS [UnitPurchasePrice], 
+    [StockItemBalances].[UnitSellingPrice] AS [UnitSellingPrice], 
+    [StockItemBalances].[QuantityInStock] AS [QuantityInStock]
+    FROM [dbo].[StockItemBalances] AS [StockItemBalances]</DefiningQuery>
+          </EntitySet>
+          <AssociationSet Name="FK_AccountPostings_Accounts" Association="Self.FK_AccountPostings_Accounts">
+            <End Role="Accounts" EntitySet="Accounts" />
+            <End Role="AccountPostings" EntitySet="AccountPostings" />
+          </AssociationSet>
+          <AssociationSet Name="FK_AccountPostings_Transactions" Association="Self.FK_AccountPostings_Transactions">
+            <End Role="Transactions" EntitySet="Transactions" />
+            <End Role="AccountPostings" EntitySet="AccountPostings" />
+          </AssociationSet>
+          <AssociationSet Name="FK_JobHistories_RepairJobs" Association="Self.FK_JobHistories_RepairJobs">
+            <End Role="Jobs" EntitySet="Jobs" />
+            <End Role="JobHistories" EntitySet="JobHistories" />
+          </AssociationSet>
+          <AssociationSet Name="FK_JobHistories_Users" Association="Self.FK_JobHistories_Users">
+            <End Role="Users" EntitySet="Users" />
+            <End Role="JobHistories" EntitySet="JobHistories" />
+          </AssociationSet>
+          <AssociationSet Name="FK_JobPayments_Jobs" Association="Self.FK_JobPayments_Jobs">
+            <End Role="Jobs" EntitySet="Jobs" />
+            <End Role="JobPayments" EntitySet="JobPayments" />
+          </AssociationSet>
+          <AssociationSet Name="FK_JobPayments_Transactions" Association="Self.FK_JobPayments_Transactions">
+            <End Role="Transactions" EntitySet="Transactions" />
+            <End Role="JobPayments" EntitySet="JobPayments" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Jobs_FaultTypes" Association="Self.FK_Jobs_FaultTypes">
+            <End Role="FaultTypes" EntitySet="FaultTypes" />
+            <End Role="Jobs" EntitySet="Jobs" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Jobs_ItemTypes" Association="Self.FK_Jobs_ItemTypes">
+            <End Role="JobItemTypes" EntitySet="JobItemTypes" />
+            <End Role="Jobs" EntitySet="Jobs" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Jobs_Users" Association="Self.FK_Jobs_Users">
+            <End Role="Users" EntitySet="Users" />
+            <End Role="Jobs" EntitySet="Jobs" />
+          </AssociationSet>
+          <AssociationSet Name="FK_PurchaseItems_Purchases" Association="Self.FK_PurchaseItems_Purchases">
+            <End Role="Purchases" EntitySet="Purchases" />
+            <End Role="PurchaseItems" EntitySet="PurchaseItems" />
+          </AssociationSet>
+          <AssociationSet Name="FK_PurchaseItems_StockItemTypes" Association="Self.FK_PurchaseItems_StockItemTypes">
+            <End Role="StockItemTypes" EntitySet="StockItemTypes" />
+            <End Role="PurchaseItems" EntitySet="PurchaseItems" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Purchases_Users" Association="Self.FK_Purchases_Users">
+            <End Role="Users" EntitySet="Users" />
+            <End Role="Purchases" EntitySet="Purchases" />
+          </AssociationSet>
+          <AssociationSet Name="FK_SaleItems_Sales" Association="Self.FK_SaleItems_Sales">
+            <End Role="Sales" EntitySet="Sales" />
+            <End Role="SaleItems" EntitySet="SaleItems" />
+          </AssociationSet>
+          <AssociationSet Name="FK_SaleItems_StockItems" Association="Self.FK_SaleItems_StockItems">
+            <End Role="StockItemTypes" EntitySet="StockItemTypes" />
+            <End Role="SaleItems" EntitySet="SaleItems" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Sales_Users" Association="Self.FK_Sales_Users">
+            <End Role="Users" EntitySet="Users" />
+            <End Role="Sales" EntitySet="Sales" />
+          </AssociationSet>
+          <AssociationSet Name="FK_StockItemMovements_StockItems" Association="Self.FK_StockItemMovements_StockItems">
+            <End Role="StockItemTypes" EntitySet="StockItemTypes" />
+            <End Role="StockItemMovements" EntitySet="StockItemMovements" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Supplies_Purchases" Association="Self.FK_Supplies_Purchases">
+            <End Role="Purchases" EntitySet="Purchases" />
+            <End Role="Supplies" EntitySet="Supplies" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Supplies_Users" Association="Self.FK_Supplies_Users">
+            <End Role="Users" EntitySet="Users" />
+            <End Role="Supplies" EntitySet="Supplies" />
+          </AssociationSet>
+          <AssociationSet Name="FK_SupplyItems_PurchaseItems" Association="Self.FK_SupplyItems_PurchaseItems">
+            <End Role="PurchaseItems" EntitySet="PurchaseItems" />
+            <End Role="SupplyItems" EntitySet="SupplyItems" />
+          </AssociationSet>
+          <AssociationSet Name="FK_SupplyItems_StockItemTypes" Association="Self.FK_SupplyItems_StockItemTypes">
+            <End Role="StockItemTypes" EntitySet="StockItemTypes" />
+            <End Role="SupplyItems" EntitySet="SupplyItems" />
+          </AssociationSet>
+          <AssociationSet Name="FK_SupplyItems_Supplies" Association="Self.FK_SupplyItems_Supplies">
+            <End Role="Supplies" EntitySet="Supplies" />
+            <End Role="SupplyItems" EntitySet="SupplyItems" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Transactions_TransactionTypes" Association="Self.FK_Transactions_TransactionTypes">
+            <End Role="TransactionTypes" EntitySet="TransactionTypes" />
+            <End Role="Transactions" EntitySet="Transactions" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Transactions_Users" Association="Self.FK_Transactions_Users">
+            <End Role="Users" EntitySet="Users" />
+            <End Role="Transactions" EntitySet="Transactions" />
+          </AssociationSet>
+          <AssociationSet Name="FK_TransactionTypes_Accounts" Association="Self.FK_TransactionTypes_Accounts">
+            <End Role="Accounts" EntitySet="Accounts" />
+            <End Role="TransactionTypes" EntitySet="TransactionTypes" />
+          </AssociationSet>
+          <AssociationSet Name="FK_TransactionTypes_Accounts1" Association="Self.FK_TransactionTypes_Accounts1">
+            <End Role="Accounts" EntitySet="Accounts" />
+            <End Role="TransactionTypes" EntitySet="TransactionTypes" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="BuzzleModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="AccountPosting">
+          <Key>
+            <PropertyRef Name="PostingID" />
+          </Key>
+          <Property Name="PostingID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="TransactionID" Type="Int32" Nullable="false" />
+          <Property Name="AccountID" Type="Int32" Nullable="false" />
+          <Property Name="PostingType" Type="Int32" Nullable="false" />
+          <Property Name="Amount" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Account" Relationship="Self.FK_AccountPostings_Accounts" FromRole="AccountPostings" ToRole="Accounts" />
+          <NavigationProperty Name="Transaction" Relationship="Self.FK_AccountPostings_Transactions" FromRole="AccountPostings" ToRole="Transactions" />
+        </EntityType>
+        <EntityType Name="Account">
+          <Key>
+            <PropertyRef Name="AccountID" />
+          </Key>
+          <Property Name="AccountID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="AccountName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="AccountPostings" Relationship="Self.FK_AccountPostings_Accounts" FromRole="Accounts" ToRole="AccountPostings" />
+          <NavigationProperty Name="TransactionTypes" Relationship="Self.FK_TransactionTypes_Accounts" FromRole="Accounts" ToRole="TransactionTypes" />
+          <NavigationProperty Name="TransactionTypes1" Relationship="Self.FK_TransactionTypes_Accounts1" FromRole="Accounts" ToRole="TransactionTypes" />
+        </EntityType>
+        <EntityType Name="Company">
+          <Key>
+            <PropertyRef Name="CompanyID" />
+          </Key>
+          <Property Name="CompanyID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="CompanyName" Type="String" MaxLength="150" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="CompanyLogo" Type="Binary" MaxLength="Max" FixedLength="false" />
+          <Property Name="PhoneNumber" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Email" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="FaultType">
+          <Key>
+            <PropertyRef Name="FaultTypeID" />
+          </Key>
+          <Property Name="FaultTypeID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="FaultName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Notes" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="Jobs" Relationship="BuzzleModel.FK_Jobs_FaultTypes" FromRole="FaultType" ToRole="Job" />
+        </EntityType>
+        <EntityType Name="JobItemType">
+          <Key>
+            <PropertyRef Name="ItemTypeID" />
+          </Key>
+          <Property Name="ItemTypeID" Type="Int32" Nullable="false" />
+          <Property Name="ItemName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Notes" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+          <NavigationProperty Name="Jobs" Relationship="BuzzleModel.FK_Jobs_ItemTypes" FromRole="JobItemType" ToRole="Job" />
+        </EntityType>
+        <EntityType Name="PurchaseItem">
+          <Key>
+            <PropertyRef Name="PurchaseItemID" />
+          </Key>
+          <Property Name="PurchaseItemID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="PurchaseID" Type="Int32" Nullable="false" />
+          <Property Name="StockItemTypeID" Type="Int32" Nullable="false" />
+          <Property Name="ProposedUnitPrice" Type="Int32" Nullable="false" />
+          <Property Name="Notes" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Quantity" Type="Int32" Nullable="false" />
+          <Property Name="TotalProposedPrice" Type="Int32" annotation:StoreGeneratedPattern="Computed" />
+          <Property Name="IsSupplied" Type="Boolean" Nullable="false" />
+          <NavigationProperty Name="Purchase" Relationship="Self.FK_PurchaseItems_Purchases" FromRole="PurchaseItems" ToRole="Purchases" />
+          <NavigationProperty Name="StockItemType" Relationship="Self.FK_PurchaseItems_StockItemTypes" FromRole="PurchaseItems" ToRole="StockItemTypes" />
+          <NavigationProperty Name="SupplyItems" Relationship="Self.FK_SupplyItems_PurchaseItems" FromRole="PurchaseItems" ToRole="SupplyItems" />
+        </EntityType>
+        <EntityType Name="Purchase">
+          <Key>
+            <PropertyRef Name="PurchaseID" />
+          </Key>
+          <Property Name="PurchaseID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="DateRecorded" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="CreatedByUserID" Type="Int32" Nullable="false" />
+          <Property Name="Status" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <NavigationProperty Name="PurchaseItems" Relationship="Self.FK_PurchaseItems_Purchases" FromRole="Purchases" ToRole="PurchaseItems" />
+          <NavigationProperty Name="User" Relationship="Self.FK_Purchases_Users" FromRole="Purchases" ToRole="Users" />
+          <NavigationProperty Name="Supplies" Relationship="Self.FK_Supplies_Purchases" FromRole="Purchases" ToRole="Supplies" />
+        </EntityType>
+        <EntityType Name="SaleItem">
+          <Key>
+            <PropertyRef Name="SaleItemID" />
+          </Key>
+          <Property Name="SaleItemID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="SaleID" Type="Int64" Nullable="false" />
+          <Property Name="StockItemTypeID" Type="Int32" Nullable="false" />
+          <Property Name="UnitSoldPrice" Type="Int32" Nullable="false" />
+          <Property Name="Quantity" Type="Int32" Nullable="false" />
+          <Property Name="TotalSoldPrice" Type="Int32" annotation:StoreGeneratedPattern="Computed" />
+          <Property Name="UnitPurchasePrice" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Sale" Relationship="Self.FK_SaleItems_Sales" FromRole="SaleItems" ToRole="Sales" />
+          <NavigationProperty Name="StockItemType" Relationship="Self.FK_SaleItems_StockItems" FromRole="SaleItems" ToRole="StockItemTypes" />
+        </EntityType>
+        <EntityType Name="Sale">
+          <Key>
+            <PropertyRef Name="SaleID" />
+          </Key>
+          <Property Name="SaleID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="CustomerName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="DateRecorded" Type="DateTime" Precision="3" />
+          <Property Name="RecordedByUserID" Type="Int32" Nullable="false" />
+          <Property Name="CustomerDetails" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="SaleItems" Relationship="Self.FK_SaleItems_Sales" FromRole="Sales" ToRole="SaleItems" />
+          <NavigationProperty Name="User" Relationship="Self.FK_Sales_Users" FromRole="Sales" ToRole="Users" />
+        </EntityType>
+        <EntityType Name="StockItemMovement">
+          <Key>
+            <PropertyRef Name="MovementID" />
+          </Key>
+          <Property Name="MovementID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="StockItemTypeID" Type="Int32" Nullable="false" />
+          <Property Name="Quantity" Type="Int32" Nullable="false" />
+          <Property Name="MovementType" Type="Int32" Nullable="false" />
+          <Property Name="CalculatedValue" Type="Int32" annotation:StoreGeneratedPattern="Computed" />
+          <Property Name="Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="SerialNumber" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="UnitPurchasePrice" Type="Int32" Nullable="false" />
+          <Property Name="MovementReason" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="DateRecorded" Type="DateTime" Precision="3" />
+          <NavigationProperty Name="StockItemType" Relationship="Self.FK_StockItemMovements_StockItems" FromRole="StockItemMovements" ToRole="StockItemTypes" />
+        </EntityType>
+        <EntityType Name="StockItemType">
+          <Key>
+            <PropertyRef Name="StockItemTypeID" />
+          </Key>
+          <Property Name="StockItemTypeID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="StockItemName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="UnitSellingPrice" Type="Int32" Nullable="false" />
+          <Property Name="Notes" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Model" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="UnitPurchasePrice" Type="Int32" />
+          <NavigationProperty Name="PurchaseItems" Relationship="Self.FK_PurchaseItems_StockItemTypes" FromRole="StockItemTypes" ToRole="PurchaseItems" />
+          <NavigationProperty Name="SaleItems" Relationship="Self.FK_SaleItems_StockItems" FromRole="StockItemTypes" ToRole="SaleItems" />
+          <NavigationProperty Name="StockItemMovements" Relationship="Self.FK_StockItemMovements_StockItems" FromRole="StockItemTypes" ToRole="StockItemMovements" />
+          <NavigationProperty Name="SupplyItems" Relationship="Self.FK_SupplyItems_StockItemTypes" FromRole="StockItemTypes" ToRole="SupplyItems" />
+        </EntityType>
+        <EntityType Name="Supply">
+          <Key>
+            <PropertyRef Name="SupplyID" />
+          </Key>
+          <Property Name="SupplyID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="DateRecorded" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="RecordedByUserID" Type="Int32" Nullable="false" />
+          <Property Name="Notes" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="PurchaseID" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Purchase" Relationship="Self.FK_Supplies_Purchases" FromRole="Supplies" ToRole="Purchases" />
+          <NavigationProperty Name="User" Relationship="Self.FK_Supplies_Users" FromRole="Supplies" ToRole="Users" />
+          <NavigationProperty Name="SupplyItems" Relationship="Self.FK_SupplyItems_Supplies" FromRole="Supplies" ToRole="SupplyItems" />
+        </EntityType>
+        <EntityType Name="SupplyItem">
+          <Key>
+            <PropertyRef Name="SupplyItemID" />
+          </Key>
+          <Property Name="SupplyItemID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="SupplyID" Type="Int32" Nullable="false" />
+          <Property Name="PurchaseItemID" Type="Int32" Nullable="false" />
+          <Property Name="PurchasedUnitPrice" Type="Int32" Nullable="false" />
+          <Property Name="PurchasedQuantity" Type="Int32" Nullable="false" />
+          <Property Name="TotalSpent" Type="Int32" annotation:StoreGeneratedPattern="Computed" />
+          <Property Name="StockItemTypeID" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="PurchaseItem" Relationship="Self.FK_SupplyItems_PurchaseItems" FromRole="SupplyItems" ToRole="PurchaseItems" />
+          <NavigationProperty Name="StockItemType" Relationship="Self.FK_SupplyItems_StockItemTypes" FromRole="SupplyItems" ToRole="StockItemTypes" />
+          <NavigationProperty Name="Supply" Relationship="Self.FK_SupplyItems_Supplies" FromRole="SupplyItems" ToRole="Supplies" />
+        </EntityType>
+        <EntityType Name="Transaction">
+          <Key>
+            <PropertyRef Name="TransactionID" />
+          </Key>
+          <Property Name="TransactionID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="TransactionTypeID" Type="Int32" Nullable="false" />
+          <Property Name="Amount" Type="Int32" Nullable="false" />
+          <Property Name="Notes" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="RecordedByUserID" Type="Int32" />
+          <Property Name="DateRecorded" Type="DateTime" Nullable="false" Precision="3" />
+          <NavigationProperty Name="AccountPostings" Relationship="Self.FK_AccountPostings_Transactions" FromRole="Transactions" ToRole="AccountPostings" />
+          <NavigationProperty Name="JobPayments" Relationship="Self.FK_JobPayments_Transactions" FromRole="Transactions" ToRole="JobPayments" />
+          <NavigationProperty Name="TransactionType" Relationship="Self.FK_Transactions_TransactionTypes" FromRole="Transactions" ToRole="TransactionTypes" />
+          <NavigationProperty Name="User" Relationship="Self.FK_Transactions_Users" FromRole="Transactions" ToRole="Users" />
+        </EntityType>
+        <EntityType Name="TransactionType">
+          <Key>
+            <PropertyRef Name="TransactionTypeID" />
+          </Key>
+          <Property Name="TransactionTypeID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="TransactionName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="DeductionAccountID" Type="Int32" />
+          <Property Name="IncreasingAccountID" Type="Int32" />
+          <NavigationProperty Name="Account" Relationship="Self.FK_TransactionTypes_Accounts" FromRole="TransactionTypes" ToRole="Accounts" />
+          <NavigationProperty Name="Account1" Relationship="Self.FK_TransactionTypes_Accounts1" FromRole="TransactionTypes" ToRole="Accounts" />
+          <NavigationProperty Name="Transactions" Relationship="Self.FK_Transactions_TransactionTypes" FromRole="TransactionTypes" ToRole="Transactions" />
+        </EntityType>
+        <EntityType Name="User">
+          <Key>
+            <PropertyRef Name="UserID" />
+          </Key>
+          <Property Name="UserID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="UserName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="PassWord" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="FirstName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="LastName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="DateOfBirth" Type="DateTime" Precision="3" />
+          <Property Name="DateCreated" Type="DateTime" Precision="3" />
+          <Property Name="IsDeleted" Type="Boolean" Nullable="false" />
+          <Property Name="IsAdministrator" Type="Boolean" Nullable="false" />
+          <NavigationProperty Name="Purchases" Relationship="Self.FK_Purchases_Users" FromRole="Users" ToRole="Purchases" />
+          <NavigationProperty Name="Sales" Relationship="Self.FK_Sales_Users" FromRole="Users" ToRole="Sales" />
+          <NavigationProperty Name="Supplies" Relationship="Self.FK_Supplies_Users" FromRole="Users" ToRole="Supplies" />
+          <NavigationProperty Name="Transactions" Relationship="Self.FK_Transactions_Users" FromRole="Users" ToRole="Transactions" />
+          <NavigationProperty Name="JobHistories" Relationship="Self.FK_JobHistories_Users" FromRole="Users" ToRole="JobHistories" />
+          <NavigationProperty Name="Jobs" Relationship="BuzzleModel.FK_Jobs_Users" FromRole="User" ToRole="Job" />
+        </EntityType>
+        <EntityType Name="BuzzleSetting">
+          <Key>
+            <PropertyRef Name="SettingName" />
+            <PropertyRef Name="SettingValue" />
+          </Key>
+          <Property Name="SettingName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="SettingValue" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+        </EntityType>
+        <EntityType Name="JobHistory">
+          <Key>
+            <PropertyRef Name="JobID" />
+            <PropertyRef Name="HistoryNote" />
+            <PropertyRef Name="DateInserted" />
+            <PropertyRef Name="RecordedByUserID" />
+          </Key>
+          <Property Name="JobID" Type="Int32" Nullable="false" />
+          <Property Name="HistoryNote" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="DateInserted" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="RecordedByUserID" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="User" Relationship="Self.FK_JobHistories_Users" FromRole="JobHistories" ToRole="Users" />
+          <NavigationProperty Name="Job" Relationship="BuzzleModel.FK_JobHistories_RepairJobs" FromRole="JobHistory" ToRole="Job" />
+        </EntityType>
+        <EntityType Name="JobPayment">
+          <Key>
+            <PropertyRef Name="JobID" />
+            <PropertyRef Name="TransactionID" />
+          </Key>
+          <Property Name="JobID" Type="Int32" Nullable="false" />
+          <Property Name="TransactionID" Type="Int32" Nullable="false" />
+          <Property Name="Notes" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="Transaction" Relationship="Self.FK_JobPayments_Transactions" FromRole="JobPayments" ToRole="Transactions" />
+          <NavigationProperty Name="Job" Relationship="BuzzleModel.FK_JobPayments_Jobs" FromRole="JobPayment" ToRole="Job" />
+        </EntityType>
+        <EntityType Name="LookupData">
+          <Key>
+            <PropertyRef Name="TableNumber" />
+            <PropertyRef Name="TableData" />
+          </Key>
+          <Property Name="TableNumber" Type="Byte" Nullable="false" />
+          <Property Name="TableData" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+        </EntityType>
+        <EntityType Name="AccountStat">
+          <Key>
+            <PropertyRef Name="AccountID" />
+            <PropertyRef Name="AccountName" />
+          </Key>
+          <Property Name="AccountID" Type="Int32" Nullable="false" />
+          <Property Name="AccountName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="amount" Type="Int32" />
+        </EntityType>
+        <EntityType Name="StockItemBalance">
+          <Key>
+            <PropertyRef Name="StockItemTypeID" />
+            <PropertyRef Name="StockItemName" />
+            <PropertyRef Name="UnitPurchasePrice" />
+            <PropertyRef Name="UnitSellingPrice" />
+          </Key>
+          <Property Name="StockItemTypeID" Type="Int32" Nullable="false" />
+          <Property Name="StockItemName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Model" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="SerialNumber" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="UnitPurchasePrice" Type="Int32" Nullable="false" />
+          <Property Name="UnitSellingPrice" Type="Int32" Nullable="false" />
+          <Property Name="QuantityInStock" Type="Int32" />
+        </EntityType>
+        <Association Name="FK_AccountPostings_Accounts">
+          <End Role="Accounts" Type="Self.Account" Multiplicity="1" />
+          <End Role="AccountPostings" Type="Self.AccountPosting" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Accounts">
+              <PropertyRef Name="AccountID" />
+            </Principal>
+            <Dependent Role="AccountPostings">
+              <PropertyRef Name="AccountID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_AccountPostings_Transactions">
+          <End Role="Transactions" Type="Self.Transaction" Multiplicity="1" />
+          <End Role="AccountPostings" Type="Self.AccountPosting" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Transactions">
+              <PropertyRef Name="TransactionID" />
+            </Principal>
+            <Dependent Role="AccountPostings">
+              <PropertyRef Name="TransactionID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_TransactionTypes_Accounts">
+          <End Role="Accounts" Type="Self.Account" Multiplicity="0..1" />
+          <End Role="TransactionTypes" Type="Self.TransactionType" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Accounts">
+              <PropertyRef Name="AccountID" />
+            </Principal>
+            <Dependent Role="TransactionTypes">
+              <PropertyRef Name="DeductionAccountID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_TransactionTypes_Accounts1">
+          <End Role="Accounts" Type="Self.Account" Multiplicity="0..1" />
+          <End Role="TransactionTypes" Type="Self.TransactionType" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Accounts">
+              <PropertyRef Name="AccountID" />
+            </Principal>
+            <Dependent Role="TransactionTypes">
+              <PropertyRef Name="IncreasingAccountID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_PurchaseItems_Purchases">
+          <End Role="Purchases" Type="Self.Purchase" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="PurchaseItems" Type="Self.PurchaseItem" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Purchases">
+              <PropertyRef Name="PurchaseID" />
+            </Principal>
+            <Dependent Role="PurchaseItems">
+              <PropertyRef Name="PurchaseID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_PurchaseItems_StockItemTypes">
+          <End Role="StockItemTypes" Type="Self.StockItemType" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="PurchaseItems" Type="Self.PurchaseItem" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="StockItemTypes">
+              <PropertyRef Name="StockItemTypeID" />
+            </Principal>
+            <Dependent Role="PurchaseItems">
+              <PropertyRef Name="StockItemTypeID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_SupplyItems_PurchaseItems">
+          <End Role="PurchaseItems" Type="Self.PurchaseItem" Multiplicity="1" />
+          <End Role="SupplyItems" Type="Self.SupplyItem" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="PurchaseItems">
+              <PropertyRef Name="PurchaseItemID" />
+            </Principal>
+            <Dependent Role="SupplyItems">
+              <PropertyRef Name="PurchaseItemID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Purchases_Users">
+          <End Role="Users" Type="Self.User" Multiplicity="1" />
+          <End Role="Purchases" Type="Self.Purchase" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Users">
+              <PropertyRef Name="UserID" />
+            </Principal>
+            <Dependent Role="Purchases">
+              <PropertyRef Name="CreatedByUserID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Supplies_Purchases">
+          <End Role="Purchases" Type="Self.Purchase" Multiplicity="1" />
+          <End Role="Supplies" Type="Self.Supply" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Purchases">
+              <PropertyRef Name="PurchaseID" />
+            </Principal>
+            <Dependent Role="Supplies">
+              <PropertyRef Name="PurchaseID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_SaleItems_Sales">
+          <End Role="Sales" Type="Self.Sale" Multiplicity="1" />
+          <End Role="SaleItems" Type="Self.SaleItem" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Sales">
+              <PropertyRef Name="SaleID" />
+            </Principal>
+            <Dependent Role="SaleItems">
+              <PropertyRef Name="SaleID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_SaleItems_StockItems">
+          <End Role="StockItemTypes" Type="Self.StockItemType" Multiplicity="1" />
+          <End Role="SaleItems" Type="Self.SaleItem" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="StockItemTypes">
+              <PropertyRef Name="StockItemTypeID" />
+            </Principal>
+            <Dependent Role="SaleItems">
+              <PropertyRef Name="StockItemTypeID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Sales_Users">
+          <End Role="Users" Type="Self.User" Multiplicity="1" />
+          <End Role="Sales" Type="Self.Sale" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Users">
+              <PropertyRef Name="UserID" />
+            </Principal>
+            <Dependent Role="Sales">
+              <PropertyRef Name="RecordedByUserID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_StockItemMovements_StockItems">
+          <End Role="StockItemTypes" Type="Self.StockItemType" Multiplicity="1" />
+          <End Role="StockItemMovements" Type="Self.StockItemMovement" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="StockItemTypes">
+              <PropertyRef Name="StockItemTypeID" />
+            </Principal>
+            <Dependent Role="StockItemMovements">
+              <PropertyRef Name="StockItemTypeID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_SupplyItems_StockItemTypes">
+          <End Role="StockItemTypes" Type="Self.StockItemType" Multiplicity="1" />
+          <End Role="SupplyItems" Type="Self.SupplyItem" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="StockItemTypes">
+              <PropertyRef Name="StockItemTypeID" />
+            </Principal>
+            <Dependent Role="SupplyItems">
+              <PropertyRef Name="StockItemTypeID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Supplies_Users">
+          <End Role="Users" Type="Self.User" Multiplicity="1" />
+          <End Role="Supplies" Type="Self.Supply" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Users">
+              <PropertyRef Name="UserID" />
+            </Principal>
+            <Dependent Role="Supplies">
+              <PropertyRef Name="RecordedByUserID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_SupplyItems_Supplies">
+          <End Role="Supplies" Type="Self.Supply" Multiplicity="1" />
+          <End Role="SupplyItems" Type="Self.SupplyItem" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Supplies">
+              <PropertyRef Name="SupplyID" />
+            </Principal>
+            <Dependent Role="SupplyItems">
+              <PropertyRef Name="SupplyID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_JobPayments_Transactions">
+          <End Role="Transactions" Type="Self.Transaction" Multiplicity="1" />
+          <End Role="JobPayments" Type="Self.JobPayment" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Transactions">
+              <PropertyRef Name="TransactionID" />
+            </Principal>
+            <Dependent Role="JobPayments">
+              <PropertyRef Name="TransactionID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Transactions_TransactionTypes">
+          <End Role="TransactionTypes" Type="Self.TransactionType" Multiplicity="1" />
+          <End Role="Transactions" Type="Self.Transaction" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TransactionTypes">
+              <PropertyRef Name="TransactionTypeID" />
+            </Principal>
+            <Dependent Role="Transactions">
+              <PropertyRef Name="TransactionTypeID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Transactions_Users">
+          <End Role="Users" Type="Self.User" Multiplicity="0..1" />
+          <End Role="Transactions" Type="Self.Transaction" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Users">
+              <PropertyRef Name="UserID" />
+            </Principal>
+            <Dependent Role="Transactions">
+              <PropertyRef Name="RecordedByUserID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_JobHistories_Users">
+          <End Role="Users" Type="Self.User" Multiplicity="1" />
+          <End Role="JobHistories" Type="Self.JobHistory" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Users">
+              <PropertyRef Name="UserID" />
+            </Principal>
+            <Dependent Role="JobHistories">
+              <PropertyRef Name="RecordedByUserID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="BuzzleEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="AccountPostings" EntityType="Self.AccountPosting" />
+          <EntitySet Name="Accounts" EntityType="Self.Account" />
+          <EntitySet Name="Companies" EntityType="Self.Company" />
+          <EntitySet Name="FaultTypes" EntityType="Self.FaultType" />
+          <EntitySet Name="JobItemTypes" EntityType="Self.JobItemType" />
+          <EntitySet Name="PurchaseItems" EntityType="Self.PurchaseItem" />
+          <EntitySet Name="Purchases" EntityType="Self.Purchase" />
+          <EntitySet Name="SaleItems" EntityType="Self.SaleItem" />
+          <EntitySet Name="Sales" EntityType="Self.Sale" />
+          <EntitySet Name="StockItemMovements" EntityType="Self.StockItemMovement" />
+          <EntitySet Name="StockItemTypes" EntityType="Self.StockItemType" />
+          <EntitySet Name="Supplies" EntityType="Self.Supply" />
+          <EntitySet Name="SupplyItems" EntityType="Self.SupplyItem" />
+          <EntitySet Name="Transactions" EntityType="Self.Transaction" />
+          <EntitySet Name="TransactionTypes" EntityType="Self.TransactionType" />
+          <EntitySet Name="Users" EntityType="Self.User" />
+          <EntitySet Name="BuzzleSettings" EntityType="Self.BuzzleSetting" />
+          <EntitySet Name="JobHistories" EntityType="Self.JobHistory" />
+          <EntitySet Name="JobPayments" EntityType="Self.JobPayment" />
+          <EntitySet Name="LookupDatas" EntityType="Self.LookupData" />
+          <EntitySet Name="AccountStats" EntityType="Self.AccountStat" />
+          <EntitySet Name="StockItemBalances" EntityType="Self.StockItemBalance" />
+          <AssociationSet Name="FK_AccountPostings_Accounts" Association="Self.FK_AccountPostings_Accounts">
+            <End Role="Accounts" EntitySet="Accounts" />
+            <End Role="AccountPostings" EntitySet="AccountPostings" />
+          </AssociationSet>
+          <AssociationSet Name="FK_AccountPostings_Transactions" Association="Self.FK_AccountPostings_Transactions">
+            <End Role="Transactions" EntitySet="Transactions" />
+            <End Role="AccountPostings" EntitySet="AccountPostings" />
+          </AssociationSet>
+          <AssociationSet Name="FK_TransactionTypes_Accounts" Association="Self.FK_TransactionTypes_Accounts">
+            <End Role="Accounts" EntitySet="Accounts" />
+            <End Role="TransactionTypes" EntitySet="TransactionTypes" />
+          </AssociationSet>
+          <AssociationSet Name="FK_TransactionTypes_Accounts1" Association="Self.FK_TransactionTypes_Accounts1">
+            <End Role="Accounts" EntitySet="Accounts" />
+            <End Role="TransactionTypes" EntitySet="TransactionTypes" />
+          </AssociationSet>
+          <AssociationSet Name="FK_PurchaseItems_Purchases" Association="Self.FK_PurchaseItems_Purchases">
+            <End Role="Purchases" EntitySet="Purchases" />
+            <End Role="PurchaseItems" EntitySet="PurchaseItems" />
+          </AssociationSet>
+          <AssociationSet Name="FK_PurchaseItems_StockItemTypes" Association="Self.FK_PurchaseItems_StockItemTypes">
+            <End Role="StockItemTypes" EntitySet="StockItemTypes" />
+            <End Role="PurchaseItems" EntitySet="PurchaseItems" />
+          </AssociationSet>
+          <AssociationSet Name="FK_SupplyItems_PurchaseItems" Association="Self.FK_SupplyItems_PurchaseItems">
+            <End Role="PurchaseItems" EntitySet="PurchaseItems" />
+            <End Role="SupplyItems" EntitySet="SupplyItems" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Purchases_Users" Association="Self.FK_Purchases_Users">
+            <End Role="Users" EntitySet="Users" />
+            <End Role="Purchases" EntitySet="Purchases" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Supplies_Purchases" Association="Self.FK_Supplies_Purchases">
+            <End Role="Purchases" EntitySet="Purchases" />
+            <End Role="Supplies" EntitySet="Supplies" />
+          </AssociationSet>
+          <AssociationSet Name="FK_SaleItems_Sales" Association="Self.FK_SaleItems_Sales">
+            <End Role="Sales" EntitySet="Sales" />
+            <End Role="SaleItems" EntitySet="SaleItems" />
+          </AssociationSet>
+          <AssociationSet Name="FK_SaleItems_StockItems" Association="Self.FK_SaleItems_StockItems">
+            <End Role="StockItemTypes" EntitySet="StockItemTypes" />
+            <End Role="SaleItems" EntitySet="SaleItems" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Sales_Users" Association="Self.FK_Sales_Users">
+            <End Role="Users" EntitySet="Users" />
+            <End Role="Sales" EntitySet="Sales" />
+          </AssociationSet>
+          <AssociationSet Name="FK_StockItemMovements_StockItems" Association="Self.FK_StockItemMovements_StockItems">
+            <End Role="StockItemTypes" EntitySet="StockItemTypes" />
+            <End Role="StockItemMovements" EntitySet="StockItemMovements" />
+          </AssociationSet>
+          <AssociationSet Name="FK_SupplyItems_StockItemTypes" Association="Self.FK_SupplyItems_StockItemTypes">
+            <End Role="StockItemTypes" EntitySet="StockItemTypes" />
+            <End Role="SupplyItems" EntitySet="SupplyItems" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Supplies_Users" Association="Self.FK_Supplies_Users">
+            <End Role="Users" EntitySet="Users" />
+            <End Role="Supplies" EntitySet="Supplies" />
+          </AssociationSet>
+          <AssociationSet Name="FK_SupplyItems_Supplies" Association="Self.FK_SupplyItems_Supplies">
+            <End Role="Supplies" EntitySet="Supplies" />
+            <End Role="SupplyItems" EntitySet="SupplyItems" />
+          </AssociationSet>
+          <AssociationSet Name="FK_JobPayments_Transactions" Association="Self.FK_JobPayments_Transactions">
+            <End Role="Transactions" EntitySet="Transactions" />
+            <End Role="JobPayments" EntitySet="JobPayments" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Transactions_TransactionTypes" Association="Self.FK_Transactions_TransactionTypes">
+            <End Role="TransactionTypes" EntitySet="TransactionTypes" />
+            <End Role="Transactions" EntitySet="Transactions" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Transactions_Users" Association="Self.FK_Transactions_Users">
+            <End Role="Users" EntitySet="Users" />
+            <End Role="Transactions" EntitySet="Transactions" />
+          </AssociationSet>
+          <AssociationSet Name="FK_JobHistories_Users" Association="Self.FK_JobHistories_Users">
+            <End Role="Users" EntitySet="Users" />
+            <End Role="JobHistories" EntitySet="JobHistories" />
+          </AssociationSet>
+          <FunctionImport Name="FindSales" ReturnType="Collection(BuzzleModel.FindSales_Result)">
+            <Parameter Name="StartDate" Mode="In" Type="DateTime" />
+            <Parameter Name="EndDate" Mode="In" Type="DateTime" />
+            <Parameter Name="RecordedByUserID" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="GetJobPaymentAmount" ReturnType="Collection(Int32)">
+          <Parameter Name="JobID" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <EntitySet Name="Jobs" EntityType="BuzzleModel.Job" />
+          <AssociationSet Name="FK_Jobs_FaultTypes" Association="BuzzleModel.FK_Jobs_FaultTypes">
+            <End Role="FaultType" EntitySet="FaultTypes" />
+            <End Role="Job" EntitySet="Jobs" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Jobs_ItemTypes" Association="BuzzleModel.FK_Jobs_ItemTypes">
+            <End Role="JobItemType" EntitySet="JobItemTypes" />
+            <End Role="Job" EntitySet="Jobs" />
+          </AssociationSet>
+          <AssociationSet Name="FK_JobHistories_RepairJobs" Association="BuzzleModel.FK_JobHistories_RepairJobs">
+            <End Role="Job" EntitySet="Jobs" />
+            <End Role="JobHistory" EntitySet="JobHistories" />
+          </AssociationSet>
+          <AssociationSet Name="FK_JobPayments_Jobs" Association="BuzzleModel.FK_JobPayments_Jobs">
+            <End Role="Job" EntitySet="Jobs" />
+            <End Role="JobPayment" EntitySet="JobPayments" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Jobs_Users" Association="BuzzleModel.FK_Jobs_Users">
+            <End Role="User" EntitySet="Users" />
+            <End Role="Job" EntitySet="Jobs" />
+          </AssociationSet>
+        </EntityContainer>
+        <ComplexType Name="FindSales_Result">
+          <Property Type="Int64" Name="SaleID" Nullable="false" />
+          <Property Type="String" Name="CustomerName" Nullable="true" MaxLength="50" />
+          <Property Type="DateTime" Name="DateRecorded" Nullable="true" Precision="23" />
+          <Property Type="Int32" Name="RecordedByUserID" Nullable="false" />
+          <Property Type="String" Name="CustomerDetails" Nullable="true" />
+        </ComplexType>
+        <EntityType Name="Job">
+          <Key>
+            <PropertyRef Name="JobID" />
+          </Key>
+          <Property Name="JobID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="CustomerName" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="ItemTypeID" Type="Int32" Nullable="false" />
+          <Property Name="DateCreated" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="EndDate" Type="DateTime" Precision="3" />
+          <Property Name="Notes" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="ItemDescription" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="FaultTypeID" Type="Int32" Nullable="false" />
+          <Property Name="FaultDescription" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="CustomerPhoneNumber" Type="Int32" />
+          <Property Name="IsPaid" Type="Boolean" Nullable="false" />
+          <Property Name="IsCollected" Type="Boolean" Nullable="false" />
+          <Property Name="IsFixed" Type="Boolean" Nullable="false" />
+          <Property Name="IsCancel" Type="Boolean" Nullable="false" />
+          <Property Name="CreatorUserID" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="FaultType" Relationship="BuzzleModel.FK_Jobs_FaultTypes" FromRole="Job" ToRole="FaultType" />
+          <NavigationProperty Name="JobItemType" Relationship="BuzzleModel.FK_Jobs_ItemTypes" FromRole="Job" ToRole="JobItemType" />
+          <NavigationProperty Name="JobHistories" Relationship="BuzzleModel.FK_JobHistories_RepairJobs" FromRole="Job" ToRole="JobHistory" />
+          <NavigationProperty Name="JobPayments" Relationship="BuzzleModel.FK_JobPayments_Jobs" FromRole="Job" ToRole="JobPayment" />
+          <NavigationProperty Name="CreatorUser" Relationship="BuzzleModel.FK_Jobs_Users" FromRole="Job" ToRole="User" />
+        </EntityType>
+        <Association Name="FK_Jobs_FaultTypes">
+          <End Type="BuzzleModel.FaultType" Role="FaultType" Multiplicity="1" />
+          <End Type="BuzzleModel.Job" Role="Job" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="FaultType">
+              <PropertyRef Name="FaultTypeID" />
+            </Principal>
+            <Dependent Role="Job">
+              <PropertyRef Name="FaultTypeID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Jobs_ItemTypes">
+          <End Type="BuzzleModel.JobItemType" Role="JobItemType" Multiplicity="1" />
+          <End Type="BuzzleModel.Job" Role="Job" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="JobItemType">
+              <PropertyRef Name="ItemTypeID" />
+            </Principal>
+            <Dependent Role="Job">
+              <PropertyRef Name="ItemTypeID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_JobHistories_RepairJobs">
+          <End Type="BuzzleModel.Job" Role="Job" Multiplicity="1" />
+          <End Type="BuzzleModel.JobHistory" Role="JobHistory" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Job">
+              <PropertyRef Name="JobID" />
+            </Principal>
+            <Dependent Role="JobHistory">
+              <PropertyRef Name="JobID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_JobPayments_Jobs">
+          <End Type="BuzzleModel.Job" Role="Job" Multiplicity="1" />
+          <End Type="BuzzleModel.JobPayment" Role="JobPayment" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Job">
+              <PropertyRef Name="JobID" />
+            </Principal>
+            <Dependent Role="JobPayment">
+              <PropertyRef Name="JobID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Jobs_Users">
+          <End Type="BuzzleModel.User" Role="User" Multiplicity="1" />
+          <End Type="BuzzleModel.Job" Role="Job" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="User">
+              <PropertyRef Name="UserID" />
+            </Principal>
+            <Dependent Role="Job">
+              <PropertyRef Name="CreatorUserID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="BuzzleModelStoreContainer" CdmEntityContainer="BuzzleEntities">
+          <EntitySetMapping Name="AccountPostings">
+            <EntityTypeMapping TypeName="BuzzleModel.AccountPosting">
+              <MappingFragment StoreEntitySet="AccountPostings">
+                <ScalarProperty Name="PostingID" ColumnName="PostingID" />
+                <ScalarProperty Name="TransactionID" ColumnName="TransactionID" />
+                <ScalarProperty Name="AccountID" ColumnName="AccountID" />
+                <ScalarProperty Name="PostingType" ColumnName="PostingType" />
+                <ScalarProperty Name="Amount" ColumnName="Amount" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Accounts">
+            <EntityTypeMapping TypeName="BuzzleModel.Account">
+              <MappingFragment StoreEntitySet="Accounts">
+                <ScalarProperty Name="AccountID" ColumnName="AccountID" />
+                <ScalarProperty Name="AccountName" ColumnName="AccountName" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Companies">
+            <EntityTypeMapping TypeName="BuzzleModel.Company">
+              <MappingFragment StoreEntitySet="Company">
+                <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+                <ScalarProperty Name="CompanyName" ColumnName="CompanyName" />
+                <ScalarProperty Name="CompanyLogo" ColumnName="CompanyLogo" />
+                <ScalarProperty Name="PhoneNumber" ColumnName="PhoneNumber" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="FaultTypes">
+            <EntityTypeMapping TypeName="BuzzleModel.FaultType">
+              <MappingFragment StoreEntitySet="FaultTypes">
+                <ScalarProperty Name="FaultTypeID" ColumnName="FaultTypeID" />
+                <ScalarProperty Name="FaultName" ColumnName="FaultName" />
+                <ScalarProperty Name="Notes" ColumnName="Notes" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="JobItemTypes">
+            <EntityTypeMapping TypeName="BuzzleModel.JobItemType">
+              <MappingFragment StoreEntitySet="JobItemTypes">
+                <ScalarProperty Name="ItemTypeID" ColumnName="ItemTypeID" />
+                <ScalarProperty Name="ItemName" ColumnName="ItemName" />
+                <ScalarProperty Name="Notes" ColumnName="Notes" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="PurchaseItems">
+            <EntityTypeMapping TypeName="BuzzleModel.PurchaseItem">
+              <MappingFragment StoreEntitySet="PurchaseItems">
+                <ScalarProperty Name="PurchaseItemID" ColumnName="PurchaseItemID" />
+                <ScalarProperty Name="PurchaseID" ColumnName="PurchaseID" />
+                <ScalarProperty Name="StockItemTypeID" ColumnName="StockItemTypeID" />
+                <ScalarProperty Name="ProposedUnitPrice" ColumnName="ProposedUnitPrice" />
+                <ScalarProperty Name="Notes" ColumnName="Notes" />
+                <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+                <ScalarProperty Name="TotalProposedPrice" ColumnName="TotalProposedPrice" />
+                <ScalarProperty Name="IsSupplied" ColumnName="IsSupplied" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Purchases">
+            <EntityTypeMapping TypeName="BuzzleModel.Purchase">
+              <MappingFragment StoreEntitySet="Purchases">
+                <ScalarProperty Name="PurchaseID" ColumnName="PurchaseID" />
+                <ScalarProperty Name="DateRecorded" ColumnName="DateRecorded" />
+                <ScalarProperty Name="CreatedByUserID" ColumnName="CreatedByUserID" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="SaleItems">
+            <EntityTypeMapping TypeName="BuzzleModel.SaleItem">
+              <MappingFragment StoreEntitySet="SaleItems">
+                <ScalarProperty Name="SaleItemID" ColumnName="SaleItemID" />
+                <ScalarProperty Name="SaleID" ColumnName="SaleID" />
+                <ScalarProperty Name="StockItemTypeID" ColumnName="StockItemTypeID" />
+                <ScalarProperty Name="UnitSoldPrice" ColumnName="UnitSoldPrice" />
+                <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+                <ScalarProperty Name="TotalSoldPrice" ColumnName="TotalSoldPrice" />
+                <ScalarProperty Name="UnitPurchasePrice" ColumnName="UnitPurchasePrice" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Sales">
+            <EntityTypeMapping TypeName="BuzzleModel.Sale">
+              <MappingFragment StoreEntitySet="Sales">
+                <ScalarProperty Name="SaleID" ColumnName="SaleID" />
+                <ScalarProperty Name="CustomerName" ColumnName="CustomerName" />
+                <ScalarProperty Name="DateRecorded" ColumnName="DateRecorded" />
+                <ScalarProperty Name="RecordedByUserID" ColumnName="RecordedByUserID" />
+                <ScalarProperty Name="CustomerDetails" ColumnName="CustomerDetails" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="StockItemMovements">
+            <EntityTypeMapping TypeName="BuzzleModel.StockItemMovement">
+              <MappingFragment StoreEntitySet="StockItemMovements">
+                <ScalarProperty Name="MovementID" ColumnName="MovementID" />
+                <ScalarProperty Name="StockItemTypeID" ColumnName="StockItemTypeID" />
+                <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+                <ScalarProperty Name="MovementType" ColumnName="MovementType" />
+                <ScalarProperty Name="CalculatedValue" ColumnName="CalculatedValue" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="SerialNumber" ColumnName="SerialNumber" />
+                <ScalarProperty Name="UnitPurchasePrice" ColumnName="UnitPurchasePrice" />
+                <ScalarProperty Name="MovementReason" ColumnName="MovementReason" />
+                <ScalarProperty Name="DateRecorded" ColumnName="DateRecorded" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="StockItemTypes">
+            <EntityTypeMapping TypeName="BuzzleModel.StockItemType">
+              <MappingFragment StoreEntitySet="StockItemTypes">
+                <ScalarProperty Name="StockItemTypeID" ColumnName="StockItemTypeID" />
+                <ScalarProperty Name="StockItemName" ColumnName="StockItemName" />
+                <ScalarProperty Name="UnitSellingPrice" ColumnName="UnitSellingPrice" />
+                <ScalarProperty Name="Notes" ColumnName="Notes" />
+                <ScalarProperty Name="Model" ColumnName="Model" />
+                <ScalarProperty Name="UnitPurchasePrice" ColumnName="UnitPurchasePrice" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Supplies">
+            <EntityTypeMapping TypeName="BuzzleModel.Supply">
+              <MappingFragment StoreEntitySet="Supplies">
+                <ScalarProperty Name="SupplyID" ColumnName="SupplyID" />
+                <ScalarProperty Name="DateRecorded" ColumnName="DateRecorded" />
+                <ScalarProperty Name="RecordedByUserID" ColumnName="RecordedByUserID" />
+                <ScalarProperty Name="Notes" ColumnName="Notes" />
+                <ScalarProperty Name="PurchaseID" ColumnName="PurchaseID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="SupplyItems">
+            <EntityTypeMapping TypeName="BuzzleModel.SupplyItem">
+              <MappingFragment StoreEntitySet="SupplyItems">
+                <ScalarProperty Name="SupplyItemID" ColumnName="SupplyItemID" />
+                <ScalarProperty Name="SupplyID" ColumnName="SupplyID" />
+                <ScalarProperty Name="PurchaseItemID" ColumnName="PurchaseItemID" />
+                <ScalarProperty Name="PurchasedUnitPrice" ColumnName="PurchasedUnitPrice" />
+                <ScalarProperty Name="PurchasedQuantity" ColumnName="PurchasedQuantity" />
+                <ScalarProperty Name="TotalSpent" ColumnName="TotalSpent" />
+                <ScalarProperty Name="StockItemTypeID" ColumnName="StockItemTypeID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Transactions">
+            <EntityTypeMapping TypeName="BuzzleModel.Transaction">
+              <MappingFragment StoreEntitySet="Transactions">
+                <ScalarProperty Name="TransactionID" ColumnName="TransactionID" />
+                <ScalarProperty Name="TransactionTypeID" ColumnName="TransactionTypeID" />
+                <ScalarProperty Name="Amount" ColumnName="Amount" />
+                <ScalarProperty Name="Notes" ColumnName="Notes" />
+                <ScalarProperty Name="RecordedByUserID" ColumnName="RecordedByUserID" />
+                <ScalarProperty Name="DateRecorded" ColumnName="DateRecorded" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TransactionTypes">
+            <EntityTypeMapping TypeName="BuzzleModel.TransactionType">
+              <MappingFragment StoreEntitySet="TransactionTypes">
+                <ScalarProperty Name="TransactionTypeID" ColumnName="TransactionTypeID" />
+                <ScalarProperty Name="TransactionName" ColumnName="TransactionName" />
+                <ScalarProperty Name="DeductionAccountID" ColumnName="DeductionAccountID" />
+                <ScalarProperty Name="IncreasingAccountID" ColumnName="IncreasingAccountID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Users">
+            <EntityTypeMapping TypeName="BuzzleModel.User">
+              <MappingFragment StoreEntitySet="Users">
+                <ScalarProperty Name="UserID" ColumnName="UserID" />
+                <ScalarProperty Name="UserName" ColumnName="UserName" />
+                <ScalarProperty Name="PassWord" ColumnName="PassWord" />
+                <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+                <ScalarProperty Name="LastName" ColumnName="LastName" />
+                <ScalarProperty Name="DateOfBirth" ColumnName="DateOfBirth" />
+                <ScalarProperty Name="DateCreated" ColumnName="DateCreated" />
+                <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+                <ScalarProperty Name="IsAdministrator" ColumnName="IsAdministrator" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="BuzzleSettings">
+            <EntityTypeMapping TypeName="BuzzleModel.BuzzleSetting">
+              <MappingFragment StoreEntitySet="BuzzleSettings">
+                <ScalarProperty Name="SettingName" ColumnName="SettingName" />
+                <ScalarProperty Name="SettingValue" ColumnName="SettingValue" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="JobHistories">
+            <EntityTypeMapping TypeName="BuzzleModel.JobHistory">
+              <MappingFragment StoreEntitySet="JobHistories">
+                <ScalarProperty Name="JobID" ColumnName="JobID" />
+                <ScalarProperty Name="HistoryNote" ColumnName="HistoryNote" />
+                <ScalarProperty Name="DateInserted" ColumnName="DateInserted" />
+                <ScalarProperty Name="RecordedByUserID" ColumnName="RecordedByUserID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="JobPayments">
+            <EntityTypeMapping TypeName="BuzzleModel.JobPayment">
+              <MappingFragment StoreEntitySet="JobPayments">
+                <ScalarProperty Name="JobID" ColumnName="JobID" />
+                <ScalarProperty Name="TransactionID" ColumnName="TransactionID" />
+                <ScalarProperty Name="Notes" ColumnName="Notes" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="LookupDatas">
+            <EntityTypeMapping TypeName="BuzzleModel.LookupData">
+              <MappingFragment StoreEntitySet="LookupData">
+                <ScalarProperty Name="TableNumber" ColumnName="TableNumber" />
+                <ScalarProperty Name="TableData" ColumnName="TableData" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="AccountStats">
+            <EntityTypeMapping TypeName="BuzzleModel.AccountStat">
+              <MappingFragment StoreEntitySet="AccountStats">
+                <ScalarProperty Name="AccountID" ColumnName="AccountID" />
+                <ScalarProperty Name="AccountName" ColumnName="AccountName" />
+                <ScalarProperty Name="amount" ColumnName="amount" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="StockItemBalances">
+            <EntityTypeMapping TypeName="BuzzleModel.StockItemBalance">
+              <MappingFragment StoreEntitySet="StockItemBalances">
+                <ScalarProperty Name="StockItemTypeID" ColumnName="StockItemTypeID" />
+                <ScalarProperty Name="StockItemName" ColumnName="StockItemName" />
+                <ScalarProperty Name="Model" ColumnName="Model" />
+                <ScalarProperty Name="SerialNumber" ColumnName="SerialNumber" />
+                <ScalarProperty Name="UnitPurchasePrice" ColumnName="UnitPurchasePrice" />
+                <ScalarProperty Name="UnitSellingPrice" ColumnName="UnitSellingPrice" />
+                <ScalarProperty Name="QuantityInStock" ColumnName="QuantityInStock" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <FunctionImportMapping FunctionImportName="FindSales" FunctionName="BuzzleModel.Store.FindSales">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="BuzzleModel.FindSales_Result">
+                <ScalarProperty Name="SaleID" ColumnName="SaleID" />
+                <ScalarProperty Name="CustomerName" ColumnName="CustomerName" />
+                <ScalarProperty Name="DateRecorded" ColumnName="DateRecorded" />
+                <ScalarProperty Name="RecordedByUserID" ColumnName="RecordedByUserID" />
+                <ScalarProperty Name="CustomerDetails" ColumnName="CustomerDetails" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="GetJobPaymentAmount" FunctionName="BuzzleModel.Store.GetJobPaymentAmount" />
+          <EntitySetMapping Name="Jobs">
+            <EntityTypeMapping TypeName="BuzzleModel.Job">
+              <MappingFragment StoreEntitySet="Jobs">
+                <ScalarProperty Name="CreatorUserID" ColumnName="CreatorUserID" />
+                <ScalarProperty Name="IsCancel" ColumnName="IsCancel" />
+                <ScalarProperty Name="IsFixed" ColumnName="IsFixed" />
+                <ScalarProperty Name="IsCollected" ColumnName="IsCollected" />
+                <ScalarProperty Name="IsPaid" ColumnName="IsPaid" />
+                <ScalarProperty Name="CustomerPhoneNumber" ColumnName="CustomerPhoneNumber" />
+                <ScalarProperty Name="FaultDescription" ColumnName="FaultDescription" />
+                <ScalarProperty Name="FaultTypeID" ColumnName="FaultTypeID" />
+                <ScalarProperty Name="ItemDescription" ColumnName="ItemDescription" />
+                <ScalarProperty Name="Notes" ColumnName="Notes" />
+                <ScalarProperty Name="EndDate" ColumnName="EndDate" />
+                <ScalarProperty Name="DateCreated" ColumnName="DateCreated" />
+                <ScalarProperty Name="ItemTypeID" ColumnName="ItemTypeID" />
+                <ScalarProperty Name="CustomerName" ColumnName="CustomerName" />
+                <ScalarProperty Name="JobID" ColumnName="JobID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

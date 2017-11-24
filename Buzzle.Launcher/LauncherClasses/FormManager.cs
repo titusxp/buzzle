@@ -4,7 +4,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
-using Buzzle.GlobalStuff;
+using Buzzle.Client.Ui;
 using DevExpress.Data.PLinq.Helpers;
 using DevExpress.Utils;
 using DevExpress.XtraNavBar;

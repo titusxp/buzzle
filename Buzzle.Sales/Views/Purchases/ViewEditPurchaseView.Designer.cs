@@ -110,7 +110,7 @@
             // 
             // purchaseItemBindingSource
             // 
-            this.purchaseItemBindingSource.DataSource = typeof(Buzzle.Data.DataModel.PurchaseItem);
+            this.purchaseItemBindingSource.DataSource = typeof(Buzzle.DataModel.PurchaseItem);
             // 
             // gridView_PurchaseItems
             // 
@@ -203,7 +203,7 @@
             // 
             // purchaseBindingSource
             // 
-            this.purchaseBindingSource.DataSource = typeof(Buzzle.Data.DataModel.Purchase);
+            this.purchaseBindingSource.DataSource = typeof(Buzzle.DataModel.Purchase);
             // 
             // textEdit_Status
             // 
@@ -248,7 +248,7 @@
             // 
             // userBindingSource
             // 
-            this.userBindingSource.DataSource = typeof(Buzzle.Data.DataModel.User);
+            this.userBindingSource.DataSource = typeof(Buzzle.DataModel.User);
             // 
             // layoutControlGroup1
             // 

@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
 using Buzzle.Finances;
-using Buzzle.GlobalStuff;
+using Buzzle.Client.Ui;
 using Buzzle.JobsManager.Views.JobsView;
 using Buzzle.Sales.Views;
 

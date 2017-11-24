@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Windows.Forms;
 using Buzzle.Data;
-using Buzzle.Data.DataModel;
-using Buzzle.GlobalStuff;
+using Buzzle.DataModel;
+using Buzzle.Client.Ui;
 
 namespace Buzzle.Launcher
 {

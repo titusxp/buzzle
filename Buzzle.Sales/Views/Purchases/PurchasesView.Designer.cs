@@ -92,7 +92,7 @@
             // 
             // purchaseBindingSource
             // 
-            this.purchaseBindingSource.DataSource = typeof(Buzzle.Data.DataModel.Purchase);
+            this.purchaseBindingSource.DataSource = typeof(Buzzle.DataModel.Purchase);
             this.purchaseBindingSource.CurrentChanged += new System.EventHandler(this.purchaseBindingSource_CurrentChanged);
             // 
             // gridView_Purchases

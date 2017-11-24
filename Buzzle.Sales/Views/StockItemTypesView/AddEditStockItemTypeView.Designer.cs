@@ -105,7 +105,7 @@
             // 
             // stockItemTypeBindingSource
             // 
-            this.stockItemTypeBindingSource.DataSource = typeof(Buzzle.Data.DataModel.StockItemType);
+            this.stockItemTypeBindingSource.DataSource = typeof(Buzzle.DataModel.StockItemType);
             // 
             // textEdit_Model
             // 

@@ -128,7 +128,7 @@
             // 
             // supplyBindingSource
             // 
-            this.supplyBindingSource.DataSource = typeof(Buzzle.Data.DataModel.Supply);
+            this.supplyBindingSource.DataSource = typeof(Buzzle.DataModel.Supply);
             // 
             // textEdit_DateRecorded
             // 

@@ -196,7 +196,7 @@
             // 
             // bindingSource2
             // 
-            this.bindingSource2.DataSource = typeof(Buzzle.Data.DataModel.SaleItem);
+            this.bindingSource2.DataSource = typeof(Buzzle.DataModel.SaleItem);
             // 
             // TopMargin
             // 
@@ -410,7 +410,7 @@
             // 
             // bindingSource1
             // 
-            this.bindingSource1.DataSource = typeof(Buzzle.Data.DataModel.Sale);
+            this.bindingSource1.DataSource = typeof(Buzzle.DataModel.Sale);
             // 
             // DetailReport
             // 

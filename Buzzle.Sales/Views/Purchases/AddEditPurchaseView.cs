@@ -6,9 +6,9 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using Buzzle.Client.Ui;
 using Buzzle.Data;
-using Buzzle.Data.DataModel;
-using Buzzle.GlobalStuff;
+using Buzzle.DataModel;
 using DevExpress.XtraLayout.Utils;
 
 namespace Buzzle.Sales.Views

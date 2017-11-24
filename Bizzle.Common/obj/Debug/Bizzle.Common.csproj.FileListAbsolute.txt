@@ -1,0 +1,9 @@
+F:\CODE\buzzle\Bizzle.Common\bin\Debug\Bizzle.Common.dll
+F:\CODE\buzzle\Bizzle.Common\bin\Debug\Bizzle.Common.pdb
+F:\CODE\buzzle\Bizzle.Common\obj\Debug\Bizzle.Common.csprojResolveAssemblyReference.cache
+F:\CODE\buzzle\Bizzle.Common\obj\Debug\Bizzle.Common.dll
+F:\CODE\buzzle\Bizzle.Common\obj\Debug\Bizzle.Common.pdb
+F:\CODE\buzzle\Bizzle.Common\obj\Debug\Bizzle.Common.Views.BuzzleGlobalView.resources
+F:\CODE\buzzle\Bizzle.Common\obj\Debug\Bizzle.Common.csproj.GenerateResource.Cache
+F:\CODE\buzzle\Bizzle.Common\obj\Debug\Bizzle.Common.Views.BuzzleSplashScreen.resources
+F:\CODE\buzzle\Bizzle.Common\obj\Debug\Bizzle.Common.Views.BuzzleWaitForm.resources

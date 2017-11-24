@@ -92,7 +92,7 @@
             // 
             // stockItemTypeBindingSource
             // 
-            this.stockItemTypeBindingSource.DataSource = typeof(Buzzle.Data.DataModel.StockItemType);
+            this.stockItemTypeBindingSource.DataSource = typeof(Buzzle.DataModel.StockItemType);
             this.stockItemTypeBindingSource.ListChanged += new System.ComponentModel.ListChangedEventHandler(this.stockItemTypeBindingSource_ListChanged);
             // 
             // gridView_StockItemTypes

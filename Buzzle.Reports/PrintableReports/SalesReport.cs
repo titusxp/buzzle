@@ -3,9 +3,10 @@ using System.Drawing;
 using System.Collections;
 using System.ComponentModel;
 using DevExpress.XtraReports.UI;
-using Buzzle.Data.DataModel;
+
 using System.Collections.Generic;
-using Buzzle.GlobalStuff;
+using Buzzle.DataModel;
+using Buzzle.Client.Ui;
 
 namespace Buzzle.Reports.PrintableReports
 {

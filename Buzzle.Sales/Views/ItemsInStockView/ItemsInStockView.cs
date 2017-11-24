@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using Buzzle.Data;
-using Buzzle.GlobalStuff;
+using Buzzle.Client.Ui;
 
 namespace Buzzle.Sales.Views
 {

@@ -95,7 +95,7 @@
             // 
             // saleBindingSource
             // 
-            this.saleBindingSource.DataSource = typeof(Buzzle.Data.DataModel.Sale);
+            this.saleBindingSource.DataSource = typeof(Buzzle.DataModel.Sale);
             // 
             // gridControl_SaleItems
             // 
@@ -112,7 +112,7 @@
             // 
             // saleItemBindingSource
             // 
-            this.saleItemBindingSource.DataSource = typeof(Buzzle.Data.DataModel.SaleItem);
+            this.saleItemBindingSource.DataSource = typeof(Buzzle.DataModel.SaleItem);
             this.saleItemBindingSource.ListChanged += new System.ComponentModel.ListChangedEventHandler(this.saleItemBindingSource_ListChanged);
             // 
             // gridView_SaleItems

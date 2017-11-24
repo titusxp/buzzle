@@ -82,7 +82,7 @@
             // 
             // transactionBindingSource
             // 
-            this.transactionBindingSource.DataSource = typeof(Buzzle.Data.DataModel.Transaction);
+            this.transactionBindingSource.DataSource = typeof(Buzzle.DataModel.Transaction);
             // 
             // gridView_Transactions
             // 

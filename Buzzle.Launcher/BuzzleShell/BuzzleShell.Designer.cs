@@ -30,6 +30,7 @@ namespace Buzzle.Launcher
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(BuzzleShell));
             this.layoutControl1 = new DevExpress.XtraLayout.LayoutControl();
             this.button_LogOut = new System.Windows.Forms.Button();
@@ -49,7 +50,7 @@ namespace Buzzle.Launcher
             this.emptySpaceItem1 = new DevExpress.XtraLayout.EmptySpaceItem();
             this.layoutControlItem3 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem7 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.barManager1 = new DevExpress.XtraBars.BarManager();
+            this.barManager1 = new DevExpress.XtraBars.BarManager(this.components);
             this.bar2 = new DevExpress.XtraBars.Bar();
             this.barButtonItem_Jobs = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem_Sales = new DevExpress.XtraBars.BarButtonItem();
@@ -60,7 +61,7 @@ namespace Buzzle.Launcher
             this.barButtonItem_StockItemTypes = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem_Supplies = new DevExpress.XtraBars.BarButtonItem();
             this.barSubItem2 = new DevExpress.XtraBars.BarSubItem();
-            this.barButtonItem1 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem_SalesReport = new DevExpress.XtraBars.BarButtonItem();
             this.barSubItem1 = new DevExpress.XtraBars.BarSubItem();
             this.barButtonItem_AccountSettings = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem_CompanySettings = new DevExpress.XtraBars.BarButtonItem();
@@ -72,7 +73,8 @@ namespace Buzzle.Launcher
             this.barDockControlBottom = new DevExpress.XtraBars.BarDockControl();
             this.barDockControlLeft = new DevExpress.XtraBars.BarDockControl();
             this.barDockControlRight = new DevExpress.XtraBars.BarDockControl();
-            this.barButtonItem_SalesReport = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem1 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem_Job = new DevExpress.XtraBars.BarButtonItem();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).BeginInit();
             this.layoutControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.navBarControl_Shell)).BeginInit();
@@ -223,7 +225,6 @@ namespace Buzzle.Launcher
             this.layoutControlGroup1.Location = new System.Drawing.Point(0, 0);
             this.layoutControlGroup1.Name = "Root";
             this.layoutControlGroup1.Size = new System.Drawing.Size(862, 560);
-            this.layoutControlGroup1.Text = "Root";
             // 
             // layoutControlItem1
             // 
@@ -232,9 +233,7 @@ namespace Buzzle.Launcher
             this.layoutControlItem1.Location = new System.Drawing.Point(214, 0);
             this.layoutControlItem1.Name = "layoutControlItem1";
             this.layoutControlItem1.Size = new System.Drawing.Size(628, 540);
-            this.layoutControlItem1.Text = "layoutControlItem1";
             this.layoutControlItem1.TextSize = new System.Drawing.Size(0, 0);
-            this.layoutControlItem1.TextToControlDistance = 0;
             this.layoutControlItem1.TextVisible = false;
             // 
             // layoutControlItem2
@@ -246,9 +245,7 @@ namespace Buzzle.Launcher
             this.layoutControlItem2.Name = "layoutControlItem2";
             this.layoutControlItem2.Size = new System.Drawing.Size(209, 359);
             this.layoutControlItem2.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
-            this.layoutControlItem2.Text = "layoutControlItem2";
             this.layoutControlItem2.TextSize = new System.Drawing.Size(0, 0);
-            this.layoutControlItem2.TextToControlDistance = 0;
             this.layoutControlItem2.TextVisible = false;
             // 
             // splitterItem1
@@ -268,9 +265,7 @@ namespace Buzzle.Launcher
             this.layoutControlItem4.Name = "layoutControlItem4";
             this.layoutControlItem4.Size = new System.Drawing.Size(38, 26);
             this.layoutControlItem4.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
-            this.layoutControlItem4.Text = "layoutControlItem4";
             this.layoutControlItem4.TextSize = new System.Drawing.Size(0, 0);
-            this.layoutControlItem4.TextToControlDistance = 0;
             this.layoutControlItem4.TextVisible = false;
             // 
             // layoutControlItem5
@@ -282,9 +277,7 @@ namespace Buzzle.Launcher
             this.layoutControlItem5.Name = "layoutControlItem5";
             this.layoutControlItem5.Size = new System.Drawing.Size(38, 26);
             this.layoutControlItem5.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
-            this.layoutControlItem5.Text = "layoutControlItem5";
             this.layoutControlItem5.TextSize = new System.Drawing.Size(0, 0);
-            this.layoutControlItem5.TextToControlDistance = 0;
             this.layoutControlItem5.TextVisible = false;
             // 
             // emptySpaceItem1
@@ -297,7 +290,6 @@ namespace Buzzle.Launcher
             this.emptySpaceItem1.Name = "emptySpaceItem1";
             this.emptySpaceItem1.Size = new System.Drawing.Size(133, 26);
             this.emptySpaceItem1.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
-            this.emptySpaceItem1.Text = "emptySpaceItem1";
             this.emptySpaceItem1.TextSize = new System.Drawing.Size(0, 0);
             // 
             // layoutControlItem3
@@ -330,9 +322,7 @@ namespace Buzzle.Launcher
             this.layoutControlItem7.Name = "layoutControlItem7";
             this.layoutControlItem7.Size = new System.Drawing.Size(214, 53);
             this.layoutControlItem7.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
-            this.layoutControlItem7.Text = "layoutControlItem7";
             this.layoutControlItem7.TextSize = new System.Drawing.Size(0, 0);
-            this.layoutControlItem7.TextToControlDistance = 0;
             this.layoutControlItem7.TextVisible = false;
             // 
             // barManager1
@@ -362,9 +352,10 @@ namespace Buzzle.Launcher
             this.barButtonItem_Users,
             this.barButtonItem_AccountSettings,
             this.barButtonItem_TransactionTypes,
-            this.barButtonItem_SalesReport});
+            this.barButtonItem_SalesReport,
+            this.barButtonItem_Job});
             this.barManager1.MainMenu = this.bar2;
-            this.barManager1.MaxItemId = 23;
+            this.barManager1.MaxItemId = 24;
             // 
             // bar2
             // 
@@ -373,7 +364,7 @@ namespace Buzzle.Launcher
             this.bar2.DockRow = 0;
             this.bar2.DockStyle = DevExpress.XtraBars.BarDockStyle.Top;
             this.bar2.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
-            new DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, this.barButtonItem_Jobs, "", true, true, false, 0, null, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph),
+            new DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, this.barButtonItem_Job, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph),
             new DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, this.barButtonItem_Sales, "", true, true, true, 0, null, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph),
             new DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, this.barButtonItem_Transactions, "", true, true, true, 0, null, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph),
             new DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, this.barSubItem_StockManagement, "", true, true, true, 0, null, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph),
@@ -388,7 +379,7 @@ namespace Buzzle.Launcher
             // 
             // barButtonItem_Jobs
             // 
-            this.barButtonItem_Jobs.Caption = "Jobs Management";
+            this.barButtonItem_Jobs.Caption = "Jobs";
             this.barButtonItem_Jobs.Glyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem_Jobs.Glyph")));
             this.barButtonItem_Jobs.Id = 0;
             this.barButtonItem_Jobs.Name = "barButtonItem_Jobs";
@@ -468,14 +459,14 @@ namespace Buzzle.Launcher
             this.barSubItem2.Name = "barSubItem2";
             this.barSubItem2.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barSubItem2_ItemClick);
             // 
-            // barButtonItem1
+            // barButtonItem_SalesReport
             // 
-            this.barButtonItem1.Caption = "Sales";
-            this.barButtonItem1.Enabled = false;
-            this.barButtonItem1.Glyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem1.Glyph")));
-            this.barButtonItem1.Id = 1;
-            this.barButtonItem1.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem1.LargeGlyph")));
-            this.barButtonItem1.Name = "barButtonItem1";
+            this.barButtonItem_SalesReport.Caption = "Sales Report";
+            this.barButtonItem_SalesReport.Glyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem_SalesReport.Glyph")));
+            this.barButtonItem_SalesReport.Id = 22;
+            this.barButtonItem_SalesReport.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem_SalesReport.LargeGlyph")));
+            this.barButtonItem_SalesReport.Name = "barButtonItem_SalesReport";
+            this.barButtonItem_SalesReport.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem_SalesReport_ItemClick);
             // 
             // barSubItem1
             // 
@@ -573,14 +564,22 @@ namespace Buzzle.Launcher
             this.barDockControlRight.Location = new System.Drawing.Point(862, 40);
             this.barDockControlRight.Size = new System.Drawing.Size(0, 560);
             // 
-            // barButtonItem_SalesReport
+            // barButtonItem1
             // 
-            this.barButtonItem_SalesReport.Caption = "Sales Report";
-            this.barButtonItem_SalesReport.Glyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem_SalesReport.Glyph")));
-            this.barButtonItem_SalesReport.Id = 22;
-            this.barButtonItem_SalesReport.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem_SalesReport.LargeGlyph")));
-            this.barButtonItem_SalesReport.Name = "barButtonItem_SalesReport";
-            this.barButtonItem_SalesReport.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem_SalesReport_ItemClick);
+            this.barButtonItem1.Caption = "Sales";
+            this.barButtonItem1.Enabled = false;
+            this.barButtonItem1.Glyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem1.Glyph")));
+            this.barButtonItem1.Id = 1;
+            this.barButtonItem1.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem1.LargeGlyph")));
+            this.barButtonItem1.Name = "barButtonItem1";
+            // 
+            // barButtonItem_Job
+            // 
+            this.barButtonItem_Job.Caption = "Jobs";
+            this.barButtonItem_Job.Glyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem_Job.Glyph")));
+            this.barButtonItem_Job.Id = 23;
+            this.barButtonItem_Job.Name = "barButtonItem_Job";
+            this.barButtonItem_Job.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem_Jobs_ItemClick);
             // 
             // BuzzleShell
             // 
@@ -609,6 +608,7 @@ namespace Buzzle.Launcher
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.barManager1)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -656,6 +656,6 @@ namespace Buzzle.Launcher
         private DevExpress.XtraBars.BarButtonItem barButtonItem_AccountSettings;
         private DevExpress.XtraBars.BarButtonItem barButtonItem_TransactionTypes;
         private DevExpress.XtraBars.BarButtonItem barButtonItem_SalesReport;
-
+        private DevExpress.XtraBars.BarButtonItem barButtonItem_Job;
     }
 }

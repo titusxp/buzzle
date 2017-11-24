@@ -4,9 +4,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using Buzzle.Data;
-using Buzzle.Data.DataModel;
+using Buzzle.DataModel;
 using Buzzle.Finances;
-using Buzzle.GlobalStuff;
+using Buzzle.Client.Ui;
 using DevExpress.XtraBars;
 using DevExpress.XtraRichEdit.API.Word;
 

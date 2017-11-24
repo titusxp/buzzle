@@ -85,7 +85,7 @@
             // 
             // saleBindingSource
             // 
-            this.saleBindingSource.DataSource = typeof(Buzzle.Data.DataModel.Sale);
+            this.saleBindingSource.DataSource = typeof(Buzzle.DataModel.Sale);
             // 
             // gridView_Sales
             // 

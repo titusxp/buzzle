@@ -514,11 +514,11 @@
             // 
             // bindingSource2
             // 
-            this.bindingSource2.DataSource = typeof(Buzzle.Data.DataModel.Sale);
+            this.bindingSource2.DataSource = typeof(Buzzle.DataModel.Sale);
             // 
             // bindingSource1
             // 
-            this.bindingSource1.DataSource = typeof(Buzzle.Data.DataModel.SaleItem);
+            this.bindingSource1.DataSource = typeof(Buzzle.DataModel.SaleItem);
             // 
             // xrPageInfo_DateCreated
             // 

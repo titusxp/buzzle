@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Windows.Forms;
 using Buzzle.Data;
-using Buzzle.Data.DataModel;
+using Buzzle.DataModel;
 using Buzzle.Finances;
-using Buzzle.GlobalStuff;
+using Buzzle.Client.Ui;
 using DevExpress.XtraBars;
 
 namespace Buzzle.JobsManager.Views.JobsView

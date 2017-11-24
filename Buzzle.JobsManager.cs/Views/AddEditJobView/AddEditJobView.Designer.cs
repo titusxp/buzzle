@@ -1,4 +1,4 @@
-﻿using Buzzle.Data.DataModel;
+﻿
 
 namespace Buzzle.JobsManager.Views
 {
@@ -144,7 +144,7 @@ namespace Buzzle.JobsManager.Views
             // 
             // jobBindingSource
             // 
-            this.jobBindingSource.DataSource = typeof(Buzzle.Data.DataModel.Job);
+            this.jobBindingSource.DataSource = typeof(Buzzle.DataModel.Job);
             // 
             // barManager
             // 
@@ -362,7 +362,7 @@ namespace Buzzle.JobsManager.Views
             // 
             // transactionBindingSource
             // 
-            this.transactionBindingSource.DataSource = typeof(Buzzle.Data.DataModel.Transaction);
+            this.transactionBindingSource.DataSource = typeof(Buzzle.DataModel.Transaction);
             // 
             // gridView_JobPayments
             // 
@@ -703,7 +703,7 @@ namespace Buzzle.JobsManager.Views
             // 
             // lookupDataBindingSource
             // 
-            this.lookupDataBindingSource.DataSource = typeof(Buzzle.Data.DataModel.LookupData);
+            this.lookupDataBindingSource.DataSource = typeof(Buzzle.DataModel.LookupData);
             // 
             // AddEditJobView
             // 

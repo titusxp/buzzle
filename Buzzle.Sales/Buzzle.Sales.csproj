@@ -35,26 +35,14 @@
     <Reference Include="Dapper">
       <HintPath>..\packages\Dapper.1.42\lib\net40\Dapper.dll</HintPath>
     </Reference>
-    <Reference Include="DevExpress.Data.v13.2, Version=13.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-    <Reference Include="DevExpress.Printing.v13.2.Core, Version=13.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-    <Reference Include="DevExpress.Utils.v13.2, Version=13.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-    <Reference Include="DevExpress.XtraBars.v13.2, Version=13.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.XtraEditors.v13.2, Version=13.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-    <Reference Include="DevExpress.XtraGrid.v13.2, Version=13.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.XtraLayout.v13.2, Version=13.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.XtraPrinting.v13.2, Version=13.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-    <Reference Include="EntityFramework">
-      <HintPath>..\packages\EntityFramework.6.1.3\lib\net40\EntityFramework.dll</HintPath>
-    </Reference>
-    <Reference Include="EntityFramework.SqlServer">
-      <HintPath>..\packages\EntityFramework.6.1.3\lib\net40\EntityFramework.SqlServer.dll</HintPath>
-    </Reference>
-    <Reference Include="EntityFramework.SqlServerCompact">
-      <HintPath>..\packages\EntityFramework.SqlServerCompact.6.1.3\lib\net40\EntityFramework.SqlServerCompact.dll</HintPath>
-    </Reference>
-    <Reference Include="EntityFramework.SqlServerCompact.Legacy">
-      <HintPath>..\packages\EntityFramework.SqlServerCompact.Legacy.6.1.3\lib\net40\EntityFramework.SqlServerCompact.Legacy.dll</HintPath>
-    </Reference>
+    <Reference Include="DevExpress.Data.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Printing.v15.2.Core, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraBars.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraGrid.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Configuration" />
@@ -71,9 +59,6 @@
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
-    <Reference Include="WindowsFormsToolkit">
-      <HintPath>..\..\Tools\WindowsFormsToolkit.dll</HintPath>
-    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -82,75 +67,51 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <Compile Include="Views\Sales\ViewSaleView.cs">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="Views\Sales\ViewSaleView.cs" />
     <Compile Include="Views\Sales\ViewSaleView.Designer.cs">
       <DependentUpon>ViewSaleView.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\StockItemTypesView\AddEditStockItemTypeView.cs">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="Views\StockItemTypesView\AddEditStockItemTypeView.cs" />
     <Compile Include="Views\StockItemTypesView\AddEditStockItemTypeView.Designer.cs">
       <DependentUpon>AddEditStockItemTypeView.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\Purchases\AddEditPurchaseView.cs">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="Views\Purchases\AddEditPurchaseView.cs" />
     <Compile Include="Views\Purchases\AddEditPurchaseView.Designer.cs">
       <DependentUpon>AddEditPurchaseView.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\Purchases\ProcessPurchaseView.cs">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="Views\Purchases\ProcessPurchaseView.cs" />
     <Compile Include="Views\Purchases\ProcessPurchaseView.Designer.cs">
       <DependentUpon>ProcessPurchaseView.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\Purchases\PurchasesView.cs">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="Views\Purchases\PurchasesView.cs" />
     <Compile Include="Views\Purchases\PurchasesView.Designer.cs">
       <DependentUpon>PurchasesView.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\ItemsInStockView\ItemsInStockView.cs">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="Views\ItemsInStockView\ItemsInStockView.cs" />
     <Compile Include="Views\ItemsInStockView\ItemsInStockView.Designer.cs">
       <DependentUpon>ItemsInStockView.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\Purchases\ViewEditPurchaseView.cs">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="Views\Purchases\ViewEditPurchaseView.cs" />
     <Compile Include="Views\Purchases\ViewEditPurchaseView.Designer.cs">
       <DependentUpon>ViewEditPurchaseView.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\Sales\AddSaleView.cs">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="Views\Sales\AddSaleView.cs" />
     <Compile Include="Views\Sales\AddSaleView.Designer.cs">
       <DependentUpon>AddSaleView.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\Sales\SalesView.cs">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="Views\Sales\SalesView.cs" />
     <Compile Include="Views\Sales\SalesView.Designer.cs">
       <DependentUpon>SalesView.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\StockItemTypesView\StockItemTypesView.cs">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="Views\StockItemTypesView\StockItemTypesView.cs" />
     <Compile Include="Views\StockItemTypesView\StockItemTypesView.Designer.cs">
       <DependentUpon>StockItemTypesView.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\Supplies\SuppliesView.cs">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="Views\Supplies\SuppliesView.cs" />
     <Compile Include="Views\Supplies\SuppliesView.Designer.cs">
       <DependentUpon>SuppliesView.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\Supplies\ViewSupplyView.cs">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="Views\Supplies\ViewSupplyView.cs" />
     <Compile Include="Views\Supplies\ViewSupplyView.Designer.cs">
       <DependentUpon>ViewSupplyView.cs</DependentUpon>
     </Compile>
@@ -200,13 +161,17 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Buzzle.Data\Buzzle.Data.csproj">
+    <ProjectReference Include="..\Buzzle.Api.Core\Buzzle.Api.Core.csproj">
       <Project>{7F109D34-4424-4983-9183-E21A4D2B593D}</Project>
-      <Name>Buzzle.Data</Name>
+      <Name>Buzzle.Api.Core</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Buzzle.GlobalStuff\Buzzle.GlobalStuff.csproj">
+    <ProjectReference Include="..\Buzzle.DataModel\Buzzle.DataModel.csproj">
+      <Project>{C34CED20-C408-44AC-91BA-AB014A3EEF31}</Project>
+      <Name>Buzzle.DataModel</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Buzzle.GlobalStuff\Buzzle.Client.Ui.csproj">
       <Project>{C5F508F4-60C1-475C-8170-8F214DCB5DBA}</Project>
-      <Name>Buzzle.GlobalStuff</Name>
+      <Name>Buzzle.Client.Ui</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
@@ -232,10 +197,7 @@
   </PropertyGroup>
   <PropertyGroup>
     <PostBuildEvent>
-    if not exist "$(TargetDir)x86" md "$(TargetDir)x86"
-    xcopy /s /y "$(SolutionDir)packages\Microsoft.SqlServer.Compact.4.0.8876.1\NativeBinaries\x86\*.*" "$(TargetDir)x86"
-    if not exist "$(TargetDir)amd64" md "$(TargetDir)amd64"
-    xcopy /s /y "$(SolutionDir)packages\Microsoft.SqlServer.Compact.4.0.8876.1\NativeBinaries\amd64\*.*" "$(TargetDir)amd64"</PostBuildEvent>
+    </PostBuildEvent>
   </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

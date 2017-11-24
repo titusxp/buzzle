@@ -7,8 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using Buzzle.Data;
-using Buzzle.Data.DataModel;
-using Buzzle.GlobalStuff;
+using Buzzle.DataModel;
+using Buzzle.Client.Ui;
 
 namespace Buzzle.Sales.Views.Purchases.ProcessPurchasesView
 {
