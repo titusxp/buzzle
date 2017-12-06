@@ -1,5 +1,0 @@
-F:\CODE\buzzle\Buzzle.DataModel\bin\Debug\Buzzle.DataModel.dll
-F:\CODE\buzzle\Buzzle.DataModel\bin\Debug\Buzzle.DataModel.pdb
-F:\CODE\buzzle\Buzzle.DataModel\obj\Debug\Buzzle.DataModel.csprojResolveAssemblyReference.cache
-F:\CODE\buzzle\Buzzle.DataModel\obj\Debug\Buzzle.DataModel.dll
-F:\CODE\buzzle\Buzzle.DataModel\obj\Debug\Buzzle.DataModel.pdb

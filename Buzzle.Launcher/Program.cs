@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading;
 using System.Windows.Forms;
-using Buzzle.Client.Ui;
 using System.Data.OleDb;
 using System.Configuration;
 using System.Data.SqlClient;
@@ -11,6 +10,7 @@ using Microsoft.SqlServer.Server;
 using Microsoft.SqlServer.Management.Smo;
 using Microsoft.SqlServer.Management.Common;
 using System.IO;
+using Bizzle.Common.Common;
 
 namespace Buzzle.Launcher
 {

@@ -89,11 +89,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AccountsView\AccountsView.cs" />
+    <Compile Include="AccountsView\AccountsView.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="AccountsView\AccountsView.Designer.cs">
       <DependentUpon>AccountsView.cs</DependentUpon>
     </Compile>
-    <Compile Include="AddTransactionView\AddTransactionView.cs" />
+    <Compile Include="AddTransactionView\AddTransactionView.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="AddTransactionView\AddTransactionView.Designer.cs">
       <DependentUpon>AddTransactionView.cs</DependentUpon>
     </Compile>
@@ -103,7 +107,9 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <Compile Include="TransactionsView\TransactionsView.cs" />
+    <Compile Include="TransactionsView\TransactionsView.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="TransactionsView\TransactionsView.Designer.cs">
       <DependentUpon>TransactionsView.cs</DependentUpon>
     </Compile>
@@ -133,6 +139,10 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Bizzle.Common\Bizzle.Common.csproj">
+      <Project>{FC599052-1301-4DE9-8D90-1563FACB258D}</Project>
+      <Name>Bizzle.Common</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Buzzle.Api.Core\Buzzle.Api.Core.csproj">
       <Project>{7F109D34-4424-4983-9183-E21A4D2B593D}</Project>
       <Name>Buzzle.Api.Core</Name>
@@ -140,10 +150,6 @@
     <ProjectReference Include="..\Buzzle.DataModel\Buzzle.DataModel.csproj">
       <Project>{C34CED20-C408-44AC-91BA-AB014A3EEF31}</Project>
       <Name>Buzzle.DataModel</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Buzzle.GlobalStuff\Buzzle.Client.Ui.csproj">
-      <Project>{C5F508F4-60C1-475C-8170-8F214DCB5DBA}</Project>
-      <Name>Buzzle.Client.Ui</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

@@ -6,9 +6,11 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
-using Buzzle.Data;
-using Buzzle.DataModel;
+using Bizzle.Common.Common;
+using Bizzle.Common.Views;
+using Buzzle.Api.Core;
 using Buzzle.Client.Ui;
+using Buzzle.DataModel;
 
 namespace Buzzle.Finances
 {
@@ -34,7 +36,7 @@ namespace Buzzle.Finances
 
             if (_preferredTransactionType != null)
             {
-                lookupEdit_TransactionType.EditValue = _preferredTransactionType.TransactionTypeID;
+                lookupEdit_TransactionType.EditValue = _preferredTransactionType.Id;
                 lookupEdit_TransactionType.Properties.ReadOnly = true;
             }
 
@@ -57,7 +59,7 @@ namespace Buzzle.Finances
                 Amount = (int) textEdit_Amount.EditValue,
                 Notes = memoEdit_Notes.EditValue.ToString(),
                 DateRecorded = DateTime.Now,
-                RecordedByUserID = CurrentlyLoggedInUser.UserID
+                RecordedByUserID = CurrentlyLoggedInUser.Id
             };
             var evtArgs = new BuzzleSaveTransactionEventArgs()
             {

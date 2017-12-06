@@ -1,6 +1,0 @@
-C:\Projs\Buzzle\Buzzle.Data\bin\x86\Debug\Buzzle.Data.dll.config
-C:\Projs\Buzzle\Buzzle.Data\bin\x86\Debug\Buzzle.Data.dll
-C:\Projs\Buzzle\Buzzle.Data\bin\x86\Debug\Buzzle.Data.pdb
-C:\Projs\Buzzle\Buzzle.Data\obj\x86\Debug\Buzzle.Data.dll
-C:\Projs\Buzzle\Buzzle.Data\obj\x86\Debug\Buzzle.Data.pdb
-C:\Projs\Buzzle\Buzzle.Data\obj\x86\Debug\Buzzle.Data.csprojResolveAssemblyReference.cache

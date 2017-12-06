@@ -23,7 +23,7 @@ namespace Buzzle.DataModel
             this.SupplyItems = new HashSet<SupplyItem>();
         }
     
-        public int StockItemTypeID { get; set; }
+        public int Id { get; set; }
         public string StockItemName { get; set; }
         public int UnitSellingPrice { get; set; }
         public string Notes { get; set; }

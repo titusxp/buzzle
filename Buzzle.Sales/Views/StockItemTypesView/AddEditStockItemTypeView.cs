@@ -6,6 +6,8 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using Bizzle.Common.Common;
+using Bizzle.Common.Views;
 using Buzzle.DataModel;
 using Buzzle.Client.Ui;
 using DevExpress.XtraLayout.Utils;
@@ -20,7 +22,7 @@ namespace Buzzle.Sales.Views
         {
             InitializeComponent();
             currentStockItemType = stockItemType;
-            if (currentStockItemType.StockItemTypeID < 1)
+            if (currentStockItemType.Id < 1)
             {
                 layoutControlItem_FullName.Visibility = LayoutVisibility.Never;
             }

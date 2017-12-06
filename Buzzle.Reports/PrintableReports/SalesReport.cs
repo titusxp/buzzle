@@ -5,6 +5,8 @@ using System.ComponentModel;
 using DevExpress.XtraReports.UI;
 
 using System.Collections.Generic;
+using Bizzle.Common.Common;
+using Buzzle.Client.Core;
 using Buzzle.DataModel;
 using Buzzle.Client.Ui;
 
@@ -16,7 +18,7 @@ namespace Buzzle.Reports.PrintableReports
         {
             InitializeComponent();
             xrLabel6_CreatedBy.Text = BuzzleFunctions.GetCurrentUser().FullName;
-            CompanyInfo = BuzzleFunctions.GetCompanyInfo();
+            CompanyInfo = BuzzleClientFunctions.GetCompanyInfo();
         }
 
         public Company CompanyInfo

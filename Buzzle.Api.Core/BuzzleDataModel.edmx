@@ -4,12 +4,12 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-    <Schema Namespace="BuzzleModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+      <Schema Namespace="BuzzleLocalDBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="AccountPostings">
           <Key>
-            <PropertyRef Name="PostingID" />
+            <PropertyRef Name="Id" />
           </Key>
-          <Property Name="PostingID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="TransactionID" Type="int" Nullable="false" />
           <Property Name="AccountID" Type="int" Nullable="false" />
           <Property Name="PostingType" Type="int" Nullable="false" />
@@ -17,14 +17,14 @@
         </EntityType>
         <EntityType Name="Accounts">
           <Key>
-            <PropertyRef Name="AccountID" />
+            <PropertyRef Name="Id" />
           </Key>
-          <Property Name="AccountID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="AccountName" Type="varchar" MaxLength="50" Nullable="false" />
           <Property Name="Description" Type="varchar(max)" />
         </EntityType>
         <!--Errors Found During Generation:
-warning 6002: The table/view 'Buzzle.dbo.BuzzleSettings' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+warning 6002: The table/view 'F:\CODE\BUZZLE\BUZZLE.API.CORE\BUZZLELOCALDB.MDF.dbo.BuzzleSettings' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
         <EntityType Name="BuzzleSettings">
           <Key>
             <PropertyRef Name="SettingName" />
@@ -35,9 +35,9 @@ warning 6002: The table/view 'Buzzle.dbo.BuzzleSettings' does not have a primary
         </EntityType>
         <EntityType Name="Company">
           <Key>
-            <PropertyRef Name="CompanyID" />
+            <PropertyRef Name="Id" />
           </Key>
-          <Property Name="CompanyID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="CompanyName" Type="varchar" MaxLength="150" Nullable="false" />
           <Property Name="CompanyLogo" Type="varbinary(max)" />
           <Property Name="PhoneNumber" Type="varchar" MaxLength="50" />
@@ -45,50 +45,50 @@ warning 6002: The table/view 'Buzzle.dbo.BuzzleSettings' does not have a primary
         </EntityType>
         <EntityType Name="FaultTypes">
           <Key>
-            <PropertyRef Name="FaultTypeID" />
+            <PropertyRef Name="Id" />
           </Key>
-          <Property Name="FaultTypeID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="FaultName" Type="varchar" MaxLength="50" Nullable="false" />
           <Property Name="Notes" Type="varchar(max)" />
         </EntityType>
         <!--Errors Found During Generation:
-warning 6002: The table/view 'Buzzle.dbo.JobHistories' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+warning 6002: The table/view 'F:\CODE\BUZZLE\BUZZLE.API.CORE\BUZZLELOCALDB.MDF.dbo.JobHistories' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
         <EntityType Name="JobHistories">
           <Key>
-            <PropertyRef Name="JobID" />
+            <PropertyRef Name="Id" />
             <PropertyRef Name="HistoryNote" />
             <PropertyRef Name="DateInserted" />
             <PropertyRef Name="RecordedByUserID" />
           </Key>
-          <Property Name="JobID" Type="int" Nullable="false" />
+          <Property Name="Id" Type="int" Nullable="false" />
           <Property Name="HistoryNote" Type="varchar(max)" Nullable="false" />
           <Property Name="DateInserted" Type="datetime" Nullable="false" />
           <Property Name="RecordedByUserID" Type="int" Nullable="false" />
         </EntityType>
         <EntityType Name="JobItemTypes">
           <Key>
-            <PropertyRef Name="ItemTypeID" />
+            <PropertyRef Name="Id" />
           </Key>
-          <Property Name="ItemTypeID" Type="int" Nullable="false" />
+          <Property Name="Id" Type="int" Nullable="false" />
           <Property Name="ItemName" Type="varchar" MaxLength="50" Nullable="false" />
           <Property Name="Notes" Type="nchar" MaxLength="10" />
         </EntityType>
         <!--Errors Found During Generation:
-warning 6002: The table/view 'Buzzle.dbo.JobPayments' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+warning 6002: The table/view 'F:\CODE\BUZZLE\BUZZLE.API.CORE\BUZZLELOCALDB.MDF.dbo.JobPayments' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
         <EntityType Name="JobPayments">
           <Key>
-            <PropertyRef Name="JobID" />
+            <PropertyRef Name="Id" />
             <PropertyRef Name="TransactionID" />
           </Key>
-          <Property Name="JobID" Type="int" Nullable="false" />
+          <Property Name="Id" Type="int" Nullable="false" />
           <Property Name="TransactionID" Type="int" Nullable="false" />
           <Property Name="Notes" Type="varchar(max)" />
         </EntityType>
         <EntityType Name="Jobs">
           <Key>
-            <PropertyRef Name="JobID" />
+            <PropertyRef Name="Id" />
           </Key>
-          <Property Name="JobID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="CustomerName" Type="varchar" MaxLength="50" Nullable="false" />
           <Property Name="ItemTypeID" Type="int" Nullable="false" />
           <Property Name="DateCreated" Type="datetime" Nullable="false" />
@@ -105,20 +105,20 @@ warning 6002: The table/view 'Buzzle.dbo.JobPayments' does not have a primary ke
           <Property Name="CreatorUserID" Type="int" Nullable="false" />
         </EntityType>
         <!--Errors Found During Generation:
-warning 6002: The table/view 'Buzzle.dbo.LookupData' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+warning 6002: The table/view 'F:\CODE\BUZZLE\BUZZLE.API.CORE\BUZZLELOCALDB.MDF.dbo.LookupData' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
         <EntityType Name="LookupData">
           <Key>
-            <PropertyRef Name="TableNumber" />
+            <PropertyRef Name="Id" />
             <PropertyRef Name="TableData" />
           </Key>
-          <Property Name="TableNumber" Type="tinyint" Nullable="false" />
+          <Property Name="Id" Type="tinyint" Nullable="false" />
           <Property Name="TableData" Type="varchar" MaxLength="50" Nullable="false" />
         </EntityType>
         <EntityType Name="PurchaseItems">
           <Key>
-            <PropertyRef Name="PurchaseItemID" />
+            <PropertyRef Name="Id" />
           </Key>
-          <Property Name="PurchaseItemID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="PurchaseID" Type="int" Nullable="false" />
           <Property Name="StockItemTypeID" Type="int" Nullable="false" />
           <Property Name="ProposedUnitPrice" Type="int" Nullable="false" />
@@ -129,18 +129,18 @@ warning 6002: The table/view 'Buzzle.dbo.LookupData' does not have a primary key
         </EntityType>
         <EntityType Name="Purchases">
           <Key>
-            <PropertyRef Name="PurchaseID" />
+            <PropertyRef Name="Id" />
           </Key>
-          <Property Name="PurchaseID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="DateRecorded" Type="datetime" Nullable="false" />
           <Property Name="CreatedByUserID" Type="int" Nullable="false" />
           <Property Name="Status" Type="varchar" MaxLength="50" Nullable="false" />
         </EntityType>
         <EntityType Name="SaleItems">
           <Key>
-            <PropertyRef Name="SaleItemID" />
+            <PropertyRef Name="Id" />
           </Key>
-          <Property Name="SaleItemID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="SaleID" Type="bigint" Nullable="false" />
           <Property Name="StockItemTypeID" Type="int" Nullable="false" />
           <Property Name="UnitSoldPrice" Type="int" Nullable="false" />
@@ -150,9 +150,9 @@ warning 6002: The table/view 'Buzzle.dbo.LookupData' does not have a primary key
         </EntityType>
         <EntityType Name="Sales">
           <Key>
-            <PropertyRef Name="SaleID" />
+            <PropertyRef Name="Id" />
           </Key>
-          <Property Name="SaleID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="CustomerName" Type="varchar" MaxLength="50" />
           <Property Name="DateRecorded" Type="datetime" />
           <Property Name="RecordedByUserID" Type="int" Nullable="false" />
@@ -160,9 +160,9 @@ warning 6002: The table/view 'Buzzle.dbo.LookupData' does not have a primary key
         </EntityType>
         <EntityType Name="StockItemMovements">
           <Key>
-            <PropertyRef Name="MovementID" />
+            <PropertyRef Name="Id" />
           </Key>
-          <Property Name="MovementID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="StockItemTypeID" Type="int" Nullable="false" />
           <Property Name="Quantity" Type="int" Nullable="false" />
           <Property Name="MovementType" Type="int" Nullable="false" />
@@ -175,9 +175,9 @@ warning 6002: The table/view 'Buzzle.dbo.LookupData' does not have a primary key
         </EntityType>
         <EntityType Name="StockItemTypes">
           <Key>
-            <PropertyRef Name="StockItemTypeID" />
+            <PropertyRef Name="Id" />
           </Key>
-          <Property Name="StockItemTypeID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="StockItemName" Type="varchar" MaxLength="50" Nullable="false" />
           <Property Name="UnitSellingPrice" Type="int" Nullable="false" />
           <Property Name="Notes" Type="varchar(max)" />
@@ -186,9 +186,9 @@ warning 6002: The table/view 'Buzzle.dbo.LookupData' does not have a primary key
         </EntityType>
         <EntityType Name="Supplies">
           <Key>
-            <PropertyRef Name="SupplyID" />
+            <PropertyRef Name="Id" />
           </Key>
-          <Property Name="SupplyID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="DateRecorded" Type="datetime" Nullable="false" />
           <Property Name="RecordedByUserID" Type="int" Nullable="false" />
           <Property Name="Notes" Type="varchar(max)" />
@@ -196,9 +196,9 @@ warning 6002: The table/view 'Buzzle.dbo.LookupData' does not have a primary key
         </EntityType>
         <EntityType Name="SupplyItems">
           <Key>
-            <PropertyRef Name="SupplyItemID" />
+            <PropertyRef Name="Id" />
           </Key>
-          <Property Name="SupplyItemID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="SupplyID" Type="int" Nullable="false" />
           <Property Name="PurchaseItemID" Type="int" Nullable="false" />
           <Property Name="PurchasedUnitPrice" Type="int" Nullable="false" />
@@ -208,9 +208,9 @@ warning 6002: The table/view 'Buzzle.dbo.LookupData' does not have a primary key
         </EntityType>
         <EntityType Name="Transactions">
           <Key>
-            <PropertyRef Name="TransactionID" />
+            <PropertyRef Name="Id" />
           </Key>
-          <Property Name="TransactionID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="TransactionTypeID" Type="int" Nullable="false" />
           <Property Name="Amount" Type="int" Nullable="false" />
           <Property Name="Notes" Type="varchar(max)" />
@@ -219,18 +219,18 @@ warning 6002: The table/view 'Buzzle.dbo.LookupData' does not have a primary key
         </EntityType>
         <EntityType Name="TransactionTypes">
           <Key>
-            <PropertyRef Name="TransactionTypeID" />
+            <PropertyRef Name="Id" />
           </Key>
-          <Property Name="TransactionTypeID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="TransactionName" Type="varchar" MaxLength="50" Nullable="false" />
           <Property Name="DeductionAccountID" Type="int" />
           <Property Name="IncreasingAccountID" Type="int" />
         </EntityType>
         <EntityType Name="Users">
           <Key>
-            <PropertyRef Name="UserID" />
+            <PropertyRef Name="Id" />
           </Key>
-          <Property Name="UserID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="UserName" Type="varchar" MaxLength="50" Nullable="false" />
           <Property Name="PassWord" Type="varchar" MaxLength="50" Nullable="false" />
           <Property Name="FirstName" Type="varchar" MaxLength="50" Nullable="false" />
@@ -241,26 +241,26 @@ warning 6002: The table/view 'Buzzle.dbo.LookupData' does not have a primary key
           <Property Name="IsAdministrator" Type="bit" Nullable="false" />
         </EntityType>
         <!--Errors Found During Generation:
-warning 6002: The table/view 'Buzzle.dbo.AccountStats' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+warning 6002: The table/view 'F:\CODE\BUZZLE\BUZZLE.API.CORE\BUZZLELOCALDB.MDF.dbo.AccountStats' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
         <EntityType Name="AccountStats">
           <Key>
-            <PropertyRef Name="AccountID" />
+            <PropertyRef Name="Id" />
             <PropertyRef Name="AccountName" />
           </Key>
-          <Property Name="AccountID" Type="int" Nullable="false" />
+          <Property Name="Id" Type="int" Nullable="false" />
           <Property Name="AccountName" Type="varchar" MaxLength="50" Nullable="false" />
           <Property Name="amount" Type="int" />
         </EntityType>
         <!--Errors Found During Generation:
-warning 6002: The table/view 'Buzzle.dbo.StockItemBalances' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+warning 6002: The table/view 'F:\CODE\BUZZLE\BUZZLE.API.CORE\BUZZLELOCALDB.MDF.dbo.StockItemBalances' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
         <EntityType Name="StockItemBalances">
           <Key>
-            <PropertyRef Name="StockItemTypeID" />
+            <PropertyRef Name="Id" />
             <PropertyRef Name="StockItemName" />
             <PropertyRef Name="UnitPurchasePrice" />
             <PropertyRef Name="UnitSellingPrice" />
           </Key>
-          <Property Name="StockItemTypeID" Type="int" Nullable="false" />
+          <Property Name="Id" Type="int" Nullable="false" />
           <Property Name="StockItemName" Type="varchar" MaxLength="50" Nullable="false" />
           <Property Name="Model" Type="varchar" MaxLength="50" />
           <Property Name="SerialNumber" Type="varchar" MaxLength="50" />
@@ -273,7 +273,7 @@ warning 6002: The table/view 'Buzzle.dbo.StockItemBalances' does not have a prim
           <End Role="AccountPostings" Type="Self.AccountPostings" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="Accounts">
-              <PropertyRef Name="AccountID" />
+              <PropertyRef Name="Id" />
             </Principal>
             <Dependent Role="AccountPostings">
               <PropertyRef Name="AccountID" />
@@ -285,7 +285,7 @@ warning 6002: The table/view 'Buzzle.dbo.StockItemBalances' does not have a prim
           <End Role="AccountPostings" Type="Self.AccountPostings" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="Transactions">
-              <PropertyRef Name="TransactionID" />
+              <PropertyRef Name="Id" />
             </Principal>
             <Dependent Role="AccountPostings">
               <PropertyRef Name="TransactionID" />
@@ -297,10 +297,10 @@ warning 6002: The table/view 'Buzzle.dbo.StockItemBalances' does not have a prim
           <End Role="JobHistories" Type="Self.JobHistories" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="Jobs">
-              <PropertyRef Name="JobID" />
+              <PropertyRef Name="Id" />
             </Principal>
             <Dependent Role="JobHistories">
-              <PropertyRef Name="JobID" />
+              <PropertyRef Name="Id" />
             </Dependent>
           </ReferentialConstraint>
         </Association>
@@ -309,7 +309,7 @@ warning 6002: The table/view 'Buzzle.dbo.StockItemBalances' does not have a prim
           <End Role="JobHistories" Type="Self.JobHistories" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="Users">
-              <PropertyRef Name="UserID" />
+              <PropertyRef Name="Id" />
             </Principal>
             <Dependent Role="JobHistories">
               <PropertyRef Name="RecordedByUserID" />
@@ -321,10 +321,10 @@ warning 6002: The table/view 'Buzzle.dbo.StockItemBalances' does not have a prim
           <End Role="JobPayments" Type="Self.JobPayments" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="Jobs">
-              <PropertyRef Name="JobID" />
+              <PropertyRef Name="Id" />
             </Principal>
             <Dependent Role="JobPayments">
-              <PropertyRef Name="JobID" />
+              <PropertyRef Name="Id" />
             </Dependent>
           </ReferentialConstraint>
         </Association>
@@ -333,7 +333,7 @@ warning 6002: The table/view 'Buzzle.dbo.StockItemBalances' does not have a prim
           <End Role="JobPayments" Type="Self.JobPayments" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="Transactions">
-              <PropertyRef Name="TransactionID" />
+              <PropertyRef Name="Id" />
             </Principal>
             <Dependent Role="JobPayments">
               <PropertyRef Name="TransactionID" />
@@ -345,7 +345,7 @@ warning 6002: The table/view 'Buzzle.dbo.StockItemBalances' does not have a prim
           <End Role="Jobs" Type="Self.Jobs" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="FaultTypes">
-              <PropertyRef Name="FaultTypeID" />
+              <PropertyRef Name="Id" />
             </Principal>
             <Dependent Role="Jobs">
               <PropertyRef Name="FaultTypeID" />
@@ -357,7 +357,7 @@ warning 6002: The table/view 'Buzzle.dbo.StockItemBalances' does not have a prim
           <End Role="Jobs" Type="Self.Jobs" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="JobItemTypes">
-              <PropertyRef Name="ItemTypeID" />
+              <PropertyRef Name="Id" />
             </Principal>
             <Dependent Role="Jobs">
               <PropertyRef Name="ItemTypeID" />
@@ -369,7 +369,7 @@ warning 6002: The table/view 'Buzzle.dbo.StockItemBalances' does not have a prim
           <End Role="Jobs" Type="Self.Jobs" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="Users">
-              <PropertyRef Name="UserID" />
+              <PropertyRef Name="Id" />
             </Principal>
             <Dependent Role="Jobs">
               <PropertyRef Name="CreatorUserID" />
@@ -383,7 +383,7 @@ warning 6002: The table/view 'Buzzle.dbo.StockItemBalances' does not have a prim
           <End Role="PurchaseItems" Type="Self.PurchaseItems" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="Purchases">
-              <PropertyRef Name="PurchaseID" />
+              <PropertyRef Name="Id" />
             </Principal>
             <Dependent Role="PurchaseItems">
               <PropertyRef Name="PurchaseID" />
@@ -397,7 +397,7 @@ warning 6002: The table/view 'Buzzle.dbo.StockItemBalances' does not have a prim
           <End Role="PurchaseItems" Type="Self.PurchaseItems" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="StockItemTypes">
-              <PropertyRef Name="StockItemTypeID" />
+              <PropertyRef Name="Id" />
             </Principal>
             <Dependent Role="PurchaseItems">
               <PropertyRef Name="StockItemTypeID" />
@@ -409,7 +409,7 @@ warning 6002: The table/view 'Buzzle.dbo.StockItemBalances' does not have a prim
           <End Role="Purchases" Type="Self.Purchases" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="Users">
-              <PropertyRef Name="UserID" />
+              <PropertyRef Name="Id" />
             </Principal>
             <Dependent Role="Purchases">
               <PropertyRef Name="CreatedByUserID" />
@@ -421,7 +421,7 @@ warning 6002: The table/view 'Buzzle.dbo.StockItemBalances' does not have a prim
           <End Role="SaleItems" Type="Self.SaleItems" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="Sales">
-              <PropertyRef Name="SaleID" />
+              <PropertyRef Name="Id" />
             </Principal>
             <Dependent Role="SaleItems">
               <PropertyRef Name="SaleID" />
@@ -433,7 +433,7 @@ warning 6002: The table/view 'Buzzle.dbo.StockItemBalances' does not have a prim
           <End Role="SaleItems" Type="Self.SaleItems" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="StockItemTypes">
-              <PropertyRef Name="StockItemTypeID" />
+              <PropertyRef Name="Id" />
             </Principal>
             <Dependent Role="SaleItems">
               <PropertyRef Name="StockItemTypeID" />
@@ -445,7 +445,7 @@ warning 6002: The table/view 'Buzzle.dbo.StockItemBalances' does not have a prim
           <End Role="Sales" Type="Self.Sales" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="Users">
-              <PropertyRef Name="UserID" />
+              <PropertyRef Name="Id" />
             </Principal>
             <Dependent Role="Sales">
               <PropertyRef Name="RecordedByUserID" />
@@ -457,7 +457,7 @@ warning 6002: The table/view 'Buzzle.dbo.StockItemBalances' does not have a prim
           <End Role="StockItemMovements" Type="Self.StockItemMovements" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="StockItemTypes">
-              <PropertyRef Name="StockItemTypeID" />
+              <PropertyRef Name="Id" />
             </Principal>
             <Dependent Role="StockItemMovements">
               <PropertyRef Name="StockItemTypeID" />
@@ -469,7 +469,7 @@ warning 6002: The table/view 'Buzzle.dbo.StockItemBalances' does not have a prim
           <End Role="Supplies" Type="Self.Supplies" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="Purchases">
-              <PropertyRef Name="PurchaseID" />
+              <PropertyRef Name="Id" />
             </Principal>
             <Dependent Role="Supplies">
               <PropertyRef Name="PurchaseID" />
@@ -481,7 +481,7 @@ warning 6002: The table/view 'Buzzle.dbo.StockItemBalances' does not have a prim
           <End Role="Supplies" Type="Self.Supplies" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="Users">
-              <PropertyRef Name="UserID" />
+              <PropertyRef Name="Id" />
             </Principal>
             <Dependent Role="Supplies">
               <PropertyRef Name="RecordedByUserID" />
@@ -493,7 +493,7 @@ warning 6002: The table/view 'Buzzle.dbo.StockItemBalances' does not have a prim
           <End Role="SupplyItems" Type="Self.SupplyItems" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="PurchaseItems">
-              <PropertyRef Name="PurchaseItemID" />
+              <PropertyRef Name="Id" />
             </Principal>
             <Dependent Role="SupplyItems">
               <PropertyRef Name="PurchaseItemID" />
@@ -505,7 +505,7 @@ warning 6002: The table/view 'Buzzle.dbo.StockItemBalances' does not have a prim
           <End Role="SupplyItems" Type="Self.SupplyItems" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="StockItemTypes">
-              <PropertyRef Name="StockItemTypeID" />
+              <PropertyRef Name="Id" />
             </Principal>
             <Dependent Role="SupplyItems">
               <PropertyRef Name="StockItemTypeID" />
@@ -517,7 +517,7 @@ warning 6002: The table/view 'Buzzle.dbo.StockItemBalances' does not have a prim
           <End Role="SupplyItems" Type="Self.SupplyItems" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="Supplies">
-              <PropertyRef Name="SupplyID" />
+              <PropertyRef Name="Id" />
             </Principal>
             <Dependent Role="SupplyItems">
               <PropertyRef Name="SupplyID" />
@@ -529,7 +529,7 @@ warning 6002: The table/view 'Buzzle.dbo.StockItemBalances' does not have a prim
           <End Role="Transactions" Type="Self.Transactions" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="TransactionTypes">
-              <PropertyRef Name="TransactionTypeID" />
+              <PropertyRef Name="Id" />
             </Principal>
             <Dependent Role="Transactions">
               <PropertyRef Name="TransactionTypeID" />
@@ -541,7 +541,7 @@ warning 6002: The table/view 'Buzzle.dbo.StockItemBalances' does not have a prim
           <End Role="Transactions" Type="Self.Transactions" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="Users">
-              <PropertyRef Name="UserID" />
+              <PropertyRef Name="Id" />
             </Principal>
             <Dependent Role="Transactions">
               <PropertyRef Name="RecordedByUserID" />
@@ -553,7 +553,7 @@ warning 6002: The table/view 'Buzzle.dbo.StockItemBalances' does not have a prim
           <End Role="TransactionTypes" Type="Self.TransactionTypes" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="Accounts">
-              <PropertyRef Name="AccountID" />
+              <PropertyRef Name="Id" />
             </Principal>
             <Dependent Role="TransactionTypes">
               <PropertyRef Name="DeductionAccountID" />
@@ -565,7 +565,7 @@ warning 6002: The table/view 'Buzzle.dbo.StockItemBalances' does not have a prim
           <End Role="TransactionTypes" Type="Self.TransactionTypes" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="Accounts">
-              <PropertyRef Name="AccountID" />
+              <PropertyRef Name="Id" />
             </Principal>
             <Dependent Role="TransactionTypes">
               <PropertyRef Name="IncreasingAccountID" />
@@ -580,7 +580,7 @@ warning 6002: The table/view 'Buzzle.dbo.StockItemBalances' does not have a prim
         <Function Name="GetJobPaymentAmount" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
           <Parameter Name="JobID" Type="int" Mode="In" />
         </Function>
-        <EntityContainer Name="BuzzleModelStoreContainer">
+        <EntityContainer Name="BuzzleLocalDBModelStoreContainer">
           <EntitySet Name="AccountPostings" EntityType="Self.AccountPostings" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Accounts" EntityType="Self.Accounts" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Company" EntityType="Self.Company" Schema="dbo" store:Type="Tables" />
@@ -606,7 +606,7 @@ warning 6002: The table/view 'Buzzle.dbo.StockItemBalances' does not have a prim
           </EntitySet>
           <EntitySet Name="JobHistories" EntityType="Self.JobHistories" store:Type="Tables" store:Schema="dbo">
             <DefiningQuery>SELECT 
-    [JobHistories].[JobID] AS [JobID], 
+    [JobHistories].[Id] AS [Id], 
     [JobHistories].[HistoryNote] AS [HistoryNote], 
     [JobHistories].[DateInserted] AS [DateInserted], 
     [JobHistories].[RecordedByUserID] AS [RecordedByUserID]
@@ -614,27 +614,27 @@ warning 6002: The table/view 'Buzzle.dbo.StockItemBalances' does not have a prim
           </EntitySet>
           <EntitySet Name="JobPayments" EntityType="Self.JobPayments" store:Type="Tables" store:Schema="dbo">
             <DefiningQuery>SELECT 
-    [JobPayments].[JobID] AS [JobID], 
+    [JobPayments].[Id] AS [Id], 
     [JobPayments].[TransactionID] AS [TransactionID], 
     [JobPayments].[Notes] AS [Notes]
     FROM [dbo].[JobPayments] AS [JobPayments]</DefiningQuery>
           </EntitySet>
           <EntitySet Name="LookupData" EntityType="Self.LookupData" store:Type="Tables" store:Schema="dbo">
             <DefiningQuery>SELECT 
-    [LookupData].[TableNumber] AS [TableNumber], 
+    [LookupData].[Id] AS [Id], 
     [LookupData].[TableData] AS [TableData]
     FROM [dbo].[LookupData] AS [LookupData]</DefiningQuery>
           </EntitySet>
           <EntitySet Name="AccountStats" EntityType="Self.AccountStats" store:Type="Views" store:Schema="dbo">
             <DefiningQuery>SELECT 
-    [AccountStats].[AccountID] AS [AccountID], 
+    [AccountStats].[Id] AS [Id], 
     [AccountStats].[AccountName] AS [AccountName], 
     [AccountStats].[amount] AS [amount]
     FROM [dbo].[AccountStats] AS [AccountStats]</DefiningQuery>
           </EntitySet>
           <EntitySet Name="StockItemBalances" EntityType="Self.StockItemBalances" store:Type="Views" store:Schema="dbo">
             <DefiningQuery>SELECT 
-    [StockItemBalances].[StockItemTypeID] AS [StockItemTypeID], 
+    [StockItemBalances].[Id] AS [Id], 
     [StockItemBalances].[StockItemName] AS [StockItemName], 
     [StockItemBalances].[Model] AS [Model], 
     [StockItemBalances].[SerialNumber] AS [SerialNumber], 
@@ -744,15 +744,16 @@ warning 6002: The table/view 'Buzzle.dbo.StockItemBalances' does not have a prim
             <End Role="TransactionTypes" EntitySet="TransactionTypes" />
           </AssociationSet>
         </EntityContainer>
-      </Schema></edmx:StorageModels>
+      </Schema>
+    </edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
-      <Schema Namespace="BuzzleModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+      <Schema Namespace="BuzzleLocalDBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
         <EntityType Name="AccountPosting">
           <Key>
-            <PropertyRef Name="PostingID" />
+            <PropertyRef Name="Id" />
           </Key>
-          <Property Name="PostingID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="TransactionID" Type="Int32" Nullable="false" />
           <Property Name="AccountID" Type="Int32" Nullable="false" />
           <Property Name="PostingType" Type="Int32" Nullable="false" />
@@ -762,9 +763,9 @@ warning 6002: The table/view 'Buzzle.dbo.StockItemBalances' does not have a prim
         </EntityType>
         <EntityType Name="Account">
           <Key>
-            <PropertyRef Name="AccountID" />
+            <PropertyRef Name="Id" />
           </Key>
-          <Property Name="AccountID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="AccountName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
           <NavigationProperty Name="AccountPostings" Relationship="Self.FK_AccountPostings_Accounts" FromRole="Accounts" ToRole="AccountPostings" />
@@ -773,9 +774,9 @@ warning 6002: The table/view 'Buzzle.dbo.StockItemBalances' does not have a prim
         </EntityType>
         <EntityType Name="Company">
           <Key>
-            <PropertyRef Name="CompanyID" />
+            <PropertyRef Name="Id" />
           </Key>
-          <Property Name="CompanyID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="CompanyName" Type="String" MaxLength="150" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="CompanyLogo" Type="Binary" MaxLength="Max" FixedLength="false" />
           <Property Name="PhoneNumber" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
@@ -783,27 +784,52 @@ warning 6002: The table/view 'Buzzle.dbo.StockItemBalances' does not have a prim
         </EntityType>
         <EntityType Name="FaultType">
           <Key>
-            <PropertyRef Name="FaultTypeID" />
+            <PropertyRef Name="Id" />
           </Key>
-          <Property Name="FaultTypeID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="FaultName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="Notes" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
-          <NavigationProperty Name="Jobs" Relationship="BuzzleModel.FK_Jobs_FaultTypes" FromRole="FaultType" ToRole="Job" />
+          <NavigationProperty Name="Jobs" Relationship="Self.FK_Jobs_FaultTypes" FromRole="FaultTypes" ToRole="Jobs" />
         </EntityType>
         <EntityType Name="JobItemType">
           <Key>
-            <PropertyRef Name="ItemTypeID" />
+            <PropertyRef Name="Id" />
           </Key>
-          <Property Name="ItemTypeID" Type="Int32" Nullable="false" />
+          <Property Name="Id" Type="Int32" Nullable="false" />
           <Property Name="ItemName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="Notes" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
-          <NavigationProperty Name="Jobs" Relationship="BuzzleModel.FK_Jobs_ItemTypes" FromRole="JobItemType" ToRole="Job" />
+          <NavigationProperty Name="Jobs" Relationship="Self.FK_Jobs_ItemTypes" FromRole="JobItemTypes" ToRole="Jobs" />
+        </EntityType>
+        <EntityType Name="Job">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="CustomerName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="ItemTypeID" Type="Int32" Nullable="false" />
+          <Property Name="DateCreated" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="EndDate" Type="DateTime" Precision="3" />
+          <Property Name="Notes" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="ItemDescription" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="FaultTypeID" Type="Int32" Nullable="false" />
+          <Property Name="FaultDescription" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="CustomerPhoneNumber" Type="Int32" />
+          <Property Name="IsPaid" Type="Boolean" Nullable="false" />
+          <Property Name="IsCollected" Type="Boolean" Nullable="false" />
+          <Property Name="IsFixed" Type="Boolean" Nullable="false" />
+          <Property Name="IsCancel" Type="Boolean" Nullable="false" />
+          <Property Name="CreatorUserID" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="FaultType" Relationship="Self.FK_Jobs_FaultTypes" FromRole="Jobs" ToRole="FaultTypes" />
+          <NavigationProperty Name="JobItemType" Relationship="Self.FK_Jobs_ItemTypes" FromRole="Jobs" ToRole="JobItemTypes" />
+          <NavigationProperty Name="JobHistories" Relationship="Self.FK_JobHistories_RepairJobs" FromRole="Jobs" ToRole="JobHistories" />
+          <NavigationProperty Name="JobPayments" Relationship="Self.FK_JobPayments_Jobs" FromRole="Jobs" ToRole="JobPayments" />
+          <NavigationProperty Name="CreatorUser" Relationship="Self.FK_Jobs_Users" FromRole="Jobs" ToRole="Users" />
         </EntityType>
         <EntityType Name="PurchaseItem">
           <Key>
-            <PropertyRef Name="PurchaseItemID" />
+            <PropertyRef Name="Id" />
           </Key>
-          <Property Name="PurchaseItemID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="PurchaseID" Type="Int32" Nullable="false" />
           <Property Name="StockItemTypeID" Type="Int32" Nullable="false" />
           <Property Name="ProposedUnitPrice" Type="Int32" Nullable="false" />
@@ -817,9 +843,9 @@ warning 6002: The table/view 'Buzzle.dbo.StockItemBalances' does not have a prim
         </EntityType>
         <EntityType Name="Purchase">
           <Key>
-            <PropertyRef Name="PurchaseID" />
+            <PropertyRef Name="Id" />
           </Key>
-          <Property Name="PurchaseID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="DateRecorded" Type="DateTime" Nullable="false" Precision="3" />
           <Property Name="CreatedByUserID" Type="Int32" Nullable="false" />
           <Property Name="Status" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
@@ -829,9 +855,9 @@ warning 6002: The table/view 'Buzzle.dbo.StockItemBalances' does not have a prim
         </EntityType>
         <EntityType Name="SaleItem">
           <Key>
-            <PropertyRef Name="SaleItemID" />
+            <PropertyRef Name="Id" />
           </Key>
-          <Property Name="SaleItemID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="SaleID" Type="Int64" Nullable="false" />
           <Property Name="StockItemTypeID" Type="Int32" Nullable="false" />
           <Property Name="UnitSoldPrice" Type="Int32" Nullable="false" />
@@ -843,9 +869,9 @@ warning 6002: The table/view 'Buzzle.dbo.StockItemBalances' does not have a prim
         </EntityType>
         <EntityType Name="Sale">
           <Key>
-            <PropertyRef Name="SaleID" />
+            <PropertyRef Name="Id" />
           </Key>
-          <Property Name="SaleID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="CustomerName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
           <Property Name="DateRecorded" Type="DateTime" Precision="3" />
           <Property Name="RecordedByUserID" Type="Int32" Nullable="false" />
@@ -855,9 +881,9 @@ warning 6002: The table/view 'Buzzle.dbo.StockItemBalances' does not have a prim
         </EntityType>
         <EntityType Name="StockItemMovement">
           <Key>
-            <PropertyRef Name="MovementID" />
+            <PropertyRef Name="Id" />
           </Key>
-          <Property Name="MovementID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="StockItemTypeID" Type="Int32" Nullable="false" />
           <Property Name="Quantity" Type="Int32" Nullable="false" />
           <Property Name="MovementType" Type="Int32" Nullable="false" />
@@ -871,9 +897,9 @@ warning 6002: The table/view 'Buzzle.dbo.StockItemBalances' does not have a prim
         </EntityType>
         <EntityType Name="StockItemType">
           <Key>
-            <PropertyRef Name="StockItemTypeID" />
+            <PropertyRef Name="Id" />
           </Key>
-          <Property Name="StockItemTypeID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="StockItemName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="UnitSellingPrice" Type="Int32" Nullable="false" />
           <Property Name="Notes" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
@@ -886,9 +912,9 @@ warning 6002: The table/view 'Buzzle.dbo.StockItemBalances' does not have a prim
         </EntityType>
         <EntityType Name="Supply">
           <Key>
-            <PropertyRef Name="SupplyID" />
+            <PropertyRef Name="Id" />
           </Key>
-          <Property Name="SupplyID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="DateRecorded" Type="DateTime" Nullable="false" Precision="3" />
           <Property Name="RecordedByUserID" Type="Int32" Nullable="false" />
           <Property Name="Notes" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
@@ -899,9 +925,9 @@ warning 6002: The table/view 'Buzzle.dbo.StockItemBalances' does not have a prim
         </EntityType>
         <EntityType Name="SupplyItem">
           <Key>
-            <PropertyRef Name="SupplyItemID" />
+            <PropertyRef Name="Id" />
           </Key>
-          <Property Name="SupplyItemID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="SupplyID" Type="Int32" Nullable="false" />
           <Property Name="PurchaseItemID" Type="Int32" Nullable="false" />
           <Property Name="PurchasedUnitPrice" Type="Int32" Nullable="false" />
@@ -914,9 +940,9 @@ warning 6002: The table/view 'Buzzle.dbo.StockItemBalances' does not have a prim
         </EntityType>
         <EntityType Name="Transaction">
           <Key>
-            <PropertyRef Name="TransactionID" />
+            <PropertyRef Name="Id" />
           </Key>
-          <Property Name="TransactionID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="TransactionTypeID" Type="Int32" Nullable="false" />
           <Property Name="Amount" Type="Int32" Nullable="false" />
           <Property Name="Notes" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
@@ -929,9 +955,9 @@ warning 6002: The table/view 'Buzzle.dbo.StockItemBalances' does not have a prim
         </EntityType>
         <EntityType Name="TransactionType">
           <Key>
-            <PropertyRef Name="TransactionTypeID" />
+            <PropertyRef Name="Id" />
           </Key>
-          <Property Name="TransactionTypeID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="TransactionName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="DeductionAccountID" Type="Int32" />
           <Property Name="IncreasingAccountID" Type="Int32" />
@@ -941,9 +967,9 @@ warning 6002: The table/view 'Buzzle.dbo.StockItemBalances' does not have a prim
         </EntityType>
         <EntityType Name="User">
           <Key>
-            <PropertyRef Name="UserID" />
+            <PropertyRef Name="Id" />
           </Key>
-          <Property Name="UserID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="UserName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="PassWord" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="FirstName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
@@ -952,12 +978,12 @@ warning 6002: The table/view 'Buzzle.dbo.StockItemBalances' does not have a prim
           <Property Name="DateCreated" Type="DateTime" Precision="3" />
           <Property Name="IsDeleted" Type="Boolean" Nullable="false" />
           <Property Name="IsAdministrator" Type="Boolean" Nullable="false" />
+          <NavigationProperty Name="Jobs" Relationship="Self.FK_Jobs_Users" FromRole="Users" ToRole="Jobs" />
           <NavigationProperty Name="Purchases" Relationship="Self.FK_Purchases_Users" FromRole="Users" ToRole="Purchases" />
           <NavigationProperty Name="Sales" Relationship="Self.FK_Sales_Users" FromRole="Users" ToRole="Sales" />
           <NavigationProperty Name="Supplies" Relationship="Self.FK_Supplies_Users" FromRole="Users" ToRole="Supplies" />
           <NavigationProperty Name="Transactions" Relationship="Self.FK_Transactions_Users" FromRole="Users" ToRole="Transactions" />
           <NavigationProperty Name="JobHistories" Relationship="Self.FK_JobHistories_Users" FromRole="Users" ToRole="JobHistories" />
-          <NavigationProperty Name="Jobs" Relationship="BuzzleModel.FK_Jobs_Users" FromRole="User" ToRole="Job" />
         </EntityType>
         <EntityType Name="BuzzleSetting">
           <Key>
@@ -969,54 +995,54 @@ warning 6002: The table/view 'Buzzle.dbo.StockItemBalances' does not have a prim
         </EntityType>
         <EntityType Name="JobHistory">
           <Key>
-            <PropertyRef Name="JobID" />
+            <PropertyRef Name="Id" />
             <PropertyRef Name="HistoryNote" />
             <PropertyRef Name="DateInserted" />
             <PropertyRef Name="RecordedByUserID" />
           </Key>
-          <Property Name="JobID" Type="Int32" Nullable="false" />
+          <Property Name="Id" Type="Int32" Nullable="false" />
           <Property Name="HistoryNote" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="DateInserted" Type="DateTime" Nullable="false" Precision="3" />
           <Property Name="RecordedByUserID" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Job" Relationship="Self.FK_JobHistories_RepairJobs" FromRole="JobHistories" ToRole="Jobs" />
           <NavigationProperty Name="User" Relationship="Self.FK_JobHistories_Users" FromRole="JobHistories" ToRole="Users" />
-          <NavigationProperty Name="Job" Relationship="BuzzleModel.FK_JobHistories_RepairJobs" FromRole="JobHistory" ToRole="Job" />
         </EntityType>
         <EntityType Name="JobPayment">
           <Key>
-            <PropertyRef Name="JobID" />
+            <PropertyRef Name="Id" />
             <PropertyRef Name="TransactionID" />
           </Key>
-          <Property Name="JobID" Type="Int32" Nullable="false" />
+          <Property Name="Id" Type="Int32" Nullable="false" />
           <Property Name="TransactionID" Type="Int32" Nullable="false" />
           <Property Name="Notes" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="Job" Relationship="Self.FK_JobPayments_Jobs" FromRole="JobPayments" ToRole="Jobs" />
           <NavigationProperty Name="Transaction" Relationship="Self.FK_JobPayments_Transactions" FromRole="JobPayments" ToRole="Transactions" />
-          <NavigationProperty Name="Job" Relationship="BuzzleModel.FK_JobPayments_Jobs" FromRole="JobPayment" ToRole="Job" />
         </EntityType>
         <EntityType Name="LookupData">
           <Key>
-            <PropertyRef Name="TableNumber" />
+            <PropertyRef Name="Id" />
             <PropertyRef Name="TableData" />
           </Key>
-          <Property Name="TableNumber" Type="Byte" Nullable="false" />
+          <Property Name="Id" Type="Byte" Nullable="false" />
           <Property Name="TableData" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
         </EntityType>
         <EntityType Name="AccountStat">
           <Key>
-            <PropertyRef Name="AccountID" />
+            <PropertyRef Name="Id" />
             <PropertyRef Name="AccountName" />
           </Key>
-          <Property Name="AccountID" Type="Int32" Nullable="false" />
+          <Property Name="Id" Type="Int32" Nullable="false" />
           <Property Name="AccountName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="amount" Type="Int32" />
         </EntityType>
         <EntityType Name="StockItemBalance">
           <Key>
-            <PropertyRef Name="StockItemTypeID" />
+            <PropertyRef Name="Id" />
             <PropertyRef Name="StockItemName" />
             <PropertyRef Name="UnitPurchasePrice" />
             <PropertyRef Name="UnitSellingPrice" />
           </Key>
-          <Property Name="StockItemTypeID" Type="Int32" Nullable="false" />
+          <Property Name="Id" Type="Int32" Nullable="false" />
           <Property Name="StockItemName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="Model" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
           <Property Name="SerialNumber" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
@@ -1029,7 +1055,7 @@ warning 6002: The table/view 'Buzzle.dbo.StockItemBalances' does not have a prim
           <End Role="AccountPostings" Type="Self.AccountPosting" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="Accounts">
-              <PropertyRef Name="AccountID" />
+              <PropertyRef Name="Id" />
             </Principal>
             <Dependent Role="AccountPostings">
               <PropertyRef Name="AccountID" />
@@ -1041,7 +1067,7 @@ warning 6002: The table/view 'Buzzle.dbo.StockItemBalances' does not have a prim
           <End Role="AccountPostings" Type="Self.AccountPosting" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="Transactions">
-              <PropertyRef Name="TransactionID" />
+              <PropertyRef Name="Id" />
             </Principal>
             <Dependent Role="AccountPostings">
               <PropertyRef Name="TransactionID" />
@@ -1053,7 +1079,7 @@ warning 6002: The table/view 'Buzzle.dbo.StockItemBalances' does not have a prim
           <End Role="TransactionTypes" Type="Self.TransactionType" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="Accounts">
-              <PropertyRef Name="AccountID" />
+              <PropertyRef Name="Id" />
             </Principal>
             <Dependent Role="TransactionTypes">
               <PropertyRef Name="DeductionAccountID" />
@@ -1065,10 +1091,70 @@ warning 6002: The table/view 'Buzzle.dbo.StockItemBalances' does not have a prim
           <End Role="TransactionTypes" Type="Self.TransactionType" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="Accounts">
-              <PropertyRef Name="AccountID" />
+              <PropertyRef Name="Id" />
             </Principal>
             <Dependent Role="TransactionTypes">
               <PropertyRef Name="IncreasingAccountID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Jobs_FaultTypes">
+          <End Role="FaultTypes" Type="Self.FaultType" Multiplicity="1" />
+          <End Role="Jobs" Type="Self.Job" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="FaultTypes">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Jobs">
+              <PropertyRef Name="FaultTypeID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Jobs_ItemTypes">
+          <End Role="JobItemTypes" Type="Self.JobItemType" Multiplicity="1" />
+          <End Role="Jobs" Type="Self.Job" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="JobItemTypes">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Jobs">
+              <PropertyRef Name="ItemTypeID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_JobHistories_RepairJobs">
+          <End Role="Jobs" Type="Self.Job" Multiplicity="1" />
+          <End Role="JobHistories" Type="Self.JobHistory" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Jobs">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="JobHistories">
+              <PropertyRef Name="Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_JobPayments_Jobs">
+          <End Role="Jobs" Type="Self.Job" Multiplicity="1" />
+          <End Role="JobPayments" Type="Self.JobPayment" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Jobs">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="JobPayments">
+              <PropertyRef Name="Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Jobs_Users">
+          <End Role="Users" Type="Self.User" Multiplicity="1" />
+          <End Role="Jobs" Type="Self.Job" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Users">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Jobs">
+              <PropertyRef Name="CreatorUserID" />
             </Dependent>
           </ReferentialConstraint>
         </Association>
@@ -1079,7 +1165,7 @@ warning 6002: The table/view 'Buzzle.dbo.StockItemBalances' does not have a prim
           <End Role="PurchaseItems" Type="Self.PurchaseItem" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="Purchases">
-              <PropertyRef Name="PurchaseID" />
+              <PropertyRef Name="Id" />
             </Principal>
             <Dependent Role="PurchaseItems">
               <PropertyRef Name="PurchaseID" />
@@ -1093,7 +1179,7 @@ warning 6002: The table/view 'Buzzle.dbo.StockItemBalances' does not have a prim
           <End Role="PurchaseItems" Type="Self.PurchaseItem" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="StockItemTypes">
-              <PropertyRef Name="StockItemTypeID" />
+              <PropertyRef Name="Id" />
             </Principal>
             <Dependent Role="PurchaseItems">
               <PropertyRef Name="StockItemTypeID" />
@@ -1105,7 +1191,7 @@ warning 6002: The table/view 'Buzzle.dbo.StockItemBalances' does not have a prim
           <End Role="SupplyItems" Type="Self.SupplyItem" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="PurchaseItems">
-              <PropertyRef Name="PurchaseItemID" />
+              <PropertyRef Name="Id" />
             </Principal>
             <Dependent Role="SupplyItems">
               <PropertyRef Name="PurchaseItemID" />
@@ -1117,7 +1203,7 @@ warning 6002: The table/view 'Buzzle.dbo.StockItemBalances' does not have a prim
           <End Role="Purchases" Type="Self.Purchase" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="Users">
-              <PropertyRef Name="UserID" />
+              <PropertyRef Name="Id" />
             </Principal>
             <Dependent Role="Purchases">
               <PropertyRef Name="CreatedByUserID" />
@@ -1129,7 +1215,7 @@ warning 6002: The table/view 'Buzzle.dbo.StockItemBalances' does not have a prim
           <End Role="Supplies" Type="Self.Supply" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="Purchases">
-              <PropertyRef Name="PurchaseID" />
+              <PropertyRef Name="Id" />
             </Principal>
             <Dependent Role="Supplies">
               <PropertyRef Name="PurchaseID" />
@@ -1141,7 +1227,7 @@ warning 6002: The table/view 'Buzzle.dbo.StockItemBalances' does not have a prim
           <End Role="SaleItems" Type="Self.SaleItem" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="Sales">
-              <PropertyRef Name="SaleID" />
+              <PropertyRef Name="Id" />
             </Principal>
             <Dependent Role="SaleItems">
               <PropertyRef Name="SaleID" />
@@ -1153,7 +1239,7 @@ warning 6002: The table/view 'Buzzle.dbo.StockItemBalances' does not have a prim
           <End Role="SaleItems" Type="Self.SaleItem" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="StockItemTypes">
-              <PropertyRef Name="StockItemTypeID" />
+              <PropertyRef Name="Id" />
             </Principal>
             <Dependent Role="SaleItems">
               <PropertyRef Name="StockItemTypeID" />
@@ -1165,7 +1251,7 @@ warning 6002: The table/view 'Buzzle.dbo.StockItemBalances' does not have a prim
           <End Role="Sales" Type="Self.Sale" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="Users">
-              <PropertyRef Name="UserID" />
+              <PropertyRef Name="Id" />
             </Principal>
             <Dependent Role="Sales">
               <PropertyRef Name="RecordedByUserID" />
@@ -1177,7 +1263,7 @@ warning 6002: The table/view 'Buzzle.dbo.StockItemBalances' does not have a prim
           <End Role="StockItemMovements" Type="Self.StockItemMovement" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="StockItemTypes">
-              <PropertyRef Name="StockItemTypeID" />
+              <PropertyRef Name="Id" />
             </Principal>
             <Dependent Role="StockItemMovements">
               <PropertyRef Name="StockItemTypeID" />
@@ -1189,7 +1275,7 @@ warning 6002: The table/view 'Buzzle.dbo.StockItemBalances' does not have a prim
           <End Role="SupplyItems" Type="Self.SupplyItem" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="StockItemTypes">
-              <PropertyRef Name="StockItemTypeID" />
+              <PropertyRef Name="Id" />
             </Principal>
             <Dependent Role="SupplyItems">
               <PropertyRef Name="StockItemTypeID" />
@@ -1201,7 +1287,7 @@ warning 6002: The table/view 'Buzzle.dbo.StockItemBalances' does not have a prim
           <End Role="Supplies" Type="Self.Supply" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="Users">
-              <PropertyRef Name="UserID" />
+              <PropertyRef Name="Id" />
             </Principal>
             <Dependent Role="Supplies">
               <PropertyRef Name="RecordedByUserID" />
@@ -1213,7 +1299,7 @@ warning 6002: The table/view 'Buzzle.dbo.StockItemBalances' does not have a prim
           <End Role="SupplyItems" Type="Self.SupplyItem" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="Supplies">
-              <PropertyRef Name="SupplyID" />
+              <PropertyRef Name="Id" />
             </Principal>
             <Dependent Role="SupplyItems">
               <PropertyRef Name="SupplyID" />
@@ -1225,7 +1311,7 @@ warning 6002: The table/view 'Buzzle.dbo.StockItemBalances' does not have a prim
           <End Role="JobPayments" Type="Self.JobPayment" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="Transactions">
-              <PropertyRef Name="TransactionID" />
+              <PropertyRef Name="Id" />
             </Principal>
             <Dependent Role="JobPayments">
               <PropertyRef Name="TransactionID" />
@@ -1237,7 +1323,7 @@ warning 6002: The table/view 'Buzzle.dbo.StockItemBalances' does not have a prim
           <End Role="Transactions" Type="Self.Transaction" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="TransactionTypes">
-              <PropertyRef Name="TransactionTypeID" />
+              <PropertyRef Name="Id" />
             </Principal>
             <Dependent Role="Transactions">
               <PropertyRef Name="TransactionTypeID" />
@@ -1249,7 +1335,7 @@ warning 6002: The table/view 'Buzzle.dbo.StockItemBalances' does not have a prim
           <End Role="Transactions" Type="Self.Transaction" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="Users">
-              <PropertyRef Name="UserID" />
+              <PropertyRef Name="Id" />
             </Principal>
             <Dependent Role="Transactions">
               <PropertyRef Name="RecordedByUserID" />
@@ -1261,19 +1347,20 @@ warning 6002: The table/view 'Buzzle.dbo.StockItemBalances' does not have a prim
           <End Role="JobHistories" Type="Self.JobHistory" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="Users">
-              <PropertyRef Name="UserID" />
+              <PropertyRef Name="Id" />
             </Principal>
             <Dependent Role="JobHistories">
               <PropertyRef Name="RecordedByUserID" />
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <EntityContainer Name="BuzzleEntities" annotation:LazyLoadingEnabled="true">
+        <EntityContainer Name="BuzzleLocalDBEntities" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="AccountPostings" EntityType="Self.AccountPosting" />
           <EntitySet Name="Accounts" EntityType="Self.Account" />
           <EntitySet Name="Companies" EntityType="Self.Company" />
           <EntitySet Name="FaultTypes" EntityType="Self.FaultType" />
           <EntitySet Name="JobItemTypes" EntityType="Self.JobItemType" />
+          <EntitySet Name="Jobs" EntityType="Self.Job" />
           <EntitySet Name="PurchaseItems" EntityType="Self.PurchaseItem" />
           <EntitySet Name="Purchases" EntityType="Self.Purchase" />
           <EntitySet Name="SaleItems" EntityType="Self.SaleItem" />
@@ -1306,6 +1393,26 @@ warning 6002: The table/view 'Buzzle.dbo.StockItemBalances' does not have a prim
           <AssociationSet Name="FK_TransactionTypes_Accounts1" Association="Self.FK_TransactionTypes_Accounts1">
             <End Role="Accounts" EntitySet="Accounts" />
             <End Role="TransactionTypes" EntitySet="TransactionTypes" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Jobs_FaultTypes" Association="Self.FK_Jobs_FaultTypes">
+            <End Role="FaultTypes" EntitySet="FaultTypes" />
+            <End Role="Jobs" EntitySet="Jobs" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Jobs_ItemTypes" Association="Self.FK_Jobs_ItemTypes">
+            <End Role="JobItemTypes" EntitySet="JobItemTypes" />
+            <End Role="Jobs" EntitySet="Jobs" />
+          </AssociationSet>
+          <AssociationSet Name="FK_JobHistories_RepairJobs" Association="Self.FK_JobHistories_RepairJobs">
+            <End Role="Jobs" EntitySet="Jobs" />
+            <End Role="JobHistories" EntitySet="JobHistories" />
+          </AssociationSet>
+          <AssociationSet Name="FK_JobPayments_Jobs" Association="Self.FK_JobPayments_Jobs">
+            <End Role="Jobs" EntitySet="Jobs" />
+            <End Role="JobPayments" EntitySet="JobPayments" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Jobs_Users" Association="Self.FK_Jobs_Users">
+            <End Role="Users" EntitySet="Users" />
+            <End Role="Jobs" EntitySet="Jobs" />
           </AssociationSet>
           <AssociationSet Name="FK_PurchaseItems_Purchases" Association="Self.FK_PurchaseItems_Purchases">
             <End Role="Purchases" EntitySet="Purchases" />
@@ -1371,138 +1478,32 @@ warning 6002: The table/view 'Buzzle.dbo.StockItemBalances' does not have a prim
             <End Role="Users" EntitySet="Users" />
             <End Role="JobHistories" EntitySet="JobHistories" />
           </AssociationSet>
-          <FunctionImport Name="FindSales" ReturnType="Collection(BuzzleModel.FindSales_Result)">
+          <FunctionImport Name="FindSales" ReturnType="Collection(BuzzleLocalDBModel.FindSales_Result)">
             <Parameter Name="StartDate" Mode="In" Type="DateTime" />
             <Parameter Name="EndDate" Mode="In" Type="DateTime" />
             <Parameter Name="RecordedByUserID" Mode="In" Type="Int32" />
           </FunctionImport>
           <FunctionImport Name="GetJobPaymentAmount" ReturnType="Collection(Int32)">
-          <Parameter Name="JobID" Mode="In" Type="Int32" />
+            <Parameter Name="JobID" Mode="In" Type="Int32" />
           </FunctionImport>
-          <EntitySet Name="Jobs" EntityType="BuzzleModel.Job" />
-          <AssociationSet Name="FK_Jobs_FaultTypes" Association="BuzzleModel.FK_Jobs_FaultTypes">
-            <End Role="FaultType" EntitySet="FaultTypes" />
-            <End Role="Job" EntitySet="Jobs" />
-          </AssociationSet>
-          <AssociationSet Name="FK_Jobs_ItemTypes" Association="BuzzleModel.FK_Jobs_ItemTypes">
-            <End Role="JobItemType" EntitySet="JobItemTypes" />
-            <End Role="Job" EntitySet="Jobs" />
-          </AssociationSet>
-          <AssociationSet Name="FK_JobHistories_RepairJobs" Association="BuzzleModel.FK_JobHistories_RepairJobs">
-            <End Role="Job" EntitySet="Jobs" />
-            <End Role="JobHistory" EntitySet="JobHistories" />
-          </AssociationSet>
-          <AssociationSet Name="FK_JobPayments_Jobs" Association="BuzzleModel.FK_JobPayments_Jobs">
-            <End Role="Job" EntitySet="Jobs" />
-            <End Role="JobPayment" EntitySet="JobPayments" />
-          </AssociationSet>
-          <AssociationSet Name="FK_Jobs_Users" Association="BuzzleModel.FK_Jobs_Users">
-            <End Role="User" EntitySet="Users" />
-            <End Role="Job" EntitySet="Jobs" />
-          </AssociationSet>
         </EntityContainer>
         <ComplexType Name="FindSales_Result">
-          <Property Type="Int64" Name="SaleID" Nullable="false" />
+          <Property Type="Int64" Name="Id" Nullable="false" />
           <Property Type="String" Name="CustomerName" Nullable="true" MaxLength="50" />
           <Property Type="DateTime" Name="DateRecorded" Nullable="true" Precision="23" />
           <Property Type="Int32" Name="RecordedByUserID" Nullable="false" />
           <Property Type="String" Name="CustomerDetails" Nullable="true" />
         </ComplexType>
-        <EntityType Name="Job">
-          <Key>
-            <PropertyRef Name="JobID" />
-          </Key>
-          <Property Name="JobID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="CustomerName" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
-          <Property Name="ItemTypeID" Type="Int32" Nullable="false" />
-          <Property Name="DateCreated" Type="DateTime" Nullable="false" Precision="3" />
-          <Property Name="EndDate" Type="DateTime" Precision="3" />
-          <Property Name="Notes" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
-          <Property Name="ItemDescription" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
-          <Property Name="FaultTypeID" Type="Int32" Nullable="false" />
-          <Property Name="FaultDescription" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
-          <Property Name="CustomerPhoneNumber" Type="Int32" />
-          <Property Name="IsPaid" Type="Boolean" Nullable="false" />
-          <Property Name="IsCollected" Type="Boolean" Nullable="false" />
-          <Property Name="IsFixed" Type="Boolean" Nullable="false" />
-          <Property Name="IsCancel" Type="Boolean" Nullable="false" />
-          <Property Name="CreatorUserID" Type="Int32" Nullable="false" />
-          <NavigationProperty Name="FaultType" Relationship="BuzzleModel.FK_Jobs_FaultTypes" FromRole="Job" ToRole="FaultType" />
-          <NavigationProperty Name="JobItemType" Relationship="BuzzleModel.FK_Jobs_ItemTypes" FromRole="Job" ToRole="JobItemType" />
-          <NavigationProperty Name="JobHistories" Relationship="BuzzleModel.FK_JobHistories_RepairJobs" FromRole="Job" ToRole="JobHistory" />
-          <NavigationProperty Name="JobPayments" Relationship="BuzzleModel.FK_JobPayments_Jobs" FromRole="Job" ToRole="JobPayment" />
-          <NavigationProperty Name="CreatorUser" Relationship="BuzzleModel.FK_Jobs_Users" FromRole="Job" ToRole="User" />
-        </EntityType>
-        <Association Name="FK_Jobs_FaultTypes">
-          <End Type="BuzzleModel.FaultType" Role="FaultType" Multiplicity="1" />
-          <End Type="BuzzleModel.Job" Role="Job" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="FaultType">
-              <PropertyRef Name="FaultTypeID" />
-            </Principal>
-            <Dependent Role="Job">
-              <PropertyRef Name="FaultTypeID" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
-        <Association Name="FK_Jobs_ItemTypes">
-          <End Type="BuzzleModel.JobItemType" Role="JobItemType" Multiplicity="1" />
-          <End Type="BuzzleModel.Job" Role="Job" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="JobItemType">
-              <PropertyRef Name="ItemTypeID" />
-            </Principal>
-            <Dependent Role="Job">
-              <PropertyRef Name="ItemTypeID" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
-        <Association Name="FK_JobHistories_RepairJobs">
-          <End Type="BuzzleModel.Job" Role="Job" Multiplicity="1" />
-          <End Type="BuzzleModel.JobHistory" Role="JobHistory" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="Job">
-              <PropertyRef Name="JobID" />
-            </Principal>
-            <Dependent Role="JobHistory">
-              <PropertyRef Name="JobID" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
-        <Association Name="FK_JobPayments_Jobs">
-          <End Type="BuzzleModel.Job" Role="Job" Multiplicity="1" />
-          <End Type="BuzzleModel.JobPayment" Role="JobPayment" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="Job">
-              <PropertyRef Name="JobID" />
-            </Principal>
-            <Dependent Role="JobPayment">
-              <PropertyRef Name="JobID" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
-        <Association Name="FK_Jobs_Users">
-          <End Type="BuzzleModel.User" Role="User" Multiplicity="1" />
-          <End Type="BuzzleModel.Job" Role="Job" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="User">
-              <PropertyRef Name="UserID" />
-            </Principal>
-            <Dependent Role="Job">
-              <PropertyRef Name="CreatorUserID" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
       </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-        <EntityContainerMapping StorageEntityContainer="BuzzleModelStoreContainer" CdmEntityContainer="BuzzleEntities">
+        <EntityContainerMapping StorageEntityContainer="BuzzleLocalDBModelStoreContainer" CdmEntityContainer="BuzzleLocalDBEntities">
           <EntitySetMapping Name="AccountPostings">
-            <EntityTypeMapping TypeName="BuzzleModel.AccountPosting">
+            <EntityTypeMapping TypeName="BuzzleLocalDBModel.AccountPosting">
               <MappingFragment StoreEntitySet="AccountPostings">
-                <ScalarProperty Name="PostingID" ColumnName="PostingID" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
                 <ScalarProperty Name="TransactionID" ColumnName="TransactionID" />
                 <ScalarProperty Name="AccountID" ColumnName="AccountID" />
                 <ScalarProperty Name="PostingType" ColumnName="PostingType" />
@@ -1511,18 +1512,18 @@ warning 6002: The table/view 'Buzzle.dbo.StockItemBalances' does not have a prim
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="Accounts">
-            <EntityTypeMapping TypeName="BuzzleModel.Account">
+            <EntityTypeMapping TypeName="BuzzleLocalDBModel.Account">
               <MappingFragment StoreEntitySet="Accounts">
-                <ScalarProperty Name="AccountID" ColumnName="AccountID" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
                 <ScalarProperty Name="AccountName" ColumnName="AccountName" />
                 <ScalarProperty Name="Description" ColumnName="Description" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="Companies">
-            <EntityTypeMapping TypeName="BuzzleModel.Company">
+            <EntityTypeMapping TypeName="BuzzleLocalDBModel.Company">
               <MappingFragment StoreEntitySet="Company">
-                <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
                 <ScalarProperty Name="CompanyName" ColumnName="CompanyName" />
                 <ScalarProperty Name="CompanyLogo" ColumnName="CompanyLogo" />
                 <ScalarProperty Name="PhoneNumber" ColumnName="PhoneNumber" />
@@ -1531,27 +1532,48 @@ warning 6002: The table/view 'Buzzle.dbo.StockItemBalances' does not have a prim
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="FaultTypes">
-            <EntityTypeMapping TypeName="BuzzleModel.FaultType">
+            <EntityTypeMapping TypeName="BuzzleLocalDBModel.FaultType">
               <MappingFragment StoreEntitySet="FaultTypes">
-                <ScalarProperty Name="FaultTypeID" ColumnName="FaultTypeID" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
                 <ScalarProperty Name="FaultName" ColumnName="FaultName" />
                 <ScalarProperty Name="Notes" ColumnName="Notes" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="JobItemTypes">
-            <EntityTypeMapping TypeName="BuzzleModel.JobItemType">
+            <EntityTypeMapping TypeName="BuzzleLocalDBModel.JobItemType">
               <MappingFragment StoreEntitySet="JobItemTypes">
-                <ScalarProperty Name="ItemTypeID" ColumnName="ItemTypeID" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
                 <ScalarProperty Name="ItemName" ColumnName="ItemName" />
                 <ScalarProperty Name="Notes" ColumnName="Notes" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
+          <EntitySetMapping Name="Jobs">
+            <EntityTypeMapping TypeName="BuzzleLocalDBModel.Job">
+              <MappingFragment StoreEntitySet="Jobs">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="CustomerName" ColumnName="CustomerName" />
+                <ScalarProperty Name="ItemTypeID" ColumnName="ItemTypeID" />
+                <ScalarProperty Name="DateCreated" ColumnName="DateCreated" />
+                <ScalarProperty Name="EndDate" ColumnName="EndDate" />
+                <ScalarProperty Name="Notes" ColumnName="Notes" />
+                <ScalarProperty Name="ItemDescription" ColumnName="ItemDescription" />
+                <ScalarProperty Name="FaultTypeID" ColumnName="FaultTypeID" />
+                <ScalarProperty Name="FaultDescription" ColumnName="FaultDescription" />
+                <ScalarProperty Name="CustomerPhoneNumber" ColumnName="CustomerPhoneNumber" />
+                <ScalarProperty Name="IsPaid" ColumnName="IsPaid" />
+                <ScalarProperty Name="IsCollected" ColumnName="IsCollected" />
+                <ScalarProperty Name="IsFixed" ColumnName="IsFixed" />
+                <ScalarProperty Name="IsCancel" ColumnName="IsCancel" />
+                <ScalarProperty Name="CreatorUserID" ColumnName="CreatorUserID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
           <EntitySetMapping Name="PurchaseItems">
-            <EntityTypeMapping TypeName="BuzzleModel.PurchaseItem">
+            <EntityTypeMapping TypeName="BuzzleLocalDBModel.PurchaseItem">
               <MappingFragment StoreEntitySet="PurchaseItems">
-                <ScalarProperty Name="PurchaseItemID" ColumnName="PurchaseItemID" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
                 <ScalarProperty Name="PurchaseID" ColumnName="PurchaseID" />
                 <ScalarProperty Name="StockItemTypeID" ColumnName="StockItemTypeID" />
                 <ScalarProperty Name="ProposedUnitPrice" ColumnName="ProposedUnitPrice" />
@@ -1563,9 +1585,9 @@ warning 6002: The table/view 'Buzzle.dbo.StockItemBalances' does not have a prim
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="Purchases">
-            <EntityTypeMapping TypeName="BuzzleModel.Purchase">
+            <EntityTypeMapping TypeName="BuzzleLocalDBModel.Purchase">
               <MappingFragment StoreEntitySet="Purchases">
-                <ScalarProperty Name="PurchaseID" ColumnName="PurchaseID" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
                 <ScalarProperty Name="DateRecorded" ColumnName="DateRecorded" />
                 <ScalarProperty Name="CreatedByUserID" ColumnName="CreatedByUserID" />
                 <ScalarProperty Name="Status" ColumnName="Status" />
@@ -1573,9 +1595,9 @@ warning 6002: The table/view 'Buzzle.dbo.StockItemBalances' does not have a prim
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="SaleItems">
-            <EntityTypeMapping TypeName="BuzzleModel.SaleItem">
+            <EntityTypeMapping TypeName="BuzzleLocalDBModel.SaleItem">
               <MappingFragment StoreEntitySet="SaleItems">
-                <ScalarProperty Name="SaleItemID" ColumnName="SaleItemID" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
                 <ScalarProperty Name="SaleID" ColumnName="SaleID" />
                 <ScalarProperty Name="StockItemTypeID" ColumnName="StockItemTypeID" />
                 <ScalarProperty Name="UnitSoldPrice" ColumnName="UnitSoldPrice" />
@@ -1586,9 +1608,9 @@ warning 6002: The table/view 'Buzzle.dbo.StockItemBalances' does not have a prim
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="Sales">
-            <EntityTypeMapping TypeName="BuzzleModel.Sale">
+            <EntityTypeMapping TypeName="BuzzleLocalDBModel.Sale">
               <MappingFragment StoreEntitySet="Sales">
-                <ScalarProperty Name="SaleID" ColumnName="SaleID" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
                 <ScalarProperty Name="CustomerName" ColumnName="CustomerName" />
                 <ScalarProperty Name="DateRecorded" ColumnName="DateRecorded" />
                 <ScalarProperty Name="RecordedByUserID" ColumnName="RecordedByUserID" />
@@ -1597,9 +1619,9 @@ warning 6002: The table/view 'Buzzle.dbo.StockItemBalances' does not have a prim
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="StockItemMovements">
-            <EntityTypeMapping TypeName="BuzzleModel.StockItemMovement">
+            <EntityTypeMapping TypeName="BuzzleLocalDBModel.StockItemMovement">
               <MappingFragment StoreEntitySet="StockItemMovements">
-                <ScalarProperty Name="MovementID" ColumnName="MovementID" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
                 <ScalarProperty Name="StockItemTypeID" ColumnName="StockItemTypeID" />
                 <ScalarProperty Name="Quantity" ColumnName="Quantity" />
                 <ScalarProperty Name="MovementType" ColumnName="MovementType" />
@@ -1613,9 +1635,9 @@ warning 6002: The table/view 'Buzzle.dbo.StockItemBalances' does not have a prim
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="StockItemTypes">
-            <EntityTypeMapping TypeName="BuzzleModel.StockItemType">
+            <EntityTypeMapping TypeName="BuzzleLocalDBModel.StockItemType">
               <MappingFragment StoreEntitySet="StockItemTypes">
-                <ScalarProperty Name="StockItemTypeID" ColumnName="StockItemTypeID" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
                 <ScalarProperty Name="StockItemName" ColumnName="StockItemName" />
                 <ScalarProperty Name="UnitSellingPrice" ColumnName="UnitSellingPrice" />
                 <ScalarProperty Name="Notes" ColumnName="Notes" />
@@ -1625,9 +1647,9 @@ warning 6002: The table/view 'Buzzle.dbo.StockItemBalances' does not have a prim
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="Supplies">
-            <EntityTypeMapping TypeName="BuzzleModel.Supply">
+            <EntityTypeMapping TypeName="BuzzleLocalDBModel.Supply">
               <MappingFragment StoreEntitySet="Supplies">
-                <ScalarProperty Name="SupplyID" ColumnName="SupplyID" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
                 <ScalarProperty Name="DateRecorded" ColumnName="DateRecorded" />
                 <ScalarProperty Name="RecordedByUserID" ColumnName="RecordedByUserID" />
                 <ScalarProperty Name="Notes" ColumnName="Notes" />
@@ -1636,9 +1658,9 @@ warning 6002: The table/view 'Buzzle.dbo.StockItemBalances' does not have a prim
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="SupplyItems">
-            <EntityTypeMapping TypeName="BuzzleModel.SupplyItem">
+            <EntityTypeMapping TypeName="BuzzleLocalDBModel.SupplyItem">
               <MappingFragment StoreEntitySet="SupplyItems">
-                <ScalarProperty Name="SupplyItemID" ColumnName="SupplyItemID" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
                 <ScalarProperty Name="SupplyID" ColumnName="SupplyID" />
                 <ScalarProperty Name="PurchaseItemID" ColumnName="PurchaseItemID" />
                 <ScalarProperty Name="PurchasedUnitPrice" ColumnName="PurchasedUnitPrice" />
@@ -1649,9 +1671,9 @@ warning 6002: The table/view 'Buzzle.dbo.StockItemBalances' does not have a prim
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="Transactions">
-            <EntityTypeMapping TypeName="BuzzleModel.Transaction">
+            <EntityTypeMapping TypeName="BuzzleLocalDBModel.Transaction">
               <MappingFragment StoreEntitySet="Transactions">
-                <ScalarProperty Name="TransactionID" ColumnName="TransactionID" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
                 <ScalarProperty Name="TransactionTypeID" ColumnName="TransactionTypeID" />
                 <ScalarProperty Name="Amount" ColumnName="Amount" />
                 <ScalarProperty Name="Notes" ColumnName="Notes" />
@@ -1661,9 +1683,9 @@ warning 6002: The table/view 'Buzzle.dbo.StockItemBalances' does not have a prim
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="TransactionTypes">
-            <EntityTypeMapping TypeName="BuzzleModel.TransactionType">
+            <EntityTypeMapping TypeName="BuzzleLocalDBModel.TransactionType">
               <MappingFragment StoreEntitySet="TransactionTypes">
-                <ScalarProperty Name="TransactionTypeID" ColumnName="TransactionTypeID" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
                 <ScalarProperty Name="TransactionName" ColumnName="TransactionName" />
                 <ScalarProperty Name="DeductionAccountID" ColumnName="DeductionAccountID" />
                 <ScalarProperty Name="IncreasingAccountID" ColumnName="IncreasingAccountID" />
@@ -1671,9 +1693,9 @@ warning 6002: The table/view 'Buzzle.dbo.StockItemBalances' does not have a prim
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="Users">
-            <EntityTypeMapping TypeName="BuzzleModel.User">
+            <EntityTypeMapping TypeName="BuzzleLocalDBModel.User">
               <MappingFragment StoreEntitySet="Users">
-                <ScalarProperty Name="UserID" ColumnName="UserID" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
                 <ScalarProperty Name="UserName" ColumnName="UserName" />
                 <ScalarProperty Name="PassWord" ColumnName="PassWord" />
                 <ScalarProperty Name="FirstName" ColumnName="FirstName" />
@@ -1686,7 +1708,7 @@ warning 6002: The table/view 'Buzzle.dbo.StockItemBalances' does not have a prim
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="BuzzleSettings">
-            <EntityTypeMapping TypeName="BuzzleModel.BuzzleSetting">
+            <EntityTypeMapping TypeName="BuzzleLocalDBModel.BuzzleSetting">
               <MappingFragment StoreEntitySet="BuzzleSettings">
                 <ScalarProperty Name="SettingName" ColumnName="SettingName" />
                 <ScalarProperty Name="SettingValue" ColumnName="SettingValue" />
@@ -1694,9 +1716,9 @@ warning 6002: The table/view 'Buzzle.dbo.StockItemBalances' does not have a prim
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="JobHistories">
-            <EntityTypeMapping TypeName="BuzzleModel.JobHistory">
+            <EntityTypeMapping TypeName="BuzzleLocalDBModel.JobHistory">
               <MappingFragment StoreEntitySet="JobHistories">
-                <ScalarProperty Name="JobID" ColumnName="JobID" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
                 <ScalarProperty Name="HistoryNote" ColumnName="HistoryNote" />
                 <ScalarProperty Name="DateInserted" ColumnName="DateInserted" />
                 <ScalarProperty Name="RecordedByUserID" ColumnName="RecordedByUserID" />
@@ -1704,35 +1726,35 @@ warning 6002: The table/view 'Buzzle.dbo.StockItemBalances' does not have a prim
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="JobPayments">
-            <EntityTypeMapping TypeName="BuzzleModel.JobPayment">
+            <EntityTypeMapping TypeName="BuzzleLocalDBModel.JobPayment">
               <MappingFragment StoreEntitySet="JobPayments">
-                <ScalarProperty Name="JobID" ColumnName="JobID" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
                 <ScalarProperty Name="TransactionID" ColumnName="TransactionID" />
                 <ScalarProperty Name="Notes" ColumnName="Notes" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="LookupDatas">
-            <EntityTypeMapping TypeName="BuzzleModel.LookupData">
+            <EntityTypeMapping TypeName="BuzzleLocalDBModel.LookupData">
               <MappingFragment StoreEntitySet="LookupData">
-                <ScalarProperty Name="TableNumber" ColumnName="TableNumber" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
                 <ScalarProperty Name="TableData" ColumnName="TableData" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="AccountStats">
-            <EntityTypeMapping TypeName="BuzzleModel.AccountStat">
+            <EntityTypeMapping TypeName="BuzzleLocalDBModel.AccountStat">
               <MappingFragment StoreEntitySet="AccountStats">
-                <ScalarProperty Name="AccountID" ColumnName="AccountID" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
                 <ScalarProperty Name="AccountName" ColumnName="AccountName" />
                 <ScalarProperty Name="amount" ColumnName="amount" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="StockItemBalances">
-            <EntityTypeMapping TypeName="BuzzleModel.StockItemBalance">
+            <EntityTypeMapping TypeName="BuzzleLocalDBModel.StockItemBalance">
               <MappingFragment StoreEntitySet="StockItemBalances">
-                <ScalarProperty Name="StockItemTypeID" ColumnName="StockItemTypeID" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
                 <ScalarProperty Name="StockItemName" ColumnName="StockItemName" />
                 <ScalarProperty Name="Model" ColumnName="Model" />
                 <ScalarProperty Name="SerialNumber" ColumnName="SerialNumber" />
@@ -1742,10 +1764,10 @@ warning 6002: The table/view 'Buzzle.dbo.StockItemBalances' does not have a prim
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
-          <FunctionImportMapping FunctionImportName="FindSales" FunctionName="BuzzleModel.Store.FindSales">
+          <FunctionImportMapping FunctionImportName="FindSales" FunctionName="BuzzleLocalDBModel.Store.FindSales">
             <ResultMapping>
-              <ComplexTypeMapping TypeName="BuzzleModel.FindSales_Result">
-                <ScalarProperty Name="SaleID" ColumnName="SaleID" />
+              <ComplexTypeMapping TypeName="BuzzleLocalDBModel.FindSales_Result">
+                <ScalarProperty Name="Id" ColumnName="Id" />
                 <ScalarProperty Name="CustomerName" ColumnName="CustomerName" />
                 <ScalarProperty Name="DateRecorded" ColumnName="DateRecorded" />
                 <ScalarProperty Name="RecordedByUserID" ColumnName="RecordedByUserID" />
@@ -1753,28 +1775,7 @@ warning 6002: The table/view 'Buzzle.dbo.StockItemBalances' does not have a prim
               </ComplexTypeMapping>
             </ResultMapping>
           </FunctionImportMapping>
-          <FunctionImportMapping FunctionImportName="GetJobPaymentAmount" FunctionName="BuzzleModel.Store.GetJobPaymentAmount" />
-          <EntitySetMapping Name="Jobs">
-            <EntityTypeMapping TypeName="BuzzleModel.Job">
-              <MappingFragment StoreEntitySet="Jobs">
-                <ScalarProperty Name="CreatorUserID" ColumnName="CreatorUserID" />
-                <ScalarProperty Name="IsCancel" ColumnName="IsCancel" />
-                <ScalarProperty Name="IsFixed" ColumnName="IsFixed" />
-                <ScalarProperty Name="IsCollected" ColumnName="IsCollected" />
-                <ScalarProperty Name="IsPaid" ColumnName="IsPaid" />
-                <ScalarProperty Name="CustomerPhoneNumber" ColumnName="CustomerPhoneNumber" />
-                <ScalarProperty Name="FaultDescription" ColumnName="FaultDescription" />
-                <ScalarProperty Name="FaultTypeID" ColumnName="FaultTypeID" />
-                <ScalarProperty Name="ItemDescription" ColumnName="ItemDescription" />
-                <ScalarProperty Name="Notes" ColumnName="Notes" />
-                <ScalarProperty Name="EndDate" ColumnName="EndDate" />
-                <ScalarProperty Name="DateCreated" ColumnName="DateCreated" />
-                <ScalarProperty Name="ItemTypeID" ColumnName="ItemTypeID" />
-                <ScalarProperty Name="CustomerName" ColumnName="CustomerName" />
-                <ScalarProperty Name="JobID" ColumnName="JobID" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
+          <FunctionImportMapping FunctionImportName="GetJobPaymentAmount" FunctionName="BuzzleLocalDBModel.Store.GetJobPaymentAmount" />
         </EntityContainerMapping>
       </Mapping>
     </edmx:Mappings>

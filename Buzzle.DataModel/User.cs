@@ -17,15 +17,15 @@ namespace Buzzle.DataModel
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public User()
         {
+            this.Jobs = new HashSet<Job>();
             this.Purchases = new HashSet<Purchase>();
             this.Sales = new HashSet<Sale>();
             this.Supplies = new HashSet<Supply>();
             this.Transactions = new HashSet<Transaction>();
             this.JobHistories = new HashSet<JobHistory>();
-            this.Jobs = new HashSet<Job>();
         }
     
-        public int UserID { get; set; }
+        public int Id { get; set; }
         public string UserName { get; set; }
         public string PassWord { get; set; }
         public string FirstName { get; set; }
@@ -36,6 +36,8 @@ namespace Buzzle.DataModel
         public bool IsAdministrator { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Job> Jobs { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Purchase> Purchases { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Sale> Sales { get; set; }
@@ -45,7 +47,5 @@ namespace Buzzle.DataModel
         public virtual ICollection<Transaction> Transactions { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<JobHistory> JobHistories { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Job> Jobs { get; set; }
     }
 }

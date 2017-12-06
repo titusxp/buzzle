@@ -14,7 +14,7 @@ namespace Buzzle.DataModel
     
     public partial class StockItemBalance
     {
-        public int StockItemTypeID { get; set; }
+        public int Id { get; set; }
         public string StockItemName { get; set; }
         public string Model { get; set; }
         public string SerialNumber { get; set; }

@@ -20,7 +20,7 @@ namespace Buzzle.DataModel
             this.Jobs = new HashSet<Job>();
         }
     
-        public int ItemTypeID { get; set; }
+        public int Id { get; set; }
         public string ItemName { get; set; }
         public string Notes { get; set; }
     

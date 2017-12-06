@@ -16,7 +16,8 @@ namespace Buzzle.Api
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            BuzzleServer.StartServer();
+            Application.Run(new BuzzleApiView());
         }
     }
 }

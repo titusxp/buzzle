@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using Bizzle.Common.Views;
 using Buzzle.Client.Ui;
 
 namespace Buzzle.Launcher

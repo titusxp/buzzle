@@ -14,7 +14,7 @@ namespace Buzzle.DataModel
     
     public partial class StockItemMovement
     {
-        public int MovementID { get; set; }
+        public int Id { get; set; }
         public int StockItemTypeID { get; set; }
         public int Quantity { get; set; }
         public int MovementType { get; set; }

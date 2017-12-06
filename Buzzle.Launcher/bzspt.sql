@@ -720,10 +720,10 @@ GO
 IF NOT EXISTS (SELECT * FROM sys.views WHERE object_id = OBJECT_ID(N'[dbo].[StockItemBalances]'))
 EXEC dbo.sp_executesql @statement = N'CREATE VIEW [dbo].[StockItemBalances]
 AS
-SELECT     SI.StockItemTypeID, SI.StockItemName, SI.Model, SM.SerialNumber, SM.UnitPurchasePrice, SI.UnitSellingPrice, SUM(SM.CalculatedValue) AS QuantityInStock
+SELECT     SI.Id, SI.StockItemName, SI.Model, SM.SerialNumber, SM.UnitPurchasePrice, SI.UnitSellingPrice, SUM(SM.CalculatedValue) AS QuantityInStock
 FROM         dbo.StockItemMovements AS SM INNER JOIN
-                      dbo.StockItemTypes AS SI ON SM.StockItemTypeID = SI.StockItemTypeID
-GROUP BY SI.StockItemTypeID, SI.StockItemName, SM.UnitPurchasePrice, SI.UnitSellingPrice, SM.SerialNumber, SI.Model
+                      dbo.StockItemTypes AS SI ON SM.Id = SI.Id
+GROUP BY SI.Id, SI.StockItemName, SM.UnitPurchasePrice, SI.UnitSellingPrice, SM.SerialNumber, SI.Model
 '
 GO
 IF NOT EXISTS (SELECT * FROM ::fn_listextendedproperty(N'MS_DiagramPane1' , N'SCHEMA',N'dbo', N'VIEW',N'StockItemBalances', NULL,NULL))

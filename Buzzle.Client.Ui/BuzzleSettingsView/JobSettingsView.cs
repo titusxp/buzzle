@@ -6,8 +6,9 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
-using Buzzle.Data;
-
+using Bizzle.Common.Common;
+using Bizzle.Common.Views;
+using Buzzle.Api.Core;
 using DevExpress.XtraEditors;
 using DevExpress.XtraPrinting.Native;
 using Buzzle.DataModel;
@@ -88,17 +89,17 @@ namespace Buzzle.Client.Ui
 
         private void SaveNewJobTypes()
         {
-            foreach(var item in ItemTypes.Where(item => item.ItemTypeID < 1))
+            foreach(var item in ItemTypes.Where(item => item.Id < 1))
             {
-                item.ItemTypeID = _dataManager.AddItemType(item).ItemTypeID;
+                item.Id = _dataManager.AddItemType(item).Id;
             }
         }
 
         private void SaveNewItemTypes()
         {
-            foreach (var faultType in FaultTypes.Where(faultType => faultType.FaultTypeID < 1))
+            foreach (var faultType in FaultTypes.Where(faultType => faultType.Id < 1))
             {
-                faultType.FaultTypeID = _dataManager.AddFaultType(faultType).FaultTypeID;
+                faultType.Id = _dataManager.AddFaultType(faultType).Id;
             }
         }
 

@@ -14,7 +14,7 @@ namespace Buzzle.DataModel
     
     public partial class AccountStat
     {
-        public int AccountID { get; set; }
+        public int Id { get; set; }
         public string AccountName { get; set; }
         public Nullable<int> amount { get; set; }
     }

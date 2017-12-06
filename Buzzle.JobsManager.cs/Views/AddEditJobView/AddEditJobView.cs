@@ -3,13 +3,14 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using Buzzle.Data;
+using Bizzle.Common.Common;
+using Bizzle.Common.Views;
+using Buzzle.Api.Core;
 using Buzzle.DataModel;
 using Buzzle.Finances;
 using Buzzle.Client.Ui;
 using DevExpress.XtraBars;
 using DevExpress.XtraRichEdit.API.Word;
-
 namespace Buzzle.JobsManager.Views
 {
     public partial class AddEditJobView : BuzzleGlobalView
@@ -37,9 +38,9 @@ namespace Buzzle.JobsManager.Views
 
         private void UpDateOrSetJobCreator()
         {
-            if (_currentJob.JobID < 1)
+            if (_currentJob.Id < 1)
             {
-                _currentJob.CreatorUserID = CurrentlyLoggedInUser.UserID;
+                _currentJob.CreatorUserID = CurrentlyLoggedInUser.Id;
                 textEdit_CreatedBy.Text = CurrentlyLoggedInUser.FullName;
             }
             else
@@ -86,14 +87,14 @@ namespace Buzzle.JobsManager.Views
 
         private void UpdateCurrentJobFaultType()
         {
-            var firstOrDefault = _allFaultTypes.FirstOrDefault(item => item.FaultTypeID == _currentJob.FaultTypeID);
+            var firstOrDefault = _allFaultTypes.FirstOrDefault(item => item.Id == _currentJob.FaultTypeID);
             CurrentFaultType =  (firstOrDefault != null)?
                 firstOrDefault.FaultName: "";
         }
 
         private void UpdateCurrentJobItemType()
         {
-            var firstOrDefault = _allItemTypes.FirstOrDefault(item => item.ItemTypeID == _currentJob.ItemTypeID);
+            var firstOrDefault = _allItemTypes.FirstOrDefault(item => item.Id == _currentJob.ItemTypeID);
             CurrentItemType = (firstOrDefault != null)?
                 firstOrDefault.ItemName: "";
         }
@@ -123,8 +124,8 @@ namespace Buzzle.JobsManager.Views
         {
             var firstOrDefault =
                 _allFaultTypes.FirstOrDefault(fault => fault.FaultName.ToUpper() == CurrentFaultType.ToUpper());
-            if (firstOrDefault != null) return firstOrDefault.FaultTypeID;
-            return CreateNewFaultType().FaultTypeID;
+            if (firstOrDefault != null) return firstOrDefault.Id;
+            return CreateNewFaultType().Id;
         }
 
         private FaultType CreateNewFaultType()
@@ -139,8 +140,8 @@ namespace Buzzle.JobsManager.Views
         {
             var firstOrDefault =
                 _allItemTypes.FirstOrDefault(item => item.ItemName.ToUpper() == CurrentItemType.ToUpper());
-            if (firstOrDefault != null) return firstOrDefault.ItemTypeID;
-            return CreateNewItemType().ItemTypeID;
+            if (firstOrDefault != null) return firstOrDefault.Id;
+            return CreateNewItemType().Id;
         }
 
         private JobItemType CreateNewItemType()
@@ -194,7 +195,7 @@ namespace Buzzle.JobsManager.Views
             EnableOrDisable(barButtonItem_Pay, _currentJob.IsFixedWaitingPayment && !_currentJob.IsCancel);
             EnableOrDisable(barButtonItem_Revert, _currentJob.IsFixedWaitingPayment || _currentJob.IsCancel);
             EnableOrDisable(barButtonItem_Fixed, _currentJob.IsPending && !_currentJob.IsCancel);
-            EnableOrDisable(barButtonItem_Pay, _currentJob.JobID > 0);
+            EnableOrDisable(barButtonItem_Pay, _currentJob.Id > 0);
         }
 
         private void EnableOrDisable(BarItem thisControl, bool enable)

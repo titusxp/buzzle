@@ -8,11 +8,26 @@
     <ProjectGuid>{7F109D34-4424-4983-9183-E21A4D2B593D}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Buzzle.Data</RootNamespace>
-    <AssemblyName>Buzzle.Data</AssemblyName>
+    <RootNamespace>Buzzle.Api.Core</RootNamespace>
+    <AssemblyName>Buzzle.Api.Core</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -89,8 +104,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BuzzleDataModel.Context.cs" />
-    <Compile Include="BuzzleDataModel.Context1.cs">
+    <Compile Include="BuzzleDataModel.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>BuzzleDataModel.Context.tt</DependentUpon>
@@ -100,15 +114,16 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>BuzzleDataModel.edmx</DependentUpon>
     </Compile>
-    <Compile Include="DataManager\DataManager.cs" />
+    <Compile Include="DataManager.cs" />
+    <Compile Include="Repositories\DataRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="App.Config" />
     <EntityDeploy Include="BuzzleDataModel.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>BuzzleDataModel.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <None Include="App.Config" />
     <None Include="BuzzleDataModel.edmx.diagram">
       <DependentUpon>BuzzleDataModel.edmx</DependentUpon>
     </None>
@@ -122,7 +137,15 @@
   <ItemGroup>
     <Content Include="BuzzleDataModel.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>BuzzleDataModel.Context1.cs</LastGenOutput>
+      <DependentUpon>BuzzleDataModel.edmx</DependentUpon>
+      <LastGenOutput>BuzzleDataModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="BuzzleLocalDB.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="BuzzleLocalDB_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>BuzzleLocalDB.mdf</DependentUpon>
     </Content>
   </ItemGroup>
   <ItemGroup>
@@ -134,6 +157,23 @@
       <Project>{C34CED20-C408-44AC-91BA-AB014A3EEF31}</Project>
       <Name>Buzzle.DataModel</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 Client Profile %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.4.5">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 4.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>

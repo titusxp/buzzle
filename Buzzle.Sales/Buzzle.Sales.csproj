@@ -67,51 +67,75 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <Compile Include="Views\Sales\ViewSaleView.cs" />
+    <Compile Include="Views\Sales\ViewSaleView.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Views\Sales\ViewSaleView.Designer.cs">
       <DependentUpon>ViewSaleView.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\StockItemTypesView\AddEditStockItemTypeView.cs" />
+    <Compile Include="Views\StockItemTypesView\AddEditStockItemTypeView.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Views\StockItemTypesView\AddEditStockItemTypeView.Designer.cs">
       <DependentUpon>AddEditStockItemTypeView.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\Purchases\AddEditPurchaseView.cs" />
+    <Compile Include="Views\Purchases\AddEditPurchaseView.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Views\Purchases\AddEditPurchaseView.Designer.cs">
       <DependentUpon>AddEditPurchaseView.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\Purchases\ProcessPurchaseView.cs" />
+    <Compile Include="Views\Purchases\ProcessPurchaseView.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Views\Purchases\ProcessPurchaseView.Designer.cs">
       <DependentUpon>ProcessPurchaseView.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\Purchases\PurchasesView.cs" />
+    <Compile Include="Views\Purchases\PurchasesView.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Views\Purchases\PurchasesView.Designer.cs">
       <DependentUpon>PurchasesView.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\ItemsInStockView\ItemsInStockView.cs" />
+    <Compile Include="Views\ItemsInStockView\ItemsInStockView.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Views\ItemsInStockView\ItemsInStockView.Designer.cs">
       <DependentUpon>ItemsInStockView.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\Purchases\ViewEditPurchaseView.cs" />
+    <Compile Include="Views\Purchases\ViewEditPurchaseView.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Views\Purchases\ViewEditPurchaseView.Designer.cs">
       <DependentUpon>ViewEditPurchaseView.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\Sales\AddSaleView.cs" />
+    <Compile Include="Views\Sales\AddSaleView.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Views\Sales\AddSaleView.Designer.cs">
       <DependentUpon>AddSaleView.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\Sales\SalesView.cs" />
+    <Compile Include="Views\Sales\SalesView.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Views\Sales\SalesView.Designer.cs">
       <DependentUpon>SalesView.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\StockItemTypesView\StockItemTypesView.cs" />
+    <Compile Include="Views\StockItemTypesView\StockItemTypesView.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Views\StockItemTypesView\StockItemTypesView.Designer.cs">
       <DependentUpon>StockItemTypesView.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\Supplies\SuppliesView.cs" />
+    <Compile Include="Views\Supplies\SuppliesView.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Views\Supplies\SuppliesView.Designer.cs">
       <DependentUpon>SuppliesView.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\Supplies\ViewSupplyView.cs" />
+    <Compile Include="Views\Supplies\ViewSupplyView.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Views\Supplies\ViewSupplyView.Designer.cs">
       <DependentUpon>ViewSupplyView.cs</DependentUpon>
     </Compile>
@@ -161,6 +185,10 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Bizzle.Common\Bizzle.Common.csproj">
+      <Project>{FC599052-1301-4DE9-8D90-1563FACB258D}</Project>
+      <Name>Bizzle.Common</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Buzzle.Api.Core\Buzzle.Api.Core.csproj">
       <Project>{7F109D34-4424-4983-9183-E21A4D2B593D}</Project>
       <Name>Buzzle.Api.Core</Name>
@@ -168,10 +196,6 @@
     <ProjectReference Include="..\Buzzle.DataModel\Buzzle.DataModel.csproj">
       <Project>{C34CED20-C408-44AC-91BA-AB014A3EEF31}</Project>
       <Name>Buzzle.DataModel</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Buzzle.GlobalStuff\Buzzle.Client.Ui.csproj">
-      <Project>{C5F508F4-60C1-475C-8170-8F214DCB5DBA}</Project>
-      <Name>Buzzle.Client.Ui</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

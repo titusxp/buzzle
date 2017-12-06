@@ -5,7 +5,10 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
-using Buzzle.Data;
+using Bizzle.Common.Common;
+using Bizzle.Common.Views;
+using Buzzle.Api.Core;
+
 using Buzzle.DataModel;
 using Buzzle.Client.Ui;
 using DevExpress.XtraEditors;
@@ -47,7 +50,7 @@ namespace Buzzle.Sales.Views
         {
             ((AddEditStockItemTypeView)sender).Close();
             var stockItemTypeBeingSaved = e.StockItemType;
-            if (stockItemTypeBeingSaved.StockItemTypeID == 0)
+            if (stockItemTypeBeingSaved.Id == 0)
             {
                 stockItemTypeBeingSaved = _dataManager.AddNewStockItemType(stockItemTypeBeingSaved);
                 stockItemTypeBindingSource.Add(stockItemTypeBeingSaved);

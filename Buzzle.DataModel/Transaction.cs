@@ -21,7 +21,7 @@ namespace Buzzle.DataModel
             this.JobPayments = new HashSet<JobPayment>();
         }
     
-        public int TransactionID { get; set; }
+        public int Id { get; set; }
         public int TransactionTypeID { get; set; }
         public int Amount { get; set; }
         public string Notes { get; set; }

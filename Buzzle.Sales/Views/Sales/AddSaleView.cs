@@ -6,9 +6,11 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
-using Buzzle.Data;
-using Buzzle.DataModel;
+using Bizzle.Common.Common;
+using Bizzle.Common.Views;
+using Buzzle.Api.Core;
 using Buzzle.Client.Ui;
+using Buzzle.DataModel;
 
 namespace Buzzle.Sales.Views
 {
@@ -58,7 +60,7 @@ namespace Buzzle.Sales.Views
         {
             if (!RequiredFieldValid || SelectedItem == null) return;
 
-            if (SelectedSaleItems.Any(itm => itm.StockItemTypeID == SelectedItem.StockItemTypeID))
+            if (SelectedSaleItems.Any(itm => itm.Id == SelectedItem.Id))
             {
                 BuzzleFunctions.ShowMessage("Item is already in the list", "Cannot add duplicate");
                 return;
@@ -73,7 +75,7 @@ namespace Buzzle.Sales.Views
 
             var item = new SaleItem()
             {
-                StockItemTypeID = SelectedItem.StockItemTypeID,
+                StockItemTypeID = SelectedItem.Id,
                 UnitSoldPrice = int.Parse(textEdit_UnitPrice.EditValue.ToString()),
                 Quantity = selectedQuantity,
                 UnitPurchasePrice = SelectedItem.UnitPurchasePrice
@@ -124,7 +126,7 @@ namespace Buzzle.Sales.Views
             if (_currentSale.CustomerName == null)
                 _currentSale.CustomerName = "Unavailable";
             _currentSale.DateRecorded = DateTime.Now;
-            _currentSale.RecordedByUserID = CurrentlyLoggedInUser.UserID;
+            _currentSale.RecordedByUserID = CurrentlyLoggedInUser.Id;
 
             foreach (var item in SelectedSaleItems)
             {

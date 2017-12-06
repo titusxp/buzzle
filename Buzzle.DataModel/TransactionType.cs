@@ -20,7 +20,7 @@ namespace Buzzle.DataModel
             this.Transactions = new HashSet<Transaction>();
         }
     
-        public int TransactionTypeID { get; set; }
+        public int Id { get; set; }
         public string TransactionName { get; set; }
         public Nullable<int> DeductionAccountID { get; set; }
         public Nullable<int> IncreasingAccountID { get; set; }

@@ -14,7 +14,7 @@ namespace Buzzle.DataModel
     
     public partial class LookupData
     {
-        public byte TableNumber { get; set; }
+        public byte Id { get; set; }
         public string TableData { get; set; }
     }
 }

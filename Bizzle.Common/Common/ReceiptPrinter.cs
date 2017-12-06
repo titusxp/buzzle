@@ -11,7 +11,7 @@ namespace Bizzle.Common.Common
     {
         private Sale SaleToBePrinted;
         private Job JobToBePrinted;
-        private Company Company = BuzzleFunctions.GetCompanyInfo();
+        private Company Company = new Company();// BuzzleFunctions.GetCompanyInfo();
         public void PrintSaleReceipt(Sale saleToBePrinted)
         {
             SaleToBePrinted = saleToBePrinted;
@@ -60,7 +60,7 @@ namespace Bizzle.Common.Common
             graphic.DrawString(Company.CompanyName + " - Sales Receipt", new Font("Arial", 16, FontStyle.Bold), brush, startX + logoOffsetX, startY + logoOffsetY);
             logoOffsetY += 25;
 
-            var headerString = string.Format("Sale No. {0:00000} {2}Customer Name: {3}{2}Date: {1:dd MMM yyyy hh:mm}", SaleToBePrinted.SaleID, SaleToBePrinted.DateRecorded, Environment.NewLine, SaleToBePrinted.CustomerName);
+            var headerString = string.Format("Sale No. {0:00000} {2}Customer Name: {3}{2}Date: {1:dd MMM yyyy hh:mm}", SaleToBePrinted.Id, SaleToBePrinted.DateRecorded, Environment.NewLine, SaleToBePrinted.CustomerName);
             graphic.DrawString(headerString, new Font("Courier New", 12, FontStyle.Italic), brush, startX + logoOffsetX, startY + logoOffsetY);
 
             var saleHeaderString = string.Format("{0}{1}{2}",
@@ -141,7 +141,7 @@ namespace Bizzle.Common.Common
             string customerName = string.IsNullOrWhiteSpace(JobToBePrinted.CustomerName) ? "Unavailable" : JobToBePrinted.CustomerName;
 
 
-            var headerString = string.Format("Job No. {0:00000} {2}Customer Name: {3}{2}Date Started: {1:dd MMM yyyy hh:mm} {2}Date Completed: {4:dd MMM yyyy hh:mm}", JobToBePrinted.JobID, JobToBePrinted.DateCreated, Environment.NewLine, customerName, JobToBePrinted.EndDate);
+            var headerString = string.Format("Job No. {0:00000} {2}Customer Name: {3}{2}Date Started: {1:dd MMM yyyy hh:mm} {2}Date Completed: {4:dd MMM yyyy hh:mm}", JobToBePrinted.Id, JobToBePrinted.DateCreated, Environment.NewLine, customerName, JobToBePrinted.EndDate);
 
             graphic.DrawString(headerString, new Font("Courier New", 12, FontStyle.Italic), brush, startX + logoOffsetX, startY + logoOffsetY);
 

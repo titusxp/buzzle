@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
+using Bizzle.Common.Common;
+using Bizzle.Common.Views;
 using Buzzle.Finances;
 using Buzzle.Client.Ui;
 using Buzzle.JobsManager.Views.JobsView;

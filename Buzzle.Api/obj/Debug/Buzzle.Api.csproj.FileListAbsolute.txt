@@ -1,8 +1,0 @@
-F:\CODE\buzzle\Buzzle.Api\obj\Debug\Buzzle.Api.csprojResolveAssemblyReference.cache
-F:\CODE\buzzle\Buzzle.Api\obj\Debug\Buzzle.Api.Properties.Resources.resources
-F:\CODE\buzzle\Buzzle.Api\obj\Debug\Buzzle.Api.csproj.GenerateResource.Cache
-F:\CODE\buzzle\Buzzle.Api\bin\Debug\Buzzle.Api.exe.config
-F:\CODE\buzzle\Buzzle.Api\bin\Debug\Buzzle.Api.exe
-F:\CODE\buzzle\Buzzle.Api\bin\Debug\Buzzle.Api.pdb
-F:\CODE\buzzle\Buzzle.Api\obj\Debug\Buzzle.Api.exe
-F:\CODE\buzzle\Buzzle.Api\obj\Debug\Buzzle.Api.pdb

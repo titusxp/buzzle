@@ -13,7 +13,7 @@ namespace Buzzle.DataModel
     
     public partial class FindSales_Result
     {
-        public long SaleID { get; set; }
+        public long Id { get; set; }
         public string CustomerName { get; set; }
         public Nullable<System.DateTime> DateRecorded { get; set; }
         public int RecordedByUserID { get; set; }

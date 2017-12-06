@@ -4,6 +4,8 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using Bizzle.Common.Common;
+using Bizzle.Common.Views;
 using Buzzle.Client.Ui;
 using DevExpress.Data.PLinq.Helpers;
 using DevExpress.Utils;

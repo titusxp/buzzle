@@ -6,8 +6,9 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
-using Buzzle.Client.Ui;
-using Buzzle.Data;
+using Bizzle.Common.Common;
+using Bizzle.Common.Views;
+using Buzzle.Api.Core;
 using Buzzle.DataModel;
 using DevExpress.XtraLayout.Utils;
 
@@ -27,7 +28,7 @@ namespace Buzzle.Sales.Views
             _currentPurchase = purchase ?? new Purchase
             {
                 DateRecorded = DateTime.Now,
-                CreatedByUserID = CurrentlyLoggedInUser.UserID,
+                CreatedByUserID = CurrentlyLoggedInUser.Id,
                 Status = BuzzleEnums.PurshaseStatuses.Awaiting_Purchase.ToString()
             };
 
@@ -37,7 +38,7 @@ namespace Buzzle.Sales.Views
         private void Initialize()
         {
             purchaseItemBindingSource.DataSource = _currentPurchase.PurchaseItems;
-            if (_currentPurchase.PurchaseID > 0)
+            if (_currentPurchase.Id > 0)
             {
                 layoutControlItem_PurchaseDetails.Visibility = LayoutVisibility.Always;
                 lookupEdit_CreatedBy.Properties.DataSource = _dataManager.GetAllUsers();
@@ -93,9 +94,9 @@ namespace Buzzle.Sales.Views
                 return;
             if (currentlySelectedStockItemType == null) return;
 
-            var currentStockItemTypeID = currentlySelectedStockItemType.StockItemTypeID;
+            var currentStockItemTypeID = currentlySelectedStockItemType.Id;
 
-            if (_currentPurchase.PurchaseItems.Any(item => item.StockItemTypeID == currentStockItemTypeID))
+            if (_currentPurchase.PurchaseItems.Any(item => item.Id == currentStockItemTypeID))
             {
                 BuzzleFunctions.ShowMessage("The item is already in the list", "Duplicate entry!!");
                 return;

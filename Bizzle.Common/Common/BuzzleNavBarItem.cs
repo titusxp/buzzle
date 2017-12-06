@@ -1,4 +1,5 @@
 ﻿using Bizzle.Common.Views;
+using DevExpress.XtraNavBar;
 
 namespace Bizzle.Common.Common
 {

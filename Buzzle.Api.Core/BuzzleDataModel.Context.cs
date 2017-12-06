@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Buzzle.Api.Core.DataModel
+namespace Buzzle.Api.Core
 {
     using System;
     using System.Data.Entity;
@@ -15,10 +15,11 @@ namespace Buzzle.Api.Core.DataModel
     using System.Data.Entity.Core.Objects;
     using System.Linq;
     using Buzzle.DataModel;
-    public partial class BuzzleEntities : DbContext
+    
+    public partial class BuzzleLocalDBEntities : DbContext
     {
-        public BuzzleEntities()
-            : base("name=BuzzleEntities")
+        public BuzzleLocalDBEntities()
+            : base("name=BuzzleLocalDBEntities")
         {
         }
     
@@ -32,6 +33,7 @@ namespace Buzzle.Api.Core.DataModel
         public virtual DbSet<Company> Companies { get; set; }
         public virtual DbSet<FaultType> FaultTypes { get; set; }
         public virtual DbSet<JobItemType> JobItemTypes { get; set; }
+        public virtual DbSet<Job> Jobs { get; set; }
         public virtual DbSet<PurchaseItem> PurchaseItems { get; set; }
         public virtual DbSet<Purchase> Purchases { get; set; }
         public virtual DbSet<SaleItem> SaleItems { get; set; }
@@ -49,7 +51,6 @@ namespace Buzzle.Api.Core.DataModel
         public virtual DbSet<LookupData> LookupDatas { get; set; }
         public virtual DbSet<AccountStat> AccountStats { get; set; }
         public virtual DbSet<StockItemBalance> StockItemBalances { get; set; }
-        public virtual DbSet<Job> Jobs { get; set; }
     
         public virtual ObjectResult<FindSales_Result> FindSales(Nullable<System.DateTime> startDate, Nullable<System.DateTime> endDate, Nullable<int> recordedByUserID)
         {

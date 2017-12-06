@@ -6,9 +6,11 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
-using Buzzle.Data;
-using Buzzle.DataModel;
+using Bizzle.Common.Common;
+using Bizzle.Common.Views;
+using Buzzle.Api.Core;
 using Buzzle.Client.Ui;
+using Buzzle.DataModel;
 
 namespace Buzzle.Sales.Views
 {

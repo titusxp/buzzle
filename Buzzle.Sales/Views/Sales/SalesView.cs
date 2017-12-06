@@ -6,10 +6,12 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
-using Buzzle.Data;
 using Buzzle.Client.Ui;
 
 using System.Drawing.Printing;
+using Bizzle.Common.Common;
+using Bizzle.Common.Views;
+using Buzzle.Api.Core;
 using Buzzle.DataModel;
 
 namespace Buzzle.Sales.Views
@@ -71,10 +73,10 @@ namespace Buzzle.Sales.Views
             //add transaction
             var saleTransaction = new Transaction(){
 
-                TransactionTypeID = SalesTransactionType.TransactionTypeID,
+                TransactionTypeID = SalesTransactionType.Id,
                 Amount = e.Sale.SaleItems.Select(item => item.Quantity * item.UnitSoldPrice).Sum(),
                 Notes = "New Sale",
-                RecordedByUserID = CurrentlyLoggedInUser.UserID,
+                RecordedByUserID = CurrentlyLoggedInUser.Id,
                 DateRecorded = DateTime.Now
             };
             _dataManager.AddTransaction(saleTransaction);
@@ -83,7 +85,7 @@ namespace Buzzle.Sales.Views
             foreach(var item in e.Sale.SaleItems){
                 var movement = new StockItemMovement()
                 {
-                    StockItemTypeID = item.StockItemTypeID,
+                    StockItemTypeID = (int) item.Id,
                     Quantity = item.Quantity,
                     MovementType = (int)BuzzleEnums.StockMovementTypes.Stock_Out,
                     UnitPurchasePrice = item.UnitPurchasePrice,

@@ -21,7 +21,7 @@ namespace Buzzle.DataModel
             this.Supplies = new HashSet<Supply>();
         }
     
-        public int PurchaseID { get; set; }
+        public int Id { get; set; }
         public System.DateTime DateRecorded { get; set; }
         public int CreatedByUserID { get; set; }
         public string Status { get; set; }

@@ -3,6 +3,8 @@ using Buzzle.Client.Ui;
 using System;
 using System.Collections.Generic;
 using System.Drawing;
+using Bizzle.Common.Common;
+using Buzzle.Client.Core;
 using Buzzle.DataModel;
 
 namespace Buzzle.Reports
@@ -14,7 +16,7 @@ namespace Buzzle.Reports
             InitializeComponent();
             InitializeComponent();
             lbl_CreatedBy.Text = BuzzleFunctions.GetCurrentUser().FullName;
-            CompanyInfo = BuzzleFunctions.GetCompanyInfo();
+            CompanyInfo = BuzzleClientFunctions.GetCompanyInfo();
             lbl_GeneratedDate.Text = string.Format("{0: dddd, dd-MMMM-YYYY hh:mm tt}", DateTime.Now);
         }
 

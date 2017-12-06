@@ -6,9 +6,9 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
-using Buzzle.Data;
 using Buzzle.Client.Ui;
-
+using Bizzle.Common.Views;
+using Buzzle.Api.Core;
 namespace Buzzle.Finances
 {
     public partial class AccountsView : BuzzleGlobalView

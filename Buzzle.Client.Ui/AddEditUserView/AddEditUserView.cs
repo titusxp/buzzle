@@ -6,6 +6,8 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using Bizzle.Common.Common;
+using Bizzle.Common.Views;
 using Buzzle.DataModel;
 
 namespace Buzzle.Client.Ui
@@ -19,7 +21,7 @@ namespace Buzzle.Client.Ui
             InitializeComponent();
             _currentUser = thisUser;
 
-            if (_currentUser.UserID > 0)
+            if (_currentUser.Id > 0)
             {
                 Text = string.Format("Buzzle - Edit User {0}", CurrentlyLoggedInUser.FullName);
             }
@@ -42,7 +44,7 @@ namespace Buzzle.Client.Ui
             BuzzleFunctions.SwitchFocus(this);
             if (AllFieldsValid() != true) return;
 
-            if (_currentUser.UserID < 1)
+            if (_currentUser.Id < 1)
             {
                 _currentUser.DateCreated = DateTime.Now;
             }

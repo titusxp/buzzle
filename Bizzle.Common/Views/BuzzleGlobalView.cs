@@ -11,11 +11,7 @@ namespace Bizzle.Common.Views
         {
             InitializeComponent();
         }
-
-        public static Company GetCompanyInfo()
-        {
-            return BuzzleFunctions.GetCompanyInfo();
-        }
+        
         
         public bool IsRuntime
         {

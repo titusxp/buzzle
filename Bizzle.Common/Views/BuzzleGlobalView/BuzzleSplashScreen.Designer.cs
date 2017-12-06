@@ -1,4 +1,6 @@
-﻿namespace Bizzle.Common.Views
+﻿using Bizzle.Common.Properties;
+
+namespace Bizzle.Common.Views
 {
     partial class BuzzleSplashScreen
     {
@@ -46,7 +48,7 @@
             // 
             // pictureEdit2
             // 
-            this.pictureEdit2.EditValue = global::Buzzle.Client.Ui.Properties.Resources.buzzle_splash_screen;
+            this.pictureEdit2.EditValue = Resources.buzzle_splash_screen;
             this.pictureEdit2.Location = new System.Drawing.Point(12, 12);
             this.pictureEdit2.Name = "pictureEdit2";
             this.pictureEdit2.Properties.AllowFocused = false;
@@ -60,7 +62,7 @@
             // 
             // pictureEdit1
             // 
-            this.pictureEdit1.EditValue = global::Buzzle.Client.Ui.Properties.Resources._1092505qb9ontx7k5;
+            this.pictureEdit1.EditValue = Resources._1092505qb9ontx7k5;
             this.pictureEdit1.Location = new System.Drawing.Point(23, 225);
             this.pictureEdit1.Name = "pictureEdit1";
             this.pictureEdit1.Properties.AllowFocused = false;

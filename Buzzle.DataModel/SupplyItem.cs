@@ -14,7 +14,7 @@ namespace Buzzle.DataModel
     
     public partial class SupplyItem
     {
-        public int SupplyItemID { get; set; }
+        public int Id { get; set; }
         public int SupplyID { get; set; }
         public int PurchaseItemID { get; set; }
         public int PurchasedUnitPrice { get; set; }

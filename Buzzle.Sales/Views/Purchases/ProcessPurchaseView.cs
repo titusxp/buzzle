@@ -6,9 +6,11 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
-using Buzzle.Data;
-using Buzzle.DataModel;
+using Bizzle.Common.Common;
+using Bizzle.Common.Views;
+using Buzzle.Api.Core;
 using Buzzle.Client.Ui;
+using Buzzle.DataModel;
 
 namespace Buzzle.Sales.Views.Purchases.ProcessPurchasesView
 {
@@ -68,7 +70,7 @@ namespace Buzzle.Sales.Views.Purchases.ProcessPurchasesView
         {
             if (SelectedPurchaseItem == null || textEdit_PurchasedQty.EditValue== null || textEdit_UnitPurchasePrice.EditValue == null)
                 return;
-            if (SupplyItems.Any(item => item.PurchaseItemID == SelectedPurchaseItem.PurchaseItemID))
+            if (SupplyItems.Any(item => item.Id == SelectedPurchaseItem.Id))
             {
                 BuzzleFunctions.ShowMessage("The item is already on the list", "Duplicate item");
                 return;
@@ -76,10 +78,10 @@ namespace Buzzle.Sales.Views.Purchases.ProcessPurchasesView
 
             var supplyItem = new SupplyItem()
             {
-                 PurchaseItemID = SelectedPurchaseItem.PurchaseItemID,
+                 PurchaseItemID = SelectedPurchaseItem.Id,
                  PurchasedUnitPrice = int.Parse(textEdit_UnitPurchasePrice.EditValue.ToString()),
                  PurchasedQuantity = int.Parse(textEdit_PurchasedQty.EditValue.ToString()),
-                 StockItemTypeID = SelectedPurchaseItem.StockItemTypeID
+                 StockItemTypeID = SelectedPurchaseItem.Id
             };
             supplyItem.TotalSpent = supplyItem.PurchasedUnitPrice*supplyItem.PurchasedQuantity;
 
@@ -106,10 +108,10 @@ namespace Buzzle.Sales.Views.Purchases.ProcessPurchasesView
             {
                 var supplyItem = new SupplyItem()
                 {
-                    PurchaseItemID = item.PurchaseItemID,
+                    PurchaseItemID = item.Id,
                     PurchasedUnitPrice = item.ProposedUnitPrice,
                     PurchasedQuantity = item.Quantity,
-                    StockItemTypeID= item.StockItemTypeID
+                    StockItemTypeID= item.Id
                 };
                 supplyItem.TotalSpent = supplyItem.PurchasedUnitPrice * supplyItem.PurchasedQuantity;
                 supplyItemBindingSource.Add(supplyItem);
@@ -127,7 +129,7 @@ namespace Buzzle.Sales.Views.Purchases.ProcessPurchasesView
             foreach (
                 var item in
                     _currentPurchase.PurchaseItems.Where(
-                        it => SupplyItems.Any(si => si.PurchaseItemID == it.PurchaseItemID)))
+                        it => SupplyItems.Any(si => si.Id == it.Id)))
             {
                 item.IsSupplied = true;
             }
@@ -135,8 +137,8 @@ namespace Buzzle.Sales.Views.Purchases.ProcessPurchasesView
             var supply = new Supply()
             {
                 DateRecorded = DateTime.Now,
-                RecordedByUserID = CurrentlyLoggedInUser.UserID,
-                PurchaseID = _currentPurchase.PurchaseID
+                RecordedByUserID = CurrentlyLoggedInUser.Id,
+                PurchaseID = _currentPurchase.Id
             };
 
             foreach (var item in SupplyItems)

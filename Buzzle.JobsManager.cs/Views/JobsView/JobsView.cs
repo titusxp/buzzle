@@ -2,10 +2,12 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Windows.Forms;
-using Buzzle.Data;
-using Buzzle.DataModel;
+using Bizzle.Common.Common;
+using Bizzle.Common.Views;
+using Buzzle.Api.Core;
 using Buzzle.Finances;
 using Buzzle.Client.Ui;
+using Buzzle.DataModel;
 using DevExpress.XtraBars;
 
 namespace Buzzle.JobsManager.Views.JobsView
@@ -80,7 +82,7 @@ namespace Buzzle.JobsManager.Views.JobsView
 
         private void SaveOrUpdateJob(Job thisJob)
         {
-            if (thisJob.JobID < 1)
+            if (thisJob.Id < 1)
             {
                 _dataManager.AddJob(thisJob);
                 JobsBindingSource.Add(thisJob);
@@ -94,7 +96,7 @@ namespace Buzzle.JobsManager.Views.JobsView
         private void SaveAllNewJobs()
         {
             var allJobs = JobsBindingSource.DataSource as List<Job>;
-            foreach (var job in allJobs.Where(job => job.JobID < 1))
+            foreach (var job in allJobs.Where(job => job.Id < 1))
             {
                 _dataManager.AddJob(job);
             }
@@ -208,8 +210,8 @@ namespace Buzzle.JobsManager.Views.JobsView
             transactionToBeSaved = _dataManager.AddTransaction(transactionToBeSaved);
             _dataManager.AddJobPayment(new JobPayment
             {
-                JobID = CurrentJob.JobID,
-                TransactionID = transactionToBeSaved.TransactionID
+                Id = CurrentJob.Id,
+                TransactionID = transactionToBeSaved.Id
             });
             CurrentJob.IsPaid = true;
             CurrentJob.EndDate = DateTime.Now;

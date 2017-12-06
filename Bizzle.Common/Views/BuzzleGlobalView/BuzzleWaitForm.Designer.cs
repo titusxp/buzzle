@@ -1,4 +1,5 @@
-﻿using DevExpress.XtraLayout;
+﻿using Bizzle.Common.Properties;
+using DevExpress.XtraLayout;
 
 namespace Bizzle.Common.Views
 {
@@ -70,7 +71,7 @@ namespace Bizzle.Common.Views
             // 
             // pictureEdit1
             // 
-            this.pictureEdit1.EditValue = global::Buzzle.Common.Properties.Resources._1092505qb9ontx7k5;
+            this.pictureEdit1.EditValue = Resources._1092505qb9ontx7k5;
             this.pictureEdit1.Location = new System.Drawing.Point(12, 52);
             this.pictureEdit1.Name = "pictureEdit1";
             this.pictureEdit1.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;

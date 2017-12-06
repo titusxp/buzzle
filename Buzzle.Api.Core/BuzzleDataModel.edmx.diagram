@@ -4,55 +4,55 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="b735c6301d85406b8ba11909764dc014" Name="Diagram1">
-        <EntityTypeShape EntityType="BuzzleModel.AccountPosting" Width="1.5" PointX="8.25" PointY="6.25" IsExpanded="true" />
-        <EntityTypeShape EntityType="BuzzleModel.Account" Width="1.5" PointX="1.5" PointY="4.375" IsExpanded="true" />
-        <EntityTypeShape EntityType="BuzzleModel.Company" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="BuzzleModel.FaultType" Width="1.5" PointX="0.75" PointY="14.25" IsExpanded="true" />
-        <EntityTypeShape EntityType="BuzzleModel.JobItemType" Width="1.5" PointX="0.75" PointY="16.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="BuzzleModel.PurchaseItem" Width="1.5" PointX="5.25" PointY="13.875" IsExpanded="true" />
-        <EntityTypeShape EntityType="BuzzleModel.Purchase" Width="1.5" PointX="3" PointY="14.25" IsExpanded="true" />
-        <EntityTypeShape EntityType="BuzzleModel.SaleItem" Width="1.5" PointX="5.25" PointY="18.25" IsExpanded="true" />
-        <EntityTypeShape EntityType="BuzzleModel.Sale" Width="1.5" PointX="3" PointY="17.375" IsExpanded="true" />
-        <EntityTypeShape EntityType="BuzzleModel.StockItemMovement" Width="1.5" PointX="5.25" PointY="21.875" IsExpanded="true" />
-        <EntityTypeShape EntityType="BuzzleModel.StockItemType" Width="1.5" PointX="3" PointY="21" IsExpanded="true" />
-        <EntityTypeShape EntityType="BuzzleModel.Supply" Width="1.5" PointX="5.25" PointY="9.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="BuzzleModel.SupplyItem" Width="1.5" PointX="7.5" PointY="13" IsExpanded="true" />
-        <EntityTypeShape EntityType="BuzzleModel.Transaction" Width="1.5" PointX="6" PointY="6" IsExpanded="true" />
-        <EntityTypeShape EntityType="BuzzleModel.TransactionType" Width="1.5" PointX="3.75" PointY="4.25" IsExpanded="true" />
-        <EntityTypeShape EntityType="BuzzleModel.User" Width="1.5" PointX="0.75" PointY="9.5" IsExpanded="true" />
-        <EntityTypeShape EntityType="BuzzleModel.BuzzleSetting" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="BuzzleModel.JobHistory" Width="1.5" PointX="8.25" PointY="9.625" IsExpanded="true" />
-        <EntityTypeShape EntityType="BuzzleModel.JobPayment" Width="1.5" PointX="11.25" PointY="8.375" IsExpanded="true" />
-        <EntityTypeShape EntityType="BuzzleModel.LookupData" Width="1.5" PointX="4.75" PointY="0.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="BuzzleModel.AccountStat" Width="1.5" PointX="6.75" PointY="0.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="BuzzleModel.StockItemBalance" Width="1.5" PointX="8.75" PointY="0.75" IsExpanded="true" />
-        <AssociationConnector Association="BuzzleModel.FK_AccountPostings_Accounts" ManuallyRouted="false" />
-        <AssociationConnector Association="BuzzleModel.FK_AccountPostings_Transactions" ManuallyRouted="false" />
-        <AssociationConnector Association="BuzzleModel.FK_TransactionTypes_Accounts" ManuallyRouted="false" />
-        <AssociationConnector Association="BuzzleModel.FK_TransactionTypes_Accounts1" ManuallyRouted="false" />
-        <AssociationConnector Association="BuzzleModel.FK_PurchaseItems_Purchases" ManuallyRouted="false" />
-        <AssociationConnector Association="BuzzleModel.FK_PurchaseItems_StockItemTypes" ManuallyRouted="false" />
-        <AssociationConnector Association="BuzzleModel.FK_SupplyItems_PurchaseItems" ManuallyRouted="false" />
-        <AssociationConnector Association="BuzzleModel.FK_Purchases_Users" ManuallyRouted="false" />
-        <AssociationConnector Association="BuzzleModel.FK_Supplies_Purchases" ManuallyRouted="false" />
-        <AssociationConnector Association="BuzzleModel.FK_SaleItems_Sales" ManuallyRouted="false" />
-        <AssociationConnector Association="BuzzleModel.FK_SaleItems_StockItems" ManuallyRouted="false" />
-        <AssociationConnector Association="BuzzleModel.FK_Sales_Users" ManuallyRouted="false" />
-        <AssociationConnector Association="BuzzleModel.FK_StockItemMovements_StockItems" ManuallyRouted="false" />
-        <AssociationConnector Association="BuzzleModel.FK_SupplyItems_StockItemTypes" ManuallyRouted="false" />
-        <AssociationConnector Association="BuzzleModel.FK_Supplies_Users" ManuallyRouted="false" />
-        <AssociationConnector Association="BuzzleModel.FK_SupplyItems_Supplies" ManuallyRouted="false" />
-        <AssociationConnector Association="BuzzleModel.FK_JobPayments_Transactions" ManuallyRouted="false" />
-        <AssociationConnector Association="BuzzleModel.FK_Transactions_TransactionTypes" ManuallyRouted="false" />
-        <AssociationConnector Association="BuzzleModel.FK_Transactions_Users" ManuallyRouted="false" />
-        <AssociationConnector Association="BuzzleModel.FK_JobHistories_Users" ManuallyRouted="false" />
-        <EntityTypeShape EntityType="BuzzleModel.Job" Width="1.5" PointX="3" PointY="8.625" />
-        <AssociationConnector Association="BuzzleModel.FK_Jobs_FaultTypes" />
-        <AssociationConnector Association="BuzzleModel.FK_Jobs_ItemTypes" />
-        <AssociationConnector Association="BuzzleModel.FK_JobHistories_RepairJobs" />
-        <AssociationConnector Association="BuzzleModel.FK_JobPayments_Jobs" />
-        <AssociationConnector Association="BuzzleModel.FK_Jobs_Users" />
+      <Diagram DiagramId="90dc66bd0d7f456a9c22cc3e1679b2bc" Name="Diagram1">
+        <EntityTypeShape EntityType="BuzzleLocalDBModel.AccountPosting" Width="1.5" PointX="8.25" PointY="6.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="BuzzleLocalDBModel.Account" Width="1.5" PointX="1.5" PointY="4.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="BuzzleLocalDBModel.Company" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="BuzzleLocalDBModel.FaultType" Width="1.5" PointX="0.75" PointY="14.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="BuzzleLocalDBModel.JobItemType" Width="1.5" PointX="0.75" PointY="16.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="BuzzleLocalDBModel.Job" Width="1.5" PointX="3" PointY="8" IsExpanded="true" />
+        <EntityTypeShape EntityType="BuzzleLocalDBModel.PurchaseItem" Width="1.5" PointX="5.25" PointY="13.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="BuzzleLocalDBModel.Purchase" Width="1.5" PointX="3" PointY="14.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="BuzzleLocalDBModel.SaleItem" Width="1.5" PointX="5.25" PointY="18.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="BuzzleLocalDBModel.Sale" Width="1.5" PointX="3" PointY="17.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="BuzzleLocalDBModel.StockItemMovement" Width="1.5" PointX="5.25" PointY="21.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="BuzzleLocalDBModel.StockItemType" Width="1.5" PointX="3" PointY="21" IsExpanded="true" />
+        <EntityTypeShape EntityType="BuzzleLocalDBModel.Supply" Width="1.5" PointX="5.25" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="BuzzleLocalDBModel.SupplyItem" Width="1.5" PointX="7.5" PointY="13" IsExpanded="true" />
+        <EntityTypeShape EntityType="BuzzleLocalDBModel.Transaction" Width="1.5" PointX="6" PointY="6" IsExpanded="true" />
+        <EntityTypeShape EntityType="BuzzleLocalDBModel.TransactionType" Width="1.5" PointX="3.75" PointY="4.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="BuzzleLocalDBModel.User" Width="1.5" PointX="0.75" PointY="9.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="BuzzleLocalDBModel.BuzzleSetting" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="BuzzleLocalDBModel.JobHistory" Width="1.5" PointX="8.25" PointY="9.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="BuzzleLocalDBModel.JobPayment" Width="1.5" PointX="11.25" PointY="8.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="BuzzleLocalDBModel.LookupData" Width="1.5" PointX="4.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="BuzzleLocalDBModel.AccountStat" Width="1.5" PointX="6.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="BuzzleLocalDBModel.StockItemBalance" Width="1.5" PointX="8.75" PointY="0.75" IsExpanded="true" />
+        <AssociationConnector Association="BuzzleLocalDBModel.FK_AccountPostings_Accounts" ManuallyRouted="false" />
+        <AssociationConnector Association="BuzzleLocalDBModel.FK_AccountPostings_Transactions" ManuallyRouted="false" />
+        <AssociationConnector Association="BuzzleLocalDBModel.FK_TransactionTypes_Accounts" ManuallyRouted="false" />
+        <AssociationConnector Association="BuzzleLocalDBModel.FK_TransactionTypes_Accounts1" ManuallyRouted="false" />
+        <AssociationConnector Association="BuzzleLocalDBModel.FK_Jobs_FaultTypes" ManuallyRouted="false" />
+        <AssociationConnector Association="BuzzleLocalDBModel.FK_Jobs_ItemTypes" ManuallyRouted="false" />
+        <AssociationConnector Association="BuzzleLocalDBModel.FK_JobHistories_RepairJobs" ManuallyRouted="false" />
+        <AssociationConnector Association="BuzzleLocalDBModel.FK_JobPayments_Jobs" ManuallyRouted="false" />
+        <AssociationConnector Association="BuzzleLocalDBModel.FK_Jobs_Users" ManuallyRouted="false" />
+        <AssociationConnector Association="BuzzleLocalDBModel.FK_PurchaseItems_Purchases" ManuallyRouted="false" />
+        <AssociationConnector Association="BuzzleLocalDBModel.FK_PurchaseItems_StockItemTypes" ManuallyRouted="false" />
+        <AssociationConnector Association="BuzzleLocalDBModel.FK_SupplyItems_PurchaseItems" ManuallyRouted="false" />
+        <AssociationConnector Association="BuzzleLocalDBModel.FK_Purchases_Users" ManuallyRouted="false" />
+        <AssociationConnector Association="BuzzleLocalDBModel.FK_Supplies_Purchases" ManuallyRouted="false" />
+        <AssociationConnector Association="BuzzleLocalDBModel.FK_SaleItems_Sales" ManuallyRouted="false" />
+        <AssociationConnector Association="BuzzleLocalDBModel.FK_SaleItems_StockItems" ManuallyRouted="false" />
+        <AssociationConnector Association="BuzzleLocalDBModel.FK_Sales_Users" ManuallyRouted="false" />
+        <AssociationConnector Association="BuzzleLocalDBModel.FK_StockItemMovements_StockItems" ManuallyRouted="false" />
+        <AssociationConnector Association="BuzzleLocalDBModel.FK_SupplyItems_StockItemTypes" ManuallyRouted="false" />
+        <AssociationConnector Association="BuzzleLocalDBModel.FK_Supplies_Users" ManuallyRouted="false" />
+        <AssociationConnector Association="BuzzleLocalDBModel.FK_SupplyItems_Supplies" ManuallyRouted="false" />
+        <AssociationConnector Association="BuzzleLocalDBModel.FK_JobPayments_Transactions" ManuallyRouted="false" />
+        <AssociationConnector Association="BuzzleLocalDBModel.FK_Transactions_TransactionTypes" ManuallyRouted="false" />
+        <AssociationConnector Association="BuzzleLocalDBModel.FK_Transactions_Users" ManuallyRouted="false" />
+        <AssociationConnector Association="BuzzleLocalDBModel.FK_JobHistories_Users" ManuallyRouted="false" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

@@ -14,7 +14,7 @@ namespace Buzzle.DataModel
     
     public partial class AccountPosting
     {
-        public int PostingID { get; set; }
+        public int Id { get; set; }
         public int TransactionID { get; set; }
         public int AccountID { get; set; }
         public int PostingType { get; set; }

@@ -14,12 +14,12 @@ namespace Buzzle.DataModel
     
     public partial class JobHistory
     {
-        public int JobID { get; set; }
+        public int Id { get; set; }
         public string HistoryNote { get; set; }
         public System.DateTime DateInserted { get; set; }
         public int RecordedByUserID { get; set; }
     
-        public virtual User User { get; set; }
         public virtual Job Job { get; set; }
+        public virtual User User { get; set; }
     }
 }

@@ -14,7 +14,7 @@ namespace Buzzle.DataModel
     
     public partial class Company
     {
-        public int CompanyID { get; set; }
+        public int Id { get; set; }
         public string CompanyName { get; set; }
         public byte[] CompanyLogo { get; set; }
         public string PhoneNumber { get; set; }

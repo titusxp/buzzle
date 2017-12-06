@@ -1,10 +1,15 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.ComponentModel;
 using System.Drawing;
+using System.IO;
+using System.Linq;
+using System.Reflection;
 using System.Threading;
 using System.Windows.Forms;
 using Bizzle.Common.Views;
 using Buzzle.DataModel;
+using DevExpress.XtraGrid.Views.Grid;
 
 namespace Bizzle.Common.Common
 {
@@ -134,10 +139,7 @@ namespace Bizzle.Common.Common
             _currentUser = user;
         }
 
-        public static Company GetCompanyInfo()
-        {
-            return new DataManager().GetCompanyData();
-        }
+        
 
         public static Image ResizeImage(Image image, Size newSize)
         {
@@ -150,6 +152,140 @@ namespace Bizzle.Common.Common
             return newImage;
         }
 
-        
+        private static IList<Assembly> LoadedAssemblies;
+
+        /// <summary>
+        /// Returns a list of Types within all referenced and loaded assemblies that implement or inherit the passed type.
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <returns></returns>
+        public static IEnumerable<Type> GetLoadedTypes<T>() where T : class
+        {
+            var type = typeof(T);
+            if (LoadedAssemblies == null)
+            {
+                // load all the types that are found in all loaded assemblies
+                // For the type to be found, the Module's project must be referenced within the MediTrak.Shell project or in the BIN directory
+                // in the future, we might consider using manual project/assembly loading thus eliminating the need to add references
+                // load all referenced assemblies manually since the .NET runtime does not do it automatically
+                // http://stackoverflow.com/q/12779665
+                var binAssemblies =
+                    Directory.GetFiles(AppDomain.CurrentDomain.BaseDirectory)
+                        .Where(file => Path.GetExtension(file) == ".dll")
+                        .Select(Assembly.LoadFrom)
+                        .ToList();
+
+                binAssemblies.Add(Assembly.GetEntryAssembly());
+
+                LoadedAssemblies = binAssemblies.ToArray();
+            }
+
+            return LoadedAssemblies.SelectMany(s => s.GetTypes()).Where(p => type.IsAssignableFrom(p) && !p.IsInterface).ToArray();
+
+        }
+
+        /// <summary>
+        /// Returns a list of Types within all referenced and loaded assemblies that implement or inherit the passed type and satisfy the passed predicate function
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <returns></returns>
+        public static IEnumerable<T> GetLoadedTypes<T>(Func<T, bool> predicate) where T : class
+        {
+            IEnumerable<T> types = GetLoadedTypesInstances<T>();
+            return types.Where(predicate);
+        }
+
+        /// <summary>
+        /// Returns a list of instantiated objects within all referenced and loaded assemblies that implement or inherit the passed type.
+        /// Note, this method only returns types that have a PARAMETER-LESS constructor.
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <returns></returns>
+        public static List<T> GetLoadedTypesInstances<T>() where T : class
+        {
+            var types = GetLoadedTypes<T>().ToArray();
+            if (types.Any())
+            {
+                return types.Select(m =>
+                {
+                    // exclude types that DO NOT have a parameterless contructor
+                    var constructor = m.GetConstructor(Type.EmptyTypes);
+                    if (constructor != null)
+                    {
+                        try
+                        {
+                            return (T)Activator.CreateInstance(m);
+                        }
+                        catch (Exception)
+                        {
+                            return null;
+                        }
+                    }
+                    return (T)null;
+                }).OfType<T>().ToList();
+            }
+            return null;
+        }
+
+        public static IEnumerable<T> GetLoadedTypesInstances<T>(Assembly[] assemblies) where T : class
+        {
+
+            // load all referenced assemblies manually since the .NET runtime does not do it automatically
+            // http://stackoverflow.com/q/12779665
+            var loadedAssemblies = assemblies;
+
+            // load all the types that are found in all loaded assemblies
+            // For the type to be found, the Module's project must be referenced within the MediTrak.Shell project or in the BIN directory
+            // in the future, we might consider using manual project/assembly loading thus eliminating the need to add references
+            var type = typeof(T);
+            var types = loadedAssemblies.SelectMany(s => s.GetTypes()).Where(p => type.IsAssignableFrom(p) && !p.IsInterface && !p.IsAbstract).ToArray();
+            if (types.Any())
+            {
+                return types.Select(m =>
+                {
+                    // exclude types that DO NOT have a parameterless contructor
+                    var constructor = m.GetConstructor(Type.EmptyTypes);
+                    if (constructor != null)
+                    {
+                        try
+                        {
+                            return (T)Activator.CreateInstance(m);
+                        }
+                        catch (Exception)
+                        {
+                            return null;
+                        }
+                    }
+                    return (T)null;
+                }).OfType<T>();
+            }
+            return null;
+        }
+
+        public static IEnumerable<T> GetLoadedTypesInstance<T>(Func<T, bool> predicate) where T : class
+        {
+            IEnumerable<T> types = GetLoadedTypesInstances<T>();
+            return types.Where(predicate);
+        }
+
+        public static T CreateLoadedTypeInstance<T>(params Object[] constructorArguments) where T : class
+        {
+            var loadedType = GetLoadedTypes<T>().First();
+            return (T)Activator.CreateInstance(loadedType, constructorArguments);
+        }
+
+        public static List<T> CreateLoadedTypeInstances<T>(params Object[] constructorArguments) where T : class
+        {
+            var loadedTypes = GetLoadedTypes<T>();
+            var typeInstances = new List<T>();
+
+            foreach (var loadedType in loadedTypes)
+            {
+                var instance = (T)Activator.CreateInstance(loadedType, constructorArguments);
+                typeInstances.Add(instance);
+            }
+
+            return typeInstances;
+        }
     }
 }

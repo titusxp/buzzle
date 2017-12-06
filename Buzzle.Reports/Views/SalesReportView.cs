@@ -1,5 +1,4 @@
-﻿using Buzzle.Data;
-using Buzzle.Client.Ui;
+﻿using Buzzle.Client.Ui;
 using Buzzle.Reports.PrintableReports;
 using System;
 using System.Collections.Generic;
@@ -12,6 +11,9 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using DevExpress.XtraReports.UI;
 using Buzzle.DataModel;
+using Bizzle.Common.Views;
+using Buzzle.Api.Core;
+
 
 namespace Buzzle.Reports.Views
 {

@@ -14,11 +14,11 @@ namespace Buzzle.DataModel
     
     public partial class JobPayment
     {
-        public int JobID { get; set; }
+        public int Id { get; set; }
         public int TransactionID { get; set; }
         public string Notes { get; set; }
     
-        public virtual Transaction Transaction { get; set; }
         public virtual Job Job { get; set; }
+        public virtual Transaction Transaction { get; set; }
     }
 }

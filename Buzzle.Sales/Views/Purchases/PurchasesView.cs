@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Linq;
-using Buzzle.Data;
-using Buzzle.DataModel;
+using Bizzle.Common.Common;
+using Bizzle.Common.Views;
+using Buzzle.Api.Core;
 using Buzzle.Client.Ui;
+using Buzzle.DataModel;
 using Buzzle.Sales.Views.Purchases.ProcessPurchasesView;
 using DevExpress.Data.Linq;
 
@@ -40,7 +42,7 @@ namespace Buzzle.Sales.Views
         private void addEditPurchaseView_SaveButtonClicked(object sender, PurchaseSavingEventArgs e)
         {
             (sender as AddEditPurchaseView).Close();
-            if (e.PurchaseBeingSaved.PurchaseID < 1)
+            if (e.PurchaseBeingSaved.Id < 1)
             {
                 _dataManager.AddPurchase(e.PurchaseBeingSaved);
                 LoadAllPurchases();

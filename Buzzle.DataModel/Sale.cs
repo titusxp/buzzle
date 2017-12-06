@@ -20,7 +20,7 @@ namespace Buzzle.DataModel
             this.SaleItems = new HashSet<SaleItem>();
         }
     
-        public long SaleID { get; set; }
+        public long Id { get; set; }
         public string CustomerName { get; set; }
         public Nullable<System.DateTime> DateRecorded { get; set; }
         public int RecordedByUserID { get; set; }

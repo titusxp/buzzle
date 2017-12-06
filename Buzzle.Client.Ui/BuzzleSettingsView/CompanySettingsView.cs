@@ -6,7 +6,9 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
-using Buzzle.Data;
+using Bizzle.Common.Common;
+using Bizzle.Common.Views;
+using Buzzle.Api.Core;
 using Buzzle.DataModel;
 
 namespace Buzzle.Client.Ui
@@ -40,7 +42,7 @@ namespace Buzzle.Client.Ui
             }
                       
 
-            if (CurrentCompany.CompanyID < 1)
+            if (CurrentCompany.Id < 1)
                 _dataManager.AddCompanyInfo(CurrentCompany);
             else
                 _dataManager.UpdateCompanyInfo(CurrentCompany);

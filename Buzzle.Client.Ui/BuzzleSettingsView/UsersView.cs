@@ -6,8 +6,9 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
-using Buzzle.Data;
-
+using Bizzle.Common.Common;
+using Bizzle.Common.Views;
+using Buzzle.Api.Core;
 using DevExpress.XtraEditors;
 using Buzzle.DataModel;
 
@@ -84,7 +85,7 @@ namespace Buzzle.Client.Ui
             var userToBeSaved = e.UserToBeSaved;
             ((AddEditUserView)sender).Close();
 
-            if (userToBeSaved.UserID < 1)
+            if (userToBeSaved.Id < 1)
             {
                 _dataManager.AddUser(userToBeSaved);
             }
